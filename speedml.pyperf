@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<ProfilingTarget xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ProjectTarget>
+    <TargetProject>5edb9cd9-f370-48a1-ac15-f40845551e79</TargetProject>
+    <FriendlyName>speedml</FriendlyName>
+  </ProjectTarget>
+</ProfilingTarget>
