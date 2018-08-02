@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classspeedml_1_1util_1_1_data_frame_imputer" kind="class" prot="public">
+    <compoundname>speedml::util::DataFrameImputer</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">TransformerMixin</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classspeedml_1_1util_1_1_data_frame_imputer_1ae487d957774da81c3d3d0eaad8a0342b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>speedml.util.DataFrameImputer::fill</definition>
+        <argsstring></argsstring>
+        <name>fill</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/util.py" line="18" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/util.py" bodystart="18" bodyend="-1"/>
+        <referencedby refid="classspeedml_1_1util_1_1_data_frame_imputer_1a54750e6f37675436fa4434fe214343c6" compoundref="util_8py" startline="22" endline="27">speedml.util.DataFrameImputer.transform</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classspeedml_1_1util_1_1_data_frame_imputer_1afbccdd27d0078b2934dd5986f721af29" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def speedml.util.DataFrameImputer.fit</definition>
+        <argsstring></argsstring>
+        <name>fit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Uses ``X`` dataset to fill empty values for numeric features with the median value, otherwise fills most common value for text features.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/util.py" line="14" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/util.py" bodystart="14" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classspeedml_1_1util_1_1_data_frame_imputer_1a54750e6f37675436fa4434fe214343c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def speedml.util.DataFrameImputer.transform</definition>
+        <argsstring></argsstring>
+        <name>transform</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Calls the self.fill rule defined in fit method.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/util.py" line="22" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/util.py" bodystart="22" bodyend="27"/>
+        <references refid="classspeedml_1_1util_1_1_data_frame_imputer_1ae487d957774da81c3d3d0eaad8a0342b" compoundref="util_8py" startline="18">speedml.util.DataFrameImputer.fill</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="9">
+        <label>speedml.util.DataFrameImputer</label>
+        <link refid="classspeedml_1_1util_1_1_data_frame_imputer"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>TransformerMixin</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="11">
+        <label>speedml.util.DataFrameImputer</label>
+        <link refid="classspeedml_1_1util_1_1_data_frame_imputer"/>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>TransformerMixin</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/util.py" line="13" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/util.py" bodystart="13" bodyend="27"/>
+    <listofallmembers>
+      <member refid="classspeedml_1_1util_1_1_data_frame_imputer_1ae487d957774da81c3d3d0eaad8a0342b" prot="public" virt="non-virtual"><scope>speedml::util::DataFrameImputer</scope><name>fill</name></member>
+      <member refid="classspeedml_1_1util_1_1_data_frame_imputer_1afbccdd27d0078b2934dd5986f721af29" prot="public" virt="non-virtual"><scope>speedml::util::DataFrameImputer</scope><name>fit</name></member>
+      <member refid="classspeedml_1_1util_1_1_data_frame_imputer_1a54750e6f37675436fa4434fe214343c6" prot="public" virt="non-virtual"><scope>speedml::util::DataFrameImputer</scope><name>transform</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

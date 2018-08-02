@@ -1,0 +1,428 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="namespacehouse_price" kind="namespace">
+    <compoundname>housePrice</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacehouse_price_1a7353ee4f25aff5487633cdd316332b15" prot="public" static="no" mutable="no">
+        <type>tuple</type>
+        <definition>tuple housePrice.color</definition>
+        <argsstring></argsstring>
+        <name>color</name>
+        <initializer>= sns.color_palette()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/housePrice.py" line="5" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/housePrice.py" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacehouse_price_1a1367f878d9de350296acd692a7aaea8f" prot="public" static="no" mutable="no">
+        <type>tuple</type>
+        <definition>list housePrice::train</definition>
+        <argsstring></argsstring>
+        <name>train</name>
+        <initializer>= pd.read_csv(&apos;C:\\Users\\suiyun.yang\\Desktop\\Kaggle\\datasets\\Kaggle\\HousePrice\\train.csv&apos;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/housePrice.py" line="22" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/housePrice.py" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacehouse_price_1a2b02eb042737f62fb8e346acc8cf0dfb" prot="public" static="no" mutable="no">
+        <type>tuple</type>
+        <definition>list housePrice::test</definition>
+        <argsstring></argsstring>
+        <name>test</name>
+        <initializer>= pd.read_csv(&apos;C:\\Users\\suiyun.yang\\Desktop\\Kaggle\\datasets\\Kaggle\\HousePrice\\test.csv&apos;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/housePrice.py" line="24" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/housePrice.py" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacehouse_price_1aea1111b00ab2af155801de42ab08406a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>tuple housePrice::y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <initializer>= train.SalePrice</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/housePrice.py" line="30" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/housePrice.py" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacehouse_price_1a08bc6fa4c486cdaf066a15165f894eab" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list housePrice.ntrain</definition>
+        <argsstring></argsstring>
+        <name>ntrain</name>
+        <initializer>= train.shape[0]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/housePrice.py" line="41" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/housePrice.py" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacehouse_price_1ac95c5f5478628a83299f588f8add0908" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list housePrice.ntest</definition>
+        <argsstring></argsstring>
+        <name>ntest</name>
+        <initializer>= test.shape[0]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/housePrice.py" line="42" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/housePrice.py" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacehouse_price_1af3c467aca8b8c67a0457d9854d735982" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>housePrice.y_train</definition>
+        <argsstring></argsstring>
+        <name>y_train</name>
+        <initializer>= train.SalePrice.values</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/housePrice.py" line="43" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/housePrice.py" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacehouse_price_1aa63f9dbc4aad5d7d8746fa37294a7d0b" prot="public" static="no" mutable="no">
+        <type>tuple</type>
+        <definition>tuple housePrice::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <initializer>= train.append(<ref refid="namespacehouse_price_1a2b02eb042737f62fb8e346acc8cf0dfb" kindref="member">test</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/housePrice.py" line="44" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/housePrice.py" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacehouse_price_1a69a0a412ee71a82cd4c7c67086d1b49b" prot="public" static="no" mutable="no">
+        <type>tuple</type>
+        <definition>tuple housePrice::data_na</definition>
+        <argsstring></argsstring>
+        <name>data_na</name>
+        <initializer>= data.isnull()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/housePrice.py" line="76" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/housePrice.py" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacehouse_price_1a9006021d0d5a7fc92b1b1a7b3df62202" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list housePrice.items1</definition>
+        <argsstring></argsstring>
+        <name>items1</name>
+        <initializer>= [&apos;PoolQC&apos;,&apos;MiscFeature&apos;,&apos;Alley&apos;,&apos;Fence&apos;,&apos;FireplaceQu&apos;,&apos;Fence&apos;,&apos;BsmtCond&apos;, &apos;BsmtExposure&apos;,
+          &apos;BsmtFinType1&apos;, &apos;BsmtFinType2&apos;,&apos;BsmtQual&apos;,&apos;MasVnrType&apos;,&apos;GarageCond&apos;,&apos;GarageFinish&apos;,
+          &apos;GarageQual&apos;, &apos;GarageType&apos;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/housePrice.py" line="96" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/housePrice.py" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacehouse_price_1ad8da855e3ec621edf9cacd91e486e78a" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list housePrice.items2</definition>
+        <argsstring></argsstring>
+        <name>items2</name>
+        <initializer>= [&apos;GarageYrBlt&apos;,&apos;GarageArea&apos;, &apos;GarageCars&apos;,&apos;BsmtFinSF1&apos;, &apos;BsmtFinSF2&apos;,
+       &apos;TotalBsmtSF&apos;, &apos;BsmtFinType2&apos;, &apos;BsmtFullBath&apos;, &apos;BsmtHalfBath&apos;,&apos;MasVnrArea&apos;,&apos;BsmtUnfSF&apos;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/housePrice.py" line="100" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/housePrice.py" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacehouse_price_1ad31d6e99543c8ae3994d5d532f16b1ef" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list housePrice.item3</definition>
+        <argsstring></argsstring>
+        <name>item3</name>
+        <initializer>= [ &apos;KitchenQual&apos;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/housePrice.py" line="107" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/housePrice.py" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacehouse_price_1a288c776578ea8b8f3fd4b1777f4d7aba" prot="public" static="no" mutable="no">
+        <type>tuple</type>
+        <definition>tuple housePrice::data_null</definition>
+        <argsstring></argsstring>
+        <name>data_null</name>
+        <initializer>= data.isnull()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/housePrice.py" line="115" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/housePrice.py" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacehouse_price_1a948d9e05445d922fd05e84f1e6c6d659" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list housePrice.item4</definition>
+        <argsstring></argsstring>
+        <name>item4</name>
+        <initializer>= [&apos;MSSubClass&apos;,&apos;OverallCond&apos;,&apos;YrSold&apos;,&apos;MoSold&apos;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/housePrice.py" line="146" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/housePrice.py" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacehouse_price_1a8de3d5f06217b2f4fe05fae0fa98fd72" prot="public" static="no" mutable="no">
+        <type>tuple</type>
+        <definition>tuple housePrice.cols</definition>
+        <argsstring></argsstring>
+        <name>cols</name>
+        <initializer>= (&apos;FireplaceQu&apos;, &apos;BsmtQual&apos;, &apos;BsmtCond&apos;, &apos;GarageQual&apos;, &apos;GarageCond&apos;, 
+        &apos;ExterQual&apos;, &apos;ExterCond&apos;,&apos;HeatingQC&apos;, &apos;PoolQC&apos;, &apos;KitchenQual&apos;, &apos;BsmtFinType1&apos;, 
+        &apos;BsmtFinType2&apos;, &apos;Functional&apos;, &apos;Fence&apos;, &apos;BsmtExposure&apos;, &apos;GarageFinish&apos;, &apos;LandSlope&apos;,
+        &apos;LotShape&apos;, &apos;PavedDrive&apos;, &apos;Street&apos;, &apos;Alley&apos;, &apos;CentralAir&apos;, &apos;MSSubClass&apos;, &apos;OverallCond&apos;, 
+        &apos;YrSold&apos;, &apos;MoSold&apos;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/housePrice.py" line="154" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/housePrice.py" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacehouse_price_1acaad5b7c07f69732f179446ba9c176a4" prot="public" static="no" mutable="no">
+        <type>tuple</type>
+        <definition>tuple housePrice.lbl</definition>
+        <argsstring></argsstring>
+        <name>lbl</name>
+        <initializer>= LabelEncoder()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/housePrice.py" line="161" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/housePrice.py" bodystart="161" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacehouse_price_1ab98d4c390bdc3c07a72f7897443875ac" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list housePrice.numeric_feats</definition>
+        <argsstring></argsstring>
+        <name>numeric_feats</name>
+        <initializer>= data.dtypes[data.dtypes != &apos;object&apos;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/housePrice.py" line="170" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/housePrice.py" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacehouse_price_1a6881f212f55babdda37320fed838460c" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list housePrice.skewed_feats</definition>
+        <argsstring></argsstring>
+        <name>skewed_feats</name>
+        <initializer>= <ref refid="namespacehouse_price_1aa63f9dbc4aad5d7d8746fa37294a7d0b" kindref="member">data</ref>[<ref refid="namespacehouse_price_1ab98d4c390bdc3c07a72f7897443875ac" kindref="member">numeric_feats</ref>]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/housePrice.py" line="172" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/housePrice.py" bodystart="172" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacehouse_price_1ab6345cc2ade0fb9a6972f1c2637614cf" prot="public" static="no" mutable="no">
+        <type>tuple</type>
+        <definition>list housePrice::skewness</definition>
+        <argsstring></argsstring>
+        <name>skewness</name>
+        <initializer>= pd.DataFrame({&apos;skew&apos;:<ref refid="namespacehouse_price_1a6881f212f55babdda37320fed838460c" kindref="member">skewed_feats</ref>})</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/housePrice.py" line="173" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/housePrice.py" bodystart="173" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacehouse_price_1a1e3a8acb8765b60d36c863e5c8eb0cc2" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>housePrice.skewed_features</definition>
+        <argsstring></argsstring>
+        <name>skewed_features</name>
+        <initializer>= skewness.index</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/housePrice.py" line="180" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/housePrice.py" bodystart="180" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacehouse_price_1ae603694316b9d171aeb375a958b75c67" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float housePrice.lam</definition>
+        <argsstring></argsstring>
+        <name>lam</name>
+        <initializer>= 0.15</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/housePrice.py" line="181" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/housePrice.py" bodystart="181" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacehouse_price_1ac769a88bb6cd3c5207a2949478a45e2e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>housePrice.data2</definition>
+        <argsstring></argsstring>
+        <name>data2</name>
+        <initializer>= <ref refid="namespacehouse_price_1a1367f878d9de350296acd692a7aaea8f" kindref="member">train</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/housePrice.py" line="197" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/housePrice.py" bodystart="197" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacehouse_price_1a7fbdafb7abcd9758e50762e70ea0ae92" prot="public" static="no" mutable="no">
+        <type>tuple</type>
+        <definition>tuple housePrice.param_test4</definition>
+        <argsstring></argsstring>
+        <name>param_test4</name>
+        <initializer>= OrderedDict()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/housePrice.py" line="209" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/housePrice.py" bodystart="209" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacehouse_price_1a7df313c1020e897a101270c9ff7b9bdd" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>housePrice.estimator</definition>
+        <argsstring></argsstring>
+        <name>estimator</name>
+        <initializer>= XGBRegressor</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/housePrice.py" line="218" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/housePrice.py" bodystart="218" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacehouse_price_1a8e253de5b3f0e58d818aa62bc0ed10ac" prot="public" static="no" mutable="no">
+        <type>dictionary</type>
+        <definition>dictionary housePrice.init_param</definition>
+        <argsstring></argsstring>
+        <name>init_param</name>
+        <initializer>= {&apos;learning_rate&apos;: 0.1, &apos;n_estimators&apos;: 15,
+              &apos;max_depth&apos;: 5, &apos;min_child_weight&apos;: 0.9, &apos;gamma&apos;: 0,
+              &apos;subsample&apos;: 0.8, &apos;colsample_bytree&apos;: 0.8,
+              &apos;nthread&apos;: 4, &apos;scale_pos_weight&apos;: 1, &apos;seed&apos;: 27, &apos;eval_metric&apos;:&apos;auc&apos;}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/housePrice.py" line="219" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/housePrice.py" bodystart="219" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacehouse_price_1a81fd6e447f9fa31185aa751f47ec0c81" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def housePrice.ignore_warn</definition>
+        <argsstring></argsstring>
+        <name>ignore_warn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/housePrice.py" line="8" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/housePrice.py" bodystart="8" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacehouse_price_1a2b0a00685062f831e0845fe31a73372a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def housePrice.fill_na</definition>
+        <argsstring></argsstring>
+        <name>fill_na</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/housePrice.py" line="81" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/housePrice.py" bodystart="81" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacehouse_price_1a0be6b4ef729fb48e16a608bed8bf9b52" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def housePrice.fill_na_with_mode</definition>
+        <argsstring></argsstring>
+        <name>fill_na_with_mode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/housePrice.py" line="85" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/housePrice.py" bodystart="85" bodyend="90"/>
+        <references refid="namespacemodule1_1aea3cdae47dbb141c32ac55f3164175e9" compoundref="module1_8py" startline="213">module1.mode</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacehouse_price_1a11a87b394d204862f98625eb60c53322" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def housePrice.num_transform</definition>
+        <argsstring></argsstring>
+        <name>num_transform</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/housePrice.py" line="141" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/housePrice.py" bodystart="141" bodyend="145"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/housePrice.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

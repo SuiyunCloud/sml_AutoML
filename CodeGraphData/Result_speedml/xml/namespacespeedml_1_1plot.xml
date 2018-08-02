@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="namespacespeedml_1_1plot" kind="namespace">
+    <compoundname>speedml::plot</compoundname>
+    <innerclass refid="classspeedml_1_1plot_1_1_plot" prot="public">speedml::plot::Plot</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Speedml Plot component with methods that work on plots or the Exploratory Data Analysis (EDA) workflow. Contact author https://twitter.com/manavsehgal. Code, docs and demos https://speedml.com.
+</verbatim> </para>    </detaileddescription>
+    <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/plot.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

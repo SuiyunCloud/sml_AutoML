@@ -1,0 +1,261 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classspeedml_1_1_speedml" kind="class" prot="public">
+    <compoundname>speedml::Speedml</compoundname>
+    <basecompoundref refid="classspeedml_1_1base_1_1_base" prot="public" virt="non-virtual">speedml.base.Base</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classspeedml_1_1_speedml_1a014111bcb46b00a9ad24602b9c002abb" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>speedml.Speedml::plot</definition>
+        <argsstring></argsstring>
+        <name>plot</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/__init__.py" line="47" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/__init__.py" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classspeedml_1_1_speedml_1ad74975db796547b90159e0693c6b4043" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>speedml.Speedml::feature</definition>
+        <argsstring></argsstring>
+        <name>feature</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/__init__.py" line="48" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/__init__.py" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classspeedml_1_1_speedml_1a3f880199088ec7bc710c853aa70aebcc" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>speedml.Speedml::xgb</definition>
+        <argsstring></argsstring>
+        <name>xgb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/__init__.py" line="49" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/__init__.py" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classspeedml_1_1_speedml_1a42d00e15896b001b3c54f8b437b7f7b2" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>speedml.Speedml::model</definition>
+        <argsstring></argsstring>
+        <name>model</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/__init__.py" line="50" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/__init__.py" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classspeedml_1_1_speedml_1aabae70966340f6f9511271bc0c04d2c4" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>speedml.Speedml::np</definition>
+        <argsstring></argsstring>
+        <name>np</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/__init__.py" line="52" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/__init__.py" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classspeedml_1_1_speedml_1a28869ce0f258c72c0bcfbdeb77dd0614" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>speedml.Speedml::pd</definition>
+        <argsstring></argsstring>
+        <name>pd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/__init__.py" line="53" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/__init__.py" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classspeedml_1_1_speedml_1a1f1e412daa5b3ccbf4f41cc9c0aff217" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def speedml.Speedml.__init__</definition>
+        <argsstring></argsstring>
+        <name>__init__</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Open datasets ``train`` and ``test`` as CSV or JSON files and store in pandas DataFrames ``Base.train`` and ``Base.test``. Set ``Base.target`` and ``Base.uid`` values based on parameters. Initialize ``Plot``, ``Feature``, and ``Xgb`` components.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/__init__.py" line="25" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/__init__.py" bodystart="25" bodyend="56"/>
+        <references refid="classspeedml_1_1_speedml_1aa7cb108106cdf14f70a978fe0ff70a2a" compoundref="____init_____8py" startline="65" endline="90">speedml.Speedml._setup_environment</references>
+      </memberdef>
+      <memberdef kind="function" id="classspeedml_1_1_speedml_1ac829ce6decce7c7ce9448b78a6023a83" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def speedml.Speedml.configure</definition>
+        <argsstring></argsstring>
+        <name>configure</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Configure Speedml defaults with ``option`` configuration parameter, ``value`` setting. When method is called without parameters it simply returns the current config dictionary, otherwise returns the updated configuration.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/__init__.py" line="57" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/__init__.py" bodystart="57" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classspeedml_1_1_speedml_1af213b14c4f28494e9ad1fe7bfea3dcd9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def speedml.Speedml.info</definition>
+        <argsstring></argsstring>
+        <name>info</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Runs DataFrame.info() on both Train and Test datasets.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/__init__.py" line="91" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/__init__.py" bodystart="91" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="classspeedml_1_1_speedml_1a3e4bccb2d252caecf422a4301bfadb71" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def speedml.Speedml.eda</definition>
+        <argsstring></argsstring>
+        <name>eda</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Performs speed exploratory data analysis (EDA) on the current state of datasets. Returns metrics and recommendations as a dataframe. Progressively hides metrics as they achieve workflow completion goals or meet the configured defaults and thresholds.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/__init__.py" line="99" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/__init__.py" bodystart="99" bodyend="248"/>
+        <references refid="classspeedml_1_1_speedml_1aaaaaf2a9cef39db38a27cff180a1ca12" compoundref="____init_____8py" startline="249" endline="256">speedml.Speedml.shape</references>
+      </memberdef>
+      <memberdef kind="function" id="classspeedml_1_1_speedml_1aaaaaf2a9cef39db38a27cff180a1ca12" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def speedml.Speedml.shape</definition>
+        <argsstring></argsstring>
+        <name>shape</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Print shape (samples, features) of train, test datasets and number of numerical features in each dataset.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/__init__.py" line="249" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/__init__.py" bodystart="249" bodyend="256"/>
+        <referencedby refid="classspeedml_1_1_speedml_1a3e4bccb2d252caecf422a4301bfadb71" compoundref="____init_____8py" startline="99" endline="248">speedml.Speedml.eda</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classspeedml_1_1_speedml_1a78025ed70827a9bf2c464b6fba39f043" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def speedml.Speedml.save_results</definition>
+        <argsstring></argsstring>
+        <name>save_results</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Saves the ``columns`` dictionary input to a DataFrame as ``file_path`` CSV file.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/__init__.py" line="257" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/__init__.py" bodystart="257" bodyend="265"/>
+      </memberdef>
+      <memberdef kind="function" id="classspeedml_1_1_speedml_1acdb77c6a089ae9f764098d6fe223fb6c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def speedml.Speedml.slug</definition>
+        <argsstring></argsstring>
+        <name>slug</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/__init__.py" line="266" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/__init__.py" bodystart="266" bodyend="273"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classspeedml_1_1_speedml_1aa7cb108106cdf14f70a978fe0ff70a2a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def speedml.Speedml._setup_environment</definition>
+        <argsstring></argsstring>
+        <name>_setup_environment</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/__init__.py" line="65" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/__init__.py" bodystart="65" bodyend="90"/>
+        <referencedby refid="classspeedml_1_1_speedml_1a1f1e412daa5b3ccbf4f41cc9c0aff217" compoundref="____init_____8py" startline="25" endline="56">speedml.Speedml.__init__</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="32">
+        <label>speedml.base.Base</label>
+        <link refid="classspeedml_1_1base_1_1_base"/>
+        <childnode refid="33" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>speedml.Speedml</label>
+        <link refid="classspeedml_1_1_speedml"/>
+        <childnode refid="32" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>object</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="35">
+        <label>speedml.base.Base</label>
+        <link refid="classspeedml_1_1base_1_1_base"/>
+        <childnode refid="36" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>speedml.Speedml</label>
+        <link refid="classspeedml_1_1_speedml"/>
+        <childnode refid="35" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>object</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/__init__.py" line="24" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/__init__.py" bodystart="24" bodyend="273"/>
+    <listofallmembers>
+      <member refid="classspeedml_1_1_speedml_1a1f1e412daa5b3ccbf4f41cc9c0aff217" prot="public" virt="non-virtual"><scope>speedml::Speedml</scope><name>__init__</name></member>
+      <member refid="classspeedml_1_1_speedml_1aa7cb108106cdf14f70a978fe0ff70a2a" prot="private" virt="non-virtual"><scope>speedml::Speedml</scope><name>_setup_environment</name></member>
+      <member refid="classspeedml_1_1_speedml_1ac829ce6decce7c7ce9448b78a6023a83" prot="public" virt="non-virtual"><scope>speedml::Speedml</scope><name>configure</name></member>
+      <member refid="classspeedml_1_1base_1_1_base_1af5ca411e6e3773eabfbe468bd08b08d9" prot="public" virt="non-virtual"><scope>speedml::Speedml</scope><name>data_n</name></member>
+      <member refid="classspeedml_1_1_speedml_1a3e4bccb2d252caecf422a4301bfadb71" prot="public" virt="non-virtual"><scope>speedml::Speedml</scope><name>eda</name></member>
+      <member refid="classspeedml_1_1_speedml_1ad74975db796547b90159e0693c6b4043" prot="public" virt="non-virtual"><scope>speedml::Speedml</scope><name>feature</name></member>
+      <member refid="classspeedml_1_1_speedml_1af213b14c4f28494e9ad1fe7bfea3dcd9" prot="public" virt="non-virtual"><scope>speedml::Speedml</scope><name>info</name></member>
+      <member refid="classspeedml_1_1_speedml_1a42d00e15896b001b3c54f8b437b7f7b2" prot="public" virt="non-virtual"><scope>speedml::Speedml</scope><name>model</name></member>
+      <member refid="classspeedml_1_1_speedml_1aabae70966340f6f9511271bc0c04d2c4" prot="public" virt="non-virtual"><scope>speedml::Speedml</scope><name>np</name></member>
+      <member refid="classspeedml_1_1_speedml_1a28869ce0f258c72c0bcfbdeb77dd0614" prot="public" virt="non-virtual"><scope>speedml::Speedml</scope><name>pd</name></member>
+      <member refid="classspeedml_1_1_speedml_1a014111bcb46b00a9ad24602b9c002abb" prot="public" virt="non-virtual"><scope>speedml::Speedml</scope><name>plot</name></member>
+      <member refid="classspeedml_1_1_speedml_1a78025ed70827a9bf2c464b6fba39f043" prot="public" virt="non-virtual"><scope>speedml::Speedml</scope><name>save_results</name></member>
+      <member refid="classspeedml_1_1_speedml_1aaaaaf2a9cef39db38a27cff180a1ca12" prot="public" virt="non-virtual"><scope>speedml::Speedml</scope><name>shape</name></member>
+      <member refid="classspeedml_1_1_speedml_1acdb77c6a089ae9f764098d6fe223fb6c" prot="public" virt="non-virtual"><scope>speedml::Speedml</scope><name>slug</name></member>
+      <member refid="classspeedml_1_1_speedml_1a3f880199088ec7bc710c853aa70aebcc" prot="public" virt="non-virtual"><scope>speedml::Speedml</scope><name>xgb</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

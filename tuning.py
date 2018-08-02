@@ -40,7 +40,8 @@ def logger_set():
     global logger
     logger = logging
 
-def calculater(base_model, params, train_data, target):
+def calculater(base_model, params, train_data, target, scorer):
+    result = {}
     # assert isinstance(train_data, object)
     train_xy, val = train_test_split(train_data, test_size=0.3, random_state=1)
     y = train_xy[target]
@@ -50,32 +51,39 @@ def calculater(base_model, params, train_data, target):
 
     logger.debug('Parameters for calculation are {}'.format(params))
     logger.debug('model is {}'.format(base_model))
-    gsearch = GridSearchCV(estimator=base_model, param_grid=params, scoring='roc_auc', n_jobs=4, iid=False, cv=5)
+    #gsearch = GridSearchCV(estimator=base_model, param_grid=params, scoring='roc_auc', n_jobs=4, iid=False, cv=5)
+    gsearch = GridSearchCV(estimator=base_model, param_grid=params, scoring=scorer, n_jobs=4, iid=False, cv=5)
+    logger.debug('gsearch is {}'.format(gsearch))
     # Fit the algorithm on the data
     try:
         gsearch.fit(X, y)
     except:
-        logger.exception("Exception Logged")
+        logger.exception("Exception of GridSearchCV when cv.fit()")
+        return False,False
     # gsearch.fit(X,y)
 
     # Predict training set:
-    dtrain_predictions = gsearch.predict(val_X)
-    dtrain_predprob = gsearch.predict_proba(val_X)[:, 1]
+    #dtrain_predictions = gsearch.predict(val_X)
+    #if scorer == "roc_auc":
+    #    dtrain_predprob = gsearch.predict_proba(val_X)[:, 1]
 
     # save result
-    accuracy = metrics.accuracy_score(val_y, dtrain_predictions)
-    auc = metrics.roc_auc_score(val_y, dtrain_predprob)
-    res = {'params': params, 'best_params': gsearch.best_params_, 'best_scores': gsearch.best_score_,
-           'accuracy': accuracy, 'AUC': auc, 'gridScore': gsearch.grid_scores_}
+    #accuracy = metrics.accuracy_score(val_y, dtrain_predictions)
+    #if scorer == "roc_auc":
+    #    auc = metrics.roc_auc_score(val_y, dtrain_predprob)
+    #res = {'params': params, 'best_params': gsearch.best_params_, 'best_scores': gsearch.best_score_,
+    #       'accuracy': accuracy, 'AUC': auc, 'gridScore': gsearch.grid_scores_}
+    result = {'params': params, 'best_params': gsearch.best_params_, 'best_scores': gsearch.best_score_,'gridScore':gsearch.grid_scores_}
 
     # Print model report:
     print("\nModel Report")
     print("\nParams:", params)
     print("\nbest_params:", gsearch.best_params_)
     print("\nbest_scores:", gsearch.best_score_)
-    print("Accuracy : %.4g" % accuracy)
-    print("AUC Score (Train): %f" % auc)
-    return res,gsearch
+    #print("Accuracy : %.4g" % accuracy)
+    #print("AUC Score (Train): %f" % auc)
+    logger.debug('Before calculation return,res is {}'.format(result))
+    return result,gsearch
 
 
 def createSamples(input_params, samples):
@@ -228,10 +236,13 @@ def get_decimal_place(decimal):
     return num
 
 # def compare_boundary(param,label,min_fixed,max_fixed):
-def auto_tuning(model, init_param, params, data, target='Survived', expand=10,samples=10,min_positive_num=0.00001):
+def auto_tuning(model, init_param, params, data, target='Survived',scorer='roc_auc',expand=10,samples=10,min_positive_num=0.001):
     """
     params包含参数的字典，每个参数的值由四维tuple构成，前两位是初始最小、最大，后两位是取值上下极限边界,若上下极限边界值为-1表示不做上下极限限制
     如：learning_rate:(0.05,0.3,0,1)表示learning_rate初始范围为（0.05,0.3），当在给范围找不到最优结果时，会扩大到（0,1）内
+
+    注意：模型参数要么在0-1间，要么在1-无穷，其中1-无穷的参数，自动生成的参数均为整数
+
     :param model: 模型
     :param init_param:模型的初始值
     :param params: 参数寻优范围列表
@@ -244,12 +255,13 @@ def auto_tuning(model, init_param, params, data, target='Survived', expand=10,sa
     logger_set()
     #logger = logger_set()
 
-    #参数检查
+    #参数检查，模型参数要么在0-1间，要么在1-无穷
 
     label = -1  # 标识参数没有上界或下界限
     rests = []
     param = {}
     num = 0
+
     estimator = model(**init_param)
     for k, v in params.items():
         param.clear()
@@ -258,15 +270,25 @@ def auto_tuning(model, init_param, params, data, target='Survived', expand=10,sa
         max_fixed = v[3]
         is_done = False
 
-        res = []
+        #res = []
         while not is_done:
+            res = {}
             logger.info("Current calculation step is {}".format(num))
             param_new, canAdjust = createSamples(param, samples)
-            res,end_model = calculater(estimator, param_new, data, target)
+            #logger.debug('Before calculation,res is {}'.format(res))
+            res,end_model = calculater(estimator, param_new, data, target,scorer=scorer)
+            #logger.debug('After calculation,res is {}'.format(res))
+            if not res:
+                return False
 
             #it has got the end reslut when best parameter is in fix boundaries
             best_params = res['best_params']
-            if best_params.values() in (min_fixed,max_fixed):
+            best_params_val = [i for i in best_params.values()][0]
+            if best_params_val in (min_fixed,max_fixed):
+                is_done = True
+            
+            #if best parameter is smaller than min_positive_num, it should end
+            if best_params_val <= min_positive_num:
                 is_done = True
 
             num += 1
@@ -276,7 +298,7 @@ def auto_tuning(model, init_param, params, data, target='Survived', expand=10,sa
             logger.info("\n")
             rests.append(res)
             #logger.debug('hello')
-            if canAdjust:
+            if canAdjust and (not is_done):
                 is_done, param = is_converge(res,expand)
                 if is_done:
                     break
@@ -310,30 +332,26 @@ def auto_tuning(model, init_param, params, data, target='Survived', expand=10,sa
                             param[key[0]] = (min_val_temp, max_fixed)
                         else:
                             is_done = True
-                            logger.warning(u"调整后的边界超出设定的上下限范围，上下限位：({},{})，当前调整范围为：({},{})".format(min_fixed, max_fixed,
-                                                                                                   min_val_temp,
-                                                                                                   max_val_temp))
-                #当去除新调整的范围没有小数
+                            logger.warning(u"调整后的边界超出设定的上下限范围，上下限位：({},{})，当前调整范围为：({},{})".format(min_fixed, max_fixed,min_val_temp,max_val_temp))
+                
                 temp = [i for i in param.values()]
                 key = [i for i in param.keys()]
-                num_temp = len(str(min_positive_num))
                 min_val_temp, max_val_temp = temp[0]
+                #当最小极限大于等于1，则参数必须是正整数
+                if min_fixed >= 1 and (min_val_temp <min_fixed):
+                    min_val_temp = min_fixed
+                #当去除新调整的范围没有小数
                 if get_decimal_place(min_val_temp) == 0:
                     min_val_temp = int(min_val_temp)
                 if get_decimal_place(max_val_temp) == 0:
                     max_val_temp = int(max_val_temp)
-                param[key[0]] = (min_val_temp, max_val_temp)
-                
-                #当最小值小于最小正数
-                if min_val_temp < min_positive_num:
-                    is_done = True
+                param[key[0]] = (min_val_temp, max_val_temp)   
+               
             else:
                 is_done = True
 
-            
-             
         # 更新参数
-        # print(res)
-        init_param.update(res['best_params'])
+        logger.debug("best_params is {}".format(best_params))
+        init_param.update(best_params)
         estimator = model(**init_param)
     return end_model

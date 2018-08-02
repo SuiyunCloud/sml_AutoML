@@ -1,0 +1,259 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classspeedml_1_1xgb_1_1_xgb" kind="class" prot="public">
+    <compoundname>speedml::xgb::Xgb</compoundname>
+    <basecompoundref refid="classspeedml_1_1base_1_1_base" prot="public" virt="non-virtual">speedml.base.Base</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classspeedml_1_1xgb_1_1_xgb_1a77b29c3f3ff440f9aeec7f102d5e0eb7" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>speedml.xgb.Xgb::sample_accuracy</definition>
+        <argsstring></argsstring>
+        <name>sample_accuracy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/xgb.py" line="29" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/xgb.py" bodystart="29" bodyend="-1"/>
+        <referencedby refid="classspeedml_1_1xgb_1_1_xgb_1a5f3fd53c867c4ebb63bb75e4e4940e5e" compoundref="xgb_8py" startline="20" endline="34">speedml.xgb.Xgb.sample_accuracy</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classspeedml_1_1xgb_1_1_xgb_1a83315f6ca77acc34f735f04f79044c35" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>speedml.xgb.Xgb::cv_results</definition>
+        <argsstring></argsstring>
+        <name>cv_results</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/xgb.py" line="50" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/xgb.py" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classspeedml_1_1xgb_1_1_xgb_1a27de9afd514bc3517198647d288f3833" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>speedml.xgb.Xgb::error</definition>
+        <argsstring></argsstring>
+        <name>error</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/xgb.py" line="54" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/xgb.py" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classspeedml_1_1xgb_1_1_xgb_1a50cb05d4e8c282ed5bbcf0642d898337" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>speedml.xgb.Xgb::clf</definition>
+        <argsstring></argsstring>
+        <name>clf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/xgb.py" line="66" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/xgb.py" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classspeedml_1_1xgb_1_1_xgb_1af2efd73c28a06979d50bda4cff97d190" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>speedml.xgb.Xgb::predictions</definition>
+        <argsstring></argsstring>
+        <name>predictions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/xgb.py" line="78" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/xgb.py" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classspeedml_1_1xgb_1_1_xgb_1ae96aac9213583cd3c8e000066cfcfdba" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>speedml.xgb.Xgb::feature_accuracy</definition>
+        <argsstring></argsstring>
+        <name>feature_accuracy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/xgb.py" line="99" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/xgb.py" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classspeedml_1_1xgb_1_1_xgb_1a5f3fd53c867c4ebb63bb75e4e4940e5e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def speedml.xgb.Xgb.sample_accuracy</definition>
+        <argsstring></argsstring>
+        <name>sample_accuracy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Calculate the accuracy of an XGBoost model based on number of correct labels in prediction.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/xgb.py" line="20" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/xgb.py" bodystart="20" bodyend="34"/>
+        <references refid="classspeedml_1_1xgb_1_1_xgb_1a77b29c3f3ff440f9aeec7f102d5e0eb7" compoundref="xgb_8py" startline="29">speedml.xgb.Xgb.sample_accuracy</references>
+      </memberdef>
+      <memberdef kind="function" id="classspeedml_1_1xgb_1_1_xgb_1a418a84a4637d48c9be84d2ea87fd0f47" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def speedml.xgb.Xgb.hyper</definition>
+        <argsstring></argsstring>
+        <name>hyper</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Tune XGBoost hyper-parameters by selecting from permutations of values from the ``select_params`` dictionary. Remaining parameters with single values are specified by the ``fixed_params`` dictionary. Returns a dataframe with ranking of ``select_params`` items.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/xgb.py" line="35" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/xgb.py" bodystart="35" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classspeedml_1_1xgb_1_1_xgb_1a1033f35b321809bc87e4ab0e33ba824b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def speedml.xgb.Xgb.cv</definition>
+        <argsstring></argsstring>
+        <name>cv</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Calculate the Cross-Validation (CV) score for XGBoost model based on ``grid_params`` parameters. Sets xgb.cv_results variable to the resulting dataframe.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/xgb.py" line="45" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/xgb.py" bodystart="45" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classspeedml_1_1xgb_1_1_xgb_1a36f3825d038c749d612461a342c68ba7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def speedml.xgb.Xgb.params</definition>
+        <argsstring></argsstring>
+        <name>params</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Sets Base.xgb_params to ``params`` dictionary.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/xgb.py" line="56" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/xgb.py" bodystart="56" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classspeedml_1_1xgb_1_1_xgb_1a4e97b77836e123ebb8c1e2a7243ba13b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def speedml.xgb.Xgb.classifier</definition>
+        <argsstring></argsstring>
+        <name>classifier</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Creates the XGBoost Classifier with Base.xgb_params dictionary of model hyper-parameters.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/xgb.py" line="62" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/xgb.py" bodystart="62" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classspeedml_1_1xgb_1_1_xgb_1a86288332d86668f71c5cd1c6d11d369c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def speedml.xgb.Xgb.fit</definition>
+        <argsstring></argsstring>
+        <name>fit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Sets Base.xgb_model with trained XGBoost model.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/xgb.py" line="68" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/xgb.py" bodystart="68" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classspeedml_1_1xgb_1_1_xgb_1a9cc01a906730b51cbf32fb7dc3c787dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def speedml.xgb.Xgb.predict</definition>
+        <argsstring></argsstring>
+        <name>predict</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Sets xgb.predictions with predictions from the XGBoost model.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/xgb.py" line="74" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/xgb.py" bodystart="74" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="classspeedml_1_1xgb_1_1_xgb_1accf7b71381d6fd00b0fe02bc37699db3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def speedml.xgb.Xgb.feature_selection</definition>
+        <argsstring></argsstring>
+        <name>feature_selection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Returns threshold and accuracy for ``n`` number of features.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/xgb.py" line="80" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/xgb.py" bodystart="80" bodyend="119"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="38">
+        <label>speedml.base.Base</label>
+        <link refid="classspeedml_1_1base_1_1_base"/>
+        <childnode refid="39" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>object</label>
+      </node>
+      <node id="37">
+        <label>speedml.xgb.Xgb</label>
+        <link refid="classspeedml_1_1xgb_1_1_xgb"/>
+        <childnode refid="38" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="41">
+        <label>speedml.base.Base</label>
+        <link refid="classspeedml_1_1base_1_1_base"/>
+        <childnode refid="42" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>object</label>
+      </node>
+      <node id="40">
+        <label>speedml.xgb.Xgb</label>
+        <link refid="classspeedml_1_1xgb_1_1_xgb"/>
+        <childnode refid="41" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/xgb.py" line="19" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/xgb.py" bodystart="19" bodyend="119"/>
+    <listofallmembers>
+      <member refid="classspeedml_1_1xgb_1_1_xgb_1a4e97b77836e123ebb8c1e2a7243ba13b" prot="public" virt="non-virtual"><scope>speedml::xgb::Xgb</scope><name>classifier</name></member>
+      <member refid="classspeedml_1_1xgb_1_1_xgb_1a50cb05d4e8c282ed5bbcf0642d898337" prot="public" virt="non-virtual"><scope>speedml::xgb::Xgb</scope><name>clf</name></member>
+      <member refid="classspeedml_1_1xgb_1_1_xgb_1a1033f35b321809bc87e4ab0e33ba824b" prot="public" virt="non-virtual"><scope>speedml::xgb::Xgb</scope><name>cv</name></member>
+      <member refid="classspeedml_1_1xgb_1_1_xgb_1a83315f6ca77acc34f735f04f79044c35" prot="public" virt="non-virtual"><scope>speedml::xgb::Xgb</scope><name>cv_results</name></member>
+      <member refid="classspeedml_1_1base_1_1_base_1af5ca411e6e3773eabfbe468bd08b08d9" prot="public" virt="non-virtual"><scope>speedml::xgb::Xgb</scope><name>data_n</name></member>
+      <member refid="classspeedml_1_1xgb_1_1_xgb_1a27de9afd514bc3517198647d288f3833" prot="public" virt="non-virtual"><scope>speedml::xgb::Xgb</scope><name>error</name></member>
+      <member refid="classspeedml_1_1xgb_1_1_xgb_1ae96aac9213583cd3c8e000066cfcfdba" prot="public" virt="non-virtual"><scope>speedml::xgb::Xgb</scope><name>feature_accuracy</name></member>
+      <member refid="classspeedml_1_1xgb_1_1_xgb_1accf7b71381d6fd00b0fe02bc37699db3" prot="public" virt="non-virtual"><scope>speedml::xgb::Xgb</scope><name>feature_selection</name></member>
+      <member refid="classspeedml_1_1xgb_1_1_xgb_1a86288332d86668f71c5cd1c6d11d369c" prot="public" virt="non-virtual"><scope>speedml::xgb::Xgb</scope><name>fit</name></member>
+      <member refid="classspeedml_1_1xgb_1_1_xgb_1a418a84a4637d48c9be84d2ea87fd0f47" prot="public" virt="non-virtual"><scope>speedml::xgb::Xgb</scope><name>hyper</name></member>
+      <member refid="classspeedml_1_1xgb_1_1_xgb_1a36f3825d038c749d612461a342c68ba7" prot="public" virt="non-virtual"><scope>speedml::xgb::Xgb</scope><name>params</name></member>
+      <member refid="classspeedml_1_1xgb_1_1_xgb_1a9cc01a906730b51cbf32fb7dc3c787dc" prot="public" virt="non-virtual"><scope>speedml::xgb::Xgb</scope><name>predict</name></member>
+      <member refid="classspeedml_1_1xgb_1_1_xgb_1af2efd73c28a06979d50bda4cff97d190" prot="public" virt="non-virtual"><scope>speedml::xgb::Xgb</scope><name>predictions</name></member>
+      <member refid="classspeedml_1_1xgb_1_1_xgb_1a77b29c3f3ff440f9aeec7f102d5e0eb7" prot="public" virt="non-virtual"><scope>speedml::xgb::Xgb</scope><name>sample_accuracy</name></member>
+      <member refid="classspeedml_1_1xgb_1_1_xgb_1a5f3fd53c867c4ebb63bb75e4e4940e5e" prot="public" virt="non-virtual"><scope>speedml::xgb::Xgb</scope><name>sample_accuracy</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

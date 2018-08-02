@@ -1,0 +1,196 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="namespacespeedml_1_1tuning" kind="namespace">
+    <compoundname>speedml::tuning</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacespeedml_1_1tuning_1a12c6c6bcc210247936c2861a9f324034" prot="public" static="no" mutable="no">
+        <type>tuple</type>
+        <definition>tuple speedml::tuning.lgb</definition>
+        <argsstring></argsstring>
+        <name>lgb</name>
+        <initializer>= <ref refid="namespacespeedml_1_1tuning_1a5138f753756d070fb594d1077c20c412" kindref="member">method_name</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/tuning.py" line="19" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/tuning.py" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacespeedml_1_1tuning_1a5138f753756d070fb594d1077c20c412" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def speedml.tuning.method_name</definition>
+        <argsstring></argsstring>
+        <name>method_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/tuning.py" line="15" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/tuning.py" bodystart="15" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacespeedml_1_1tuning_1a4b83a539a60fd353f3df1e6f9dee9af1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def speedml.tuning.logger_set</definition>
+        <argsstring></argsstring>
+        <name>logger_set</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>创建一个logger
+:rtype : loger
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/tuning.py" line="22" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/tuning.py" bodystart="22" bodyend="42"/>
+        <referencedby refid="namespacespeedml_1_1tuning_1a16b2205537a834d2e0d48018a6d3e15b" compoundref="tuning_8py" startline="239" endline="358">speedml.tuning.auto_tuning</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacespeedml_1_1tuning_1a653499daeaeff9bc58661ad7a5c83927" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def speedml.tuning.calculater</definition>
+        <argsstring></argsstring>
+        <name>calculater</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/tuning.py" line="43" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/tuning.py" bodystart="43" bodyend="88"/>
+        <referencedby refid="namespacespeedml_1_1tuning_1a16b2205537a834d2e0d48018a6d3e15b" compoundref="tuning_8py" startline="239" endline="358">speedml.tuning.auto_tuning</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacespeedml_1_1tuning_1ad770298006b236e7d80cd781840cb8cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def speedml.tuning.createSamples</definition>
+        <argsstring></argsstring>
+        <name>createSamples</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/tuning.py" line="89" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/tuning.py" bodystart="89" bodyend="143"/>
+        <references refid="namespacespeedml_1_1tuning_1af2ccae3301081cacce0ea5066bdc8c19" compoundref="tuning_8py" startline="224" endline="238">speedml.tuning.get_decimal_place</references>
+        <references refid="namespacespeedml_1_1tuning_1a40de4d6d84550358fd0b2999b965183d" compoundref="tuning_8py" startline="144" endline="154">speedml.tuning.intRange</references>
+        <referencedby refid="namespacespeedml_1_1tuning_1a16b2205537a834d2e0d48018a6d3e15b" compoundref="tuning_8py" startline="239" endline="358">speedml.tuning.auto_tuning</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacespeedml_1_1tuning_1a40de4d6d84550358fd0b2999b965183d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def speedml.tuning.intRange</definition>
+        <argsstring></argsstring>
+        <name>intRange</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/tuning.py" line="144" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/tuning.py" bodystart="144" bodyend="154"/>
+        <referencedby refid="namespacespeedml_1_1tuning_1ad770298006b236e7d80cd781840cb8cf" compoundref="tuning_8py" startline="89" endline="143">speedml.tuning.createSamples</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacespeedml_1_1tuning_1a00f0eede9f8b27c2dbaed10f002a3d88" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def speedml.tuning.is_converge</definition>
+        <argsstring></argsstring>
+        <name>is_converge</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/tuning.py" line="155" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/tuning.py" bodystart="155" bodyend="210"/>
+        <references refid="namespacespeedml_1_1tuning_1ad7e1c888c9dd782ee8ac10af388666c2" compoundref="tuning_8py" startline="216" endline="223">speedml.tuning.combine_dict</references>
+        <references refid="namespacespeedml_1_1tuning_1a684cfcff90b12ee04e27aa0673879e50" compoundref="tuning_8py" startline="211" endline="215">speedml.tuning.expand_both</references>
+        <referencedby refid="namespacespeedml_1_1tuning_1a16b2205537a834d2e0d48018a6d3e15b" compoundref="tuning_8py" startline="239" endline="358">speedml.tuning.auto_tuning</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacespeedml_1_1tuning_1a684cfcff90b12ee04e27aa0673879e50" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def speedml.tuning.expand_both</definition>
+        <argsstring></argsstring>
+        <name>expand_both</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/tuning.py" line="211" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/tuning.py" bodystart="211" bodyend="215"/>
+        <referencedby refid="namespacespeedml_1_1tuning_1a00f0eede9f8b27c2dbaed10f002a3d88" compoundref="tuning_8py" startline="155" endline="210">speedml.tuning.is_converge</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacespeedml_1_1tuning_1ad7e1c888c9dd782ee8ac10af388666c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def speedml.tuning.combine_dict</definition>
+        <argsstring></argsstring>
+        <name>combine_dict</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/tuning.py" line="216" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/tuning.py" bodystart="216" bodyend="223"/>
+        <referencedby refid="namespacespeedml_1_1tuning_1a00f0eede9f8b27c2dbaed10f002a3d88" compoundref="tuning_8py" startline="155" endline="210">speedml.tuning.is_converge</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacespeedml_1_1tuning_1af2ccae3301081cacce0ea5066bdc8c19" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def speedml.tuning.get_decimal_place</definition>
+        <argsstring></argsstring>
+        <name>get_decimal_place</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/tuning.py" line="224" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/tuning.py" bodystart="224" bodyend="238"/>
+        <referencedby refid="namespacespeedml_1_1tuning_1a16b2205537a834d2e0d48018a6d3e15b" compoundref="tuning_8py" startline="239" endline="358">speedml.tuning.auto_tuning</referencedby>
+        <referencedby refid="namespacespeedml_1_1tuning_1ad770298006b236e7d80cd781840cb8cf" compoundref="tuning_8py" startline="89" endline="143">speedml.tuning.createSamples</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacespeedml_1_1tuning_1a16b2205537a834d2e0d48018a6d3e15b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def speedml.tuning.auto_tuning</definition>
+        <argsstring></argsstring>
+        <name>auto_tuning</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>params包含参数的字典，每个参数的值由四维tuple构成，前两位是初始最小、最大，后两位是取值上下极限边界,若上下极限边界值为-1表示不做上下极限限制
+如：learning_rate:(0.05,0.3,0,1)表示learning_rate初始范围为（0.05,0.3），当在给范围找不到最优结果时，会扩大到（0,1）内
+
+注意：模型参数要么在0-1间，要么在1-无穷，其中1-无穷的参数，自动生成的参数均为整数
+
+:param model: 模型
+:param init_param:模型的初始值
+:param params: 参数寻优范围列表
+:param data: 训练数据
+:param target:训练数据中的目标
+:param expand:当初始寻优范围内寻优失败时，扩大边界所乘或除的系数，下边界除以expand，上边界乘expand
+:param samples: 每次迭代寻优时，参数点数
+:return:训练好的模型
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/tuning.py" line="239" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/tuning.py" bodystart="239" bodyend="358"/>
+        <references refid="namespacespeedml_1_1tuning_1a653499daeaeff9bc58661ad7a5c83927" compoundref="tuning_8py" startline="43" endline="88">speedml.tuning.calculater</references>
+        <references refid="namespacespeedml_1_1tuning_1ad770298006b236e7d80cd781840cb8cf" compoundref="tuning_8py" startline="89" endline="143">speedml.tuning.createSamples</references>
+        <references refid="namespacespeedml_1_1tuning_1af2ccae3301081cacce0ea5066bdc8c19" compoundref="tuning_8py" startline="224" endline="238">speedml.tuning.get_decimal_place</references>
+        <references refid="namespacespeedml_1_1tuning_1a00f0eede9f8b27c2dbaed10f002a3d88" compoundref="tuning_8py" startline="155" endline="210">speedml.tuning.is_converge</references>
+        <references refid="namespacespeedml_1_1tuning_1a4b83a539a60fd353f3df1e6f9dee9af1" compoundref="tuning_8py" startline="22" endline="42">speedml.tuning.logger_set</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>对输入的模型自动调参
+输入：模型（xgboost、rf），参数（经验范围，上下限）
+输出：  1.调完参数的模型
+2.以log文件方式展示调参迭代过程
+</verbatim> </para>    </detaileddescription>
+    <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/tuning.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

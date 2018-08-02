@@ -1,0 +1,163 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="plot_8py" kind="file">
+    <compoundname>plot.py</compoundname>
+    <innerclass refid="classspeedml_1_1plot_1_1_plot" prot="public">speedml::plot::Plot</innerclass>
+    <innernamespace refid="namespacespeedml_1_1plot">speedml::plot</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacespeedml_1_1plot" refkind="compound"><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="2"><highlight class="stringliteral">Speedml<sp/>Plot<sp/>component<sp/>with<sp/>methods<sp/>that<sp/>work<sp/>on<sp/>plots<sp/>or<sp/>the<sp/>Exploratory<sp/>Data<sp/>Analysis<sp/>(EDA)<sp/>workflow.<sp/>Contact<sp/>author<sp/>https://twitter.com/manavsehgal.<sp/>Code,<sp/>docs<sp/>and<sp/>demos<sp/>https://speedml.com.</highlight></codeline>
+<codeline lineno="3"><highlight class="stringliteral">&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>__future__<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>(absolute_import,<sp/>division,</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print_function,<sp/>unicode_literals)</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>builtins<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>*</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/><ref refid="namespacespeedml_1_1base" kindref="compound">speedml.base</ref><sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Base</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>numpy<sp/></highlight><highlight class="keyword">as</highlight><highlight class="normal"><sp/>np</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>pandas<sp/></highlight><highlight class="keyword">as</highlight><highlight class="normal"><sp/>pd</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>matplotlib.pyplot<sp/></highlight><highlight class="keyword">as</highlight><highlight class="normal"><sp/>plt</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>matplotlib.cm<sp/></highlight><highlight class="keyword">as</highlight><highlight class="normal"><sp/>cm</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>seaborn<sp/></highlight><highlight class="keyword">as</highlight><highlight class="normal"><sp/>sns</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>xgboost<sp/></highlight><highlight class="keyword">as</highlight><highlight class="normal"><sp/>xgb</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>sklearn.ensemble<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>ExtraTreesClassifier</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="classspeedml_1_1plot_1_1_plot" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classspeedml_1_1plot_1_1_plot" kindref="compound">Plot</ref>(<ref refid="classspeedml_1_1base_1_1_base" kindref="compound">Base</ref>):</highlight></codeline>
+<codeline lineno="23" refid="classspeedml_1_1plot_1_1_plot_1ad8c6d7bb42d10b786a0c50dd011da183" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classspeedml_1_1plot_1_1_plot_1ad8c6d7bb42d10b786a0c50dd011da183" kindref="member">crosstab</ref>(self,<sp/>x,<sp/>y):</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="25"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Return<sp/>a<sp/>dataframe<sp/>cross-tabulating<sp/>values<sp/>from<sp/>feature<sp/>``x``<sp/>and<sp/>``y``.</highlight></codeline>
+<codeline lineno="26"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>pd.crosstab(Base.train[x],<sp/>Base.train[y])</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="classspeedml_1_1plot_1_1_plot_1aedf0692978136928c169493dcd4c6155" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classspeedml_1_1plot_1_1_plot_1aedf0692978136928c169493dcd4c6155" kindref="member">bar</ref>(self,<sp/>x,<sp/>y):</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="31"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Bar<sp/>plot<sp/>``x``<sp/>across<sp/>``y``<sp/>feature<sp/>values.</highlight></codeline>
+<codeline lineno="32"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>plt.figure(figsize=(8,4))</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sns.barplot(x,<sp/>y,<sp/>data=Base.train)</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>plt.xlabel(x,<sp/>fontsize=12)</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>plt.ylabel(y,<sp/>fontsize=12)</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>plt.show();</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="classspeedml_1_1plot_1_1_plot_1ab798513aeb470bce259365227af061ed" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classspeedml_1_1plot_1_1_plot_1ab798513aeb470bce259365227af061ed" kindref="member">strip</ref>(self,<sp/>x,<sp/>y):</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="41"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Stripplot<sp/>plot<sp/>``x``<sp/>across<sp/>``y``<sp/>feature<sp/>values.</highlight></codeline>
+<codeline lineno="42"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>plt.figure(figsize=(8,4))</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sns.stripplot(x,<sp/>y,<sp/>hue=Base.target,<sp/>data=Base.train,<sp/>jitter=</highlight><highlight class="keyword">True</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>plt.xlabel(x,<sp/>fontsize=12)</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>plt.ylabel(y,<sp/>fontsize=12)</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>plt.show();</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="classspeedml_1_1plot_1_1_plot_1ae685a20e115cce8a4512967c12726003" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classspeedml_1_1plot_1_1_plot_1ae685a20e115cce8a4512967c12726003" kindref="member">distribute</ref>(self):</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="51"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Plot<sp/>multiple<sp/>feature<sp/>distribution<sp/>histogram<sp/>plots<sp/>for<sp/>all<sp/>numeric<sp/>features.<sp/>This<sp/>helps<sp/>understand<sp/>skew<sp/>of<sp/>distribution<sp/>from<sp/>normal<sp/>to<sp/>quickly<sp/>and<sp/>relatively<sp/>identify<sp/>outliers<sp/>in<sp/>the<sp/>dataset.</highlight></codeline>
+<codeline lineno="52"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Base.data_n()</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>features<sp/>=<sp/>len(Base.train_n.columns)</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>plt.figure()</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Base.train_n.hist(figsize=(features<sp/>*<sp/>1.1,<sp/>features<sp/>*<sp/>1.1));</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="classspeedml_1_1plot_1_1_plot_1a661ac8980062984543b85b2e2dbc12b6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classspeedml_1_1plot_1_1_plot_1a661ac8980062984543b85b2e2dbc12b6" kindref="member">correlate</ref>(self):</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="60"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Plot<sp/>correlation<sp/>matrix<sp/>heatmap<sp/>for<sp/>numerical<sp/>features<sp/>of<sp/>the<sp/>training<sp/>dataset.<sp/>Use<sp/>this<sp/>plot<sp/>to<sp/>understand<sp/>if<sp/>certain<sp/>features<sp/>are<sp/>duplicate,<sp/>are<sp/>of<sp/>low<sp/>importance,<sp/>or<sp/>possibly<sp/>high<sp/>importance<sp/>for<sp/>our<sp/>model.</highlight></codeline>
+<codeline lineno="61"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Base.data_n()</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>corr<sp/>=<sp/>Base.train_n.corr()</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>features<sp/>=<sp/>Base.train_n.shape[1]</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cell_size<sp/>=<sp/>features<sp/>*<sp/>1.2<sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>features<sp/>&lt;<sp/>9<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>features<sp/>*<sp/>0.5</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>plt.figure(figsize=(cell_size,<sp/>cell_size))</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sns.heatmap(corr,<sp/>vmax=1,<sp/>linewidths=.5,<sp/>square=</highlight><highlight class="keyword">True</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>annot=</highlight><highlight class="keyword">True</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>features<sp/>&lt;<sp/>9<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">False</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>plt.title(</highlight><highlight class="stringliteral">&apos;feature<sp/>correlations<sp/>in<sp/>train_n<sp/>dataset&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="classspeedml_1_1plot_1_1_plot_1a5b4fb33fdfea8c2ade447966adea50e4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classspeedml_1_1plot_1_1_plot_1a5b4fb33fdfea8c2ade447966adea50e4" kindref="member">ordinal</ref>(self,<sp/>y):</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="73"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Plot<sp/>ordinal<sp/>features<sp/>(categorical<sp/>numeric)<sp/>using<sp/>Violin<sp/>plot<sp/>against<sp/>target<sp/>feature.<sp/>Use<sp/>this<sp/>to<sp/>determine<sp/>outliers<sp/>within<sp/>ordinal<sp/>features<sp/>spread<sp/>across<sp/>associated<sp/>target<sp/>feature<sp/>values.</highlight></codeline>
+<codeline lineno="74"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Base.data_n()</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>plt.figure(figsize=(8,4))</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sns.violinplot(x=Base.target,<sp/>y=y,<sp/>data=Base.train_n)</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>plt.xlabel(Base.target,<sp/>fontsize=12)</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>plt.ylabel(y,<sp/>fontsize=12)</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>plt.show();</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82" refid="classspeedml_1_1plot_1_1_plot_1a98cee1536b8fbd6eedf6be111d87b1ba" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classspeedml_1_1plot_1_1_plot_1a98cee1536b8fbd6eedf6be111d87b1ba" kindref="member">continuous</ref>(self,<sp/>y):</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="84"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Plot<sp/>continuous<sp/>features<sp/>(numeric)<sp/>using<sp/>scatter<sp/>plot.<sp/>Use<sp/>this<sp/>to<sp/>determine<sp/>outliers<sp/>within<sp/>continuous<sp/>features.</highlight></codeline>
+<codeline lineno="85"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Base.data_n()</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>plt.figure(figsize=(8,6))</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>plt.scatter(range(Base.train_n.shape[0]),<sp/>np.sort(Base.train_n[y].values))</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>plt.xlabel(</highlight><highlight class="stringliteral">&apos;Samples&apos;</highlight><highlight class="normal">,<sp/>fontsize=12)</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>plt.ylabel(y,<sp/>fontsize=12)</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>plt.show();</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93" refid="classspeedml_1_1plot_1_1_plot_1a75a2eac6551c839f7f867c937868c46c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classspeedml_1_1plot_1_1_plot_1a75a2eac6551c839f7f867c937868c46c" kindref="member">model_ranks</ref>(self):</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="95"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Plot<sp/>ranking<sp/>among<sp/>accuracy<sp/>offered<sp/>by<sp/>various<sp/>models<sp/>based<sp/>on<sp/>our<sp/>datasets.</highlight></codeline>
+<codeline lineno="96"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>plt.xlabel(</highlight><highlight class="stringliteral">&apos;Accuracy&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>plt.title(</highlight><highlight class="stringliteral">&apos;Classifier<sp/>Accuracy&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sns.set_color_codes(</highlight><highlight class="stringliteral">&quot;muted&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sns.barplot(x=</highlight><highlight class="stringliteral">&apos;Accuracy&apos;</highlight><highlight class="normal">,<sp/>y=</highlight><highlight class="stringliteral">&apos;Classifier&apos;</highlight><highlight class="normal">,<sp/>data=Base.model_ranking,<sp/>color=</highlight><highlight class="stringliteral">&quot;b&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103" refid="classspeedml_1_1plot_1_1_plot_1a52586b71837e7bfa0659413fae373827" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classspeedml_1_1plot_1_1_plot_1a52586b71837e7bfa0659413fae373827" kindref="member">_create_feature_map</ref>(self,<sp/>features):</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>outfile<sp/>=<sp/>open(Base._config[</highlight><highlight class="stringliteral">&apos;outpath&apos;</highlight><highlight class="normal">]<sp/>+<sp/></highlight><highlight class="stringliteral">&apos;xgb.fmap&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;w&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i<sp/>=<sp/>0</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>feat<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>features:</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>outfile.write(</highlight><highlight class="stringliteral">&apos;{0}\t{1}\tq\n&apos;</highlight><highlight class="normal">.format(i,<sp/>feat))</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i<sp/>=<sp/>i<sp/>+<sp/>1</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>outfile.close()</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112" refid="classspeedml_1_1plot_1_1_plot_1a2d0f47dd10b3a990f6b7119de33642da" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classspeedml_1_1plot_1_1_plot_1a2d0f47dd10b3a990f6b7119de33642da" kindref="member">_plot_importance</ref>(self,<sp/>feature,<sp/>importance):</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ranking<sp/>=<sp/>pd.DataFrame({</highlight><highlight class="stringliteral">&apos;Feature&apos;</highlight><highlight class="normal">:<sp/>feature,</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;Importance&apos;</highlight><highlight class="normal">:<sp/>importance})</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ranking<sp/>=<sp/>ranking.sort_values(by=</highlight><highlight class="stringliteral">&apos;Importance&apos;</highlight><highlight class="normal">,<sp/>ascending=</highlight><highlight class="keyword">False</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fig,<sp/>ax<sp/>=<sp/>plt.subplots(figsize=(9,<sp/>ranking.shape[0]/2.5))</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>y_pos<sp/>=<sp/>np.arange(ranking.shape[0])</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>importance<sp/>=<sp/>ranking[</highlight><highlight class="stringliteral">&apos;Importance&apos;</highlight><highlight class="normal">]</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ax.barh(y_pos,<sp/>importance,<sp/>align=</highlight><highlight class="stringliteral">&apos;center&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ax.set_yticks(y_pos)</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ax.set_yticklabels(ranking[</highlight><highlight class="stringliteral">&apos;Feature&apos;</highlight><highlight class="normal">])</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ax.invert_yaxis()</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ax.set_xlabel(</highlight><highlight class="stringliteral">&apos;Importance&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ax.set_title(</highlight><highlight class="stringliteral">&apos;Feature<sp/>Importance&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>plt.show()</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127" refid="classspeedml_1_1plot_1_1_plot_1a24eb02b6866d9fb420194165bfffd176" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classspeedml_1_1plot_1_1_plot_1a24eb02b6866d9fb420194165bfffd176" kindref="member">importance</ref>(self):</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="129"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Plot<sp/>importance<sp/>of<sp/>features<sp/>based<sp/>on<sp/>ExtraTreesClassifier.</highlight></codeline>
+<codeline lineno="130"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Base.data_n()</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>X<sp/>=<sp/>Base.train_n</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>y<sp/>=<sp/>X[Base.target].copy()</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>X<sp/>=<sp/>X.drop([Base.target],<sp/>axis=1)</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>model<sp/>=<sp/>ExtraTreesClassifier()</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>model.fit(X,<sp/>y)</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classspeedml_1_1plot_1_1_plot_1a2d0f47dd10b3a990f6b7119de33642da" kindref="member">_plot_importance</ref>(X.columns,<sp/>model.feature_importances_)</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139" refid="classspeedml_1_1plot_1_1_plot_1a44b483f041347758639e13d0a6891982" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classspeedml_1_1plot_1_1_plot_1a44b483f041347758639e13d0a6891982" kindref="member">xgb_importance</ref>(self):</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="141"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Plot<sp/>importance<sp/>of<sp/>features<sp/>based<sp/>on<sp/>XGBoost.</highlight></codeline>
+<codeline lineno="142"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Base.data_n()</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>X<sp/>=<sp/>Base.train_n</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>X<sp/>=<sp/>X.drop([Base.target],<sp/>axis=1)</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classspeedml_1_1plot_1_1_plot_1a52586b71837e7bfa0659413fae373827" kindref="member">_create_feature_map</ref>(X.columns)</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fscore<sp/>=<sp/>Base.xgb_model.booster().get_fscore(fmap=Base._config[</highlight><highlight class="stringliteral">&apos;outpath&apos;</highlight><highlight class="normal">]<sp/>+<sp/></highlight><highlight class="stringliteral">&apos;xgb.fmap&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classspeedml_1_1plot_1_1_plot_1a2d0f47dd10b3a990f6b7119de33642da" kindref="member">_plot_importance</ref>(list(fscore.keys()),<sp/>list(fscore.values()))</highlight></codeline>
+    </programlisting>
+    <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/plot.py"/>
+  </compounddef>
+</doxygen>

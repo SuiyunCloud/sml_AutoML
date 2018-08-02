@@ -1,0 +1,441 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="namespacemodule1" kind="namespace">
+    <compoundname>module1</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacemodule1_1a19e4e407d18fcaf603abfe7c30e81f8b" prot="public" static="no" mutable="no">
+        <type>tuple</type>
+        <definition>tuple module1.color</definition>
+        <argsstring></argsstring>
+        <name>color</name>
+        <initializer>= sns.color_palette()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module1.py" line="11" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module1.py" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemodule1_1a816c82812588abe28ffd9a655867dc70" prot="public" static="no" mutable="no">
+        <type>tuple</type>
+        <definition>list module1::train</definition>
+        <argsstring></argsstring>
+        <name>train</name>
+        <initializer>= pd.read_csv(&apos;C:\\Users\\suiyun.yang\\Desktop\\Kaggle\\datasets\\Kaggle\\HousePrice\\train.csv&apos;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module1.py" line="30" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module1.py" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemodule1_1a551617199b876bf8f80695531833afe1" prot="public" static="no" mutable="no">
+        <type>tuple</type>
+        <definition>list module1::test</definition>
+        <argsstring></argsstring>
+        <name>test</name>
+        <initializer>= pd.read_csv(&apos;C:\\Users\\suiyun.yang\\Desktop\\Kaggle\\datasets\\Kaggle\\HousePrice\\test.csv&apos;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module1.py" line="32" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module1.py" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemodule1_1af0fa6c12583cfb99aca0069c36a519ec" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>tuple module1::y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <initializer>= train.SalePrice</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module1.py" line="38" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module1.py" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemodule1_1ab787c930f24777609f726966b3210558" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list module1.ntrain</definition>
+        <argsstring></argsstring>
+        <name>ntrain</name>
+        <initializer>= train.shape[0]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module1.py" line="49" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module1.py" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemodule1_1a15468f3367a68caed28307fa20dcd747" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list module1.ntest</definition>
+        <argsstring></argsstring>
+        <name>ntest</name>
+        <initializer>= test.shape[0]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module1.py" line="50" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module1.py" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemodule1_1a6cb8decbb8dced55fcb9ac1c63fdff7f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>module1.y_train</definition>
+        <argsstring></argsstring>
+        <name>y_train</name>
+        <initializer>= train.SalePrice.values</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module1.py" line="51" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module1.py" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemodule1_1a3ddb40cb8be2caff78adcfa1bb651a9d" prot="public" static="no" mutable="no">
+        <type>tuple</type>
+        <definition>tuple module1::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <initializer>= train.append(<ref refid="namespacemodule1_1a551617199b876bf8f80695531833afe1" kindref="member">test</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module1.py" line="52" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module1.py" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemodule1_1ac090f6e623e78f2e9ae64f1077a693b9" prot="public" static="no" mutable="no">
+        <type>tuple</type>
+        <definition>tuple module1::data_na</definition>
+        <argsstring></argsstring>
+        <name>data_na</name>
+        <initializer>= data.isnull()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module1.py" line="84" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module1.py" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemodule1_1ab2b9e81f5fe97d0b44a15e10c461b45e" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list module1.items1</definition>
+        <argsstring></argsstring>
+        <name>items1</name>
+        <initializer>= [&apos;PoolQC&apos;,&apos;MiscFeature&apos;,&apos;Alley&apos;,&apos;Fence&apos;,&apos;FireplaceQu&apos;,&apos;Fence&apos;,&apos;BsmtCond&apos;, &apos;BsmtExposure&apos;,
+              &apos;BsmtFinType1&apos;, &apos;BsmtFinType2&apos;,&apos;BsmtQual&apos;,&apos;MasVnrType&apos;,&apos;GarageCond&apos;,&apos;GarageFinish&apos;,
+              &apos;GarageQual&apos;, &apos;GarageType&apos;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module1.py" line="104" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module1.py" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemodule1_1a41a570388761f1482d9e73f0454c7a80" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list module1.items2</definition>
+        <argsstring></argsstring>
+        <name>items2</name>
+        <initializer>= [&apos;GarageYrBlt&apos;,&apos;GarageArea&apos;, &apos;GarageCars&apos;,&apos;BsmtFinSF1&apos;, &apos;BsmtFinSF2&apos;,
+           &apos;TotalBsmtSF&apos;, &apos;BsmtFinType2&apos;, &apos;BsmtFullBath&apos;, &apos;BsmtHalfBath&apos;,&apos;MasVnrArea&apos;,&apos;BsmtUnfSF&apos;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module1.py" line="108" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module1.py" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemodule1_1a4796fb38e13993db567c2873d49e6f49" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list module1.item3</definition>
+        <argsstring></argsstring>
+        <name>item3</name>
+        <initializer>= [ &apos;KitchenQual&apos;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module1.py" line="115" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module1.py" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemodule1_1a96bd878e5f406b511e4b0d0dee74adc8" prot="public" static="no" mutable="no">
+        <type>tuple</type>
+        <definition>tuple module1::data_null</definition>
+        <argsstring></argsstring>
+        <name>data_null</name>
+        <initializer>= data.isnull()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module1.py" line="123" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module1.py" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemodule1_1a9bdc0d3e08cdb753f61e11507410e8d9" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list module1.item4</definition>
+        <argsstring></argsstring>
+        <name>item4</name>
+        <initializer>= [&apos;MSSubClass&apos;,&apos;OverallCond&apos;,&apos;YrSold&apos;,&apos;MoSold&apos;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module1.py" line="153" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module1.py" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemodule1_1afd88c5bfa93b83de85674cfc323149bb" prot="public" static="no" mutable="no">
+        <type>tuple</type>
+        <definition>tuple module1.cols</definition>
+        <argsstring></argsstring>
+        <name>cols</name>
+        <initializer>= (&apos;FireplaceQu&apos;, &apos;BsmtQual&apos;, &apos;BsmtCond&apos;, &apos;GarageQual&apos;, &apos;GarageCond&apos;, 
+            &apos;ExterQual&apos;, &apos;ExterCond&apos;,&apos;HeatingQC&apos;, &apos;PoolQC&apos;, &apos;KitchenQual&apos;, &apos;BsmtFinType1&apos;, 
+            &apos;BsmtFinType2&apos;, &apos;Functional&apos;, &apos;Fence&apos;, &apos;BsmtExposure&apos;, &apos;GarageFinish&apos;, &apos;LandSlope&apos;,
+            &apos;LotShape&apos;, &apos;PavedDrive&apos;, &apos;Street&apos;, &apos;Alley&apos;, &apos;CentralAir&apos;, &apos;MSSubClass&apos;, &apos;OverallCond&apos;, 
+            &apos;YrSold&apos;, &apos;MoSold&apos;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module1.py" line="156" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module1.py" bodystart="156" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemodule1_1a1ca8da01911d40d574d8ab7dec3eaac5" prot="public" static="no" mutable="no">
+        <type>tuple</type>
+        <definition>tuple module1.lbl</definition>
+        <argsstring></argsstring>
+        <name>lbl</name>
+        <initializer>= LabelEncoder()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module1.py" line="163" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module1.py" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemodule1_1ac7e624323276e0fffee43da1928ff3d1" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list module1.numeric_feats</definition>
+        <argsstring></argsstring>
+        <name>numeric_feats</name>
+        <initializer>= data.dtypes[data.dtypes != &apos;object&apos;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module1.py" line="168" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module1.py" bodystart="168" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemodule1_1a943c16b4d64674ff048456ccc06ee091" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list module1.skewed_feats</definition>
+        <argsstring></argsstring>
+        <name>skewed_feats</name>
+        <initializer>= <ref refid="namespacemodule1_1a3ddb40cb8be2caff78adcfa1bb651a9d" kindref="member">data</ref>[<ref refid="namespacemodule1_1ac7e624323276e0fffee43da1928ff3d1" kindref="member">numeric_feats</ref>]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module1.py" line="170" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module1.py" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemodule1_1a6ac08d67f01ed66548225329d1fb8f28" prot="public" static="no" mutable="no">
+        <type>tuple</type>
+        <definition>list module1::skewness</definition>
+        <argsstring></argsstring>
+        <name>skewness</name>
+        <initializer>= pd.DataFrame({&apos;skew&apos;:<ref refid="namespacemodule1_1a943c16b4d64674ff048456ccc06ee091" kindref="member">skewed_feats</ref>})</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module1.py" line="171" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module1.py" bodystart="171" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemodule1_1a9550684fdb1230fa0b5cc96ff93b0c99" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>module1.skewed_features</definition>
+        <argsstring></argsstring>
+        <name>skewed_features</name>
+        <initializer>= skewness.index</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module1.py" line="177" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module1.py" bodystart="177" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemodule1_1a327849839c76c5a883bada146727a0ac" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float module1.lam</definition>
+        <argsstring></argsstring>
+        <name>lam</name>
+        <initializer>= 0.15</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module1.py" line="178" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module1.py" bodystart="178" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemodule1_1af1dff7dfb3c8d67e48aef2f726b8b8aa" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>module1.data2</definition>
+        <argsstring></argsstring>
+        <name>data2</name>
+        <initializer>= <ref refid="namespacemodule1_1a816c82812588abe28ffd9a655867dc70" kindref="member">train</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module1.py" line="191" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module1.py" bodystart="191" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemodule1_1a34eccd820417a74d024f0fa4348d52e3" prot="public" static="no" mutable="no">
+        <type>tuple</type>
+        <definition>tuple module1.param_test3</definition>
+        <argsstring></argsstring>
+        <name>param_test3</name>
+        <initializer>= OrderedDict()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module1.py" line="195" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module1.py" bodystart="195" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemodule1_1a3ce141cb4797dfe820bb25967cb9422e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>module1.estimator</definition>
+        <argsstring></argsstring>
+        <name>estimator</name>
+        <initializer>= GradientBoostingClassifier</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module1.py" line="204" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module1.py" bodystart="204" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemodule1_1a61dddae5414f5c9240183197f88b623a" prot="public" static="no" mutable="no">
+        <type>dictionary</type>
+        <definition>dictionary module1.init_param</definition>
+        <argsstring></argsstring>
+        <name>init_param</name>
+        <initializer>= {}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module1.py" line="205" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module1.py" bodystart="205" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemodule1_1aea3cdae47dbb141c32ac55f3164175e9" prot="public" static="no" mutable="no">
+        <type>tuple</type>
+        <definition>tuple module1.mode</definition>
+        <argsstring></argsstring>
+        <name>mode</name>
+        <initializer>= GradientBoostingClassifier()</initializer>
+        <briefdescription>
+<para>init_param = { &apos;n_estimators&apos;: 15, &apos;max_depth&apos;: 5, &apos;max_leaf_nodes&apos;: 0.9, &apos;min_samples_split&apos;: 0, &apos;min_samples_leaf&apos;: 0.8, &apos;min_weight_fraction_leaf&apos;: 0.8, &apos;min_weight_fraction_leaf&apos;: &apos;binary:logistic&apos;, &apos;max_features&apos;: 4} </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module1.py" line="213" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module1.py" bodystart="213" bodyend="-1"/>
+        <referencedby refid="namespacehouse_price_1a0be6b4ef729fb48e16a608bed8bf9b52" compoundref="house_price_8py" startline="85" endline="90">housePrice.fill_na_with_mode</referencedby>
+        <referencedby refid="namespacemodule1_1a0cd1d2ec920119ec65d51b2876f5f010" compoundref="module1_8py" startline="93" endline="98">fill_na_with_mode</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacemodule1_1abec556fccc61fa9c1871cb4202e8478d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def module1.ignore_warn</definition>
+        <argsstring></argsstring>
+        <name>ignore_warn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module1.py" line="14" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module1.py" bodystart="14" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacemodule1_1ac829197eb2fd5e1250857354c0d00a0e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def module1.fill_na</definition>
+        <argsstring></argsstring>
+        <name>fill_na</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module1.py" line="89" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module1.py" bodystart="89" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacemodule1_1a0cd1d2ec920119ec65d51b2876f5f010" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def module1.fill_na_with_mode</definition>
+        <argsstring></argsstring>
+        <name>fill_na_with_mode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module1.py" line="93" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module1.py" bodystart="93" bodyend="98"/>
+        <references refid="namespacemodule1_1aea3cdae47dbb141c32ac55f3164175e9" compoundref="module1_8py" startline="213">mode</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacemodule1_1a765fc990ce2d34a2f439381582906d53" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def module1.num_transform</definition>
+        <argsstring></argsstring>
+        <name>num_transform</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module1.py" line="149" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module1.py" bodystart="149" bodyend="152"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module1.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

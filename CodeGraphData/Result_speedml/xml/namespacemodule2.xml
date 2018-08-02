@@ -1,0 +1,400 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="namespacemodule2" kind="namespace">
+    <compoundname>module2</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacemodule2_1ab034a5c053db6fae28d124a0eac5207d" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string module2.__author__</definition>
+        <argsstring></argsstring>
+        <name>__author__</name>
+        <initializer>= &apos;suiyun.yang&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module2.py" line="310" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module2.py" bodystart="310" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemodule2_1afff88dd0f9db06d471f873d1a20bacc5" prot="public" static="no" mutable="no">
+        <type>tuple</type>
+        <definition>tuple module2.sml</definition>
+        <argsstring></argsstring>
+        <name>sml</name>
+        <initializer>= <ref refid="classspeedml_1_1_speedml" kindref="compound">Speedml</ref>(&quot;D:/train.csv&quot;, &quot;D:/test.csv&quot;, target=&apos;Survived&apos;, uid=&apos;PassengerId&apos;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module2.py" line="331" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module2.py" bodystart="331" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemodule2_1a3347685c7aef8a8eb79b05b1c09c33c4" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>module2.train</definition>
+        <argsstring></argsstring>
+        <name>train</name>
+        <initializer>= sml.train</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module2.py" line="332" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module2.py" bodystart="332" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemodule2_1a75362f13fcd83d121a183fb54ca5b05b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>module2.test</definition>
+        <argsstring></argsstring>
+        <name>test</name>
+        <initializer>= sml.test</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module2.py" line="333" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module2.py" bodystart="333" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemodule2_1a6978f086f6668d16c63532c42f357afc" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list module2.ntrain</definition>
+        <argsstring></argsstring>
+        <name>ntrain</name>
+        <initializer>= train.shape[0]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module2.py" line="334" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module2.py" bodystart="334" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemodule2_1a0ebc82bf3a7871b08e384d71b7fc8cf9" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list module2.ntest</definition>
+        <argsstring></argsstring>
+        <name>ntest</name>
+        <initializer>= test.shape[0]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module2.py" line="335" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module2.py" bodystart="335" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemodule2_1a7a46ec8fc0f9752ed65fa94b8faecc71" prot="public" static="no" mutable="no">
+        <type>tuple</type>
+        <definition>tuple module2.data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <initializer>= train.append(<ref refid="namespacemodule2_1a75362f13fcd83d121a183fb54ca5b05b" kindref="member">test</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module2.py" line="336" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module2.py" bodystart="336" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemodule2_1a39441c175fc6117e940a4706bc9888e1" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list module2.match</definition>
+        <argsstring></argsstring>
+        <name>match</name>
+        <initializer>= [&apos;Lady&apos;, &apos;Countess&apos;, &apos;Capt&apos;, &apos;Col&apos;, &apos;Don&apos;, &apos;Dr&apos;, &quot;Major&quot;, &apos;Rev&apos;, &apos;Sir&apos;, &apos;Jonkheer&apos;, &apos;Dona&apos;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module2.py" line="352" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module2.py" bodystart="352" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemodule2_1ac2a00588b38da1a36b6b7eb472a0197c" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string module2.new</definition>
+        <argsstring></argsstring>
+        <name>new</name>
+        <initializer>= &apos;Rare&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module2.py" line="353" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module2.py" bodystart="353" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemodule2_1a52f26cdec3b6bcc6719c7da7cc6f29b0" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>module2.y_train</definition>
+        <argsstring></argsstring>
+        <name>y_train</name>
+        <initializer>= train.Survived</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module2.py" line="362" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module2.py" bodystart="362" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemodule2_1a0bb075e28f913eab253e054186ca52d5" prot="public" static="no" mutable="no">
+        <type>tuple</type>
+        <definition>tuple module2.train_avg</definition>
+        <argsstring></argsstring>
+        <name>train_avg</name>
+        <initializer>= train.drop(&apos;Survived&apos;, axis=1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module2.py" line="363" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module2.py" bodystart="363" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemodule2_1ad25578063fd609cdaf97661e717d7c84" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>module2.test_avg</definition>
+        <argsstring></argsstring>
+        <name>test_avg</name>
+        <initializer>= <ref refid="namespacemodule2_1a75362f13fcd83d121a183fb54ca5b05b" kindref="member">test</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module2.py" line="364" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module2.py" bodystart="364" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemodule2_1af25b8f47c3c06b5c30d83efd18363d59" prot="public" static="no" mutable="no">
+        <type>tuple</type>
+        <definition>tuple module2.param_test3</definition>
+        <argsstring></argsstring>
+        <name>param_test3</name>
+        <initializer>= OrderedDict()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module2.py" line="376" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module2.py" bodystart="376" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemodule2_1ac5a96f8f4ae1e6c74934954063b4c8ce" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>module2.estimator</definition>
+        <argsstring></argsstring>
+        <name>estimator</name>
+        <initializer>= GradientBoostingClassifier</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module2.py" line="385" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module2.py" bodystart="385" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemodule2_1afeaf0b81d5a25537633d88c7a3c805db" prot="public" static="no" mutable="no">
+        <type>dictionary</type>
+        <definition>dictionary module2::init_param</definition>
+        <argsstring></argsstring>
+        <name>init_param</name>
+        <initializer>= {}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module2.py" line="386" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module2.py" bodystart="386" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemodule2_1a3118a836fc62a15c7d748d15d323d054" prot="public" static="no" mutable="no">
+        <type>tuple</type>
+        <definition>tuple module2.param_test5</definition>
+        <argsstring></argsstring>
+        <name>param_test5</name>
+        <initializer>= OrderedDict()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module2.py" line="397" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module2.py" bodystart="397" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemodule2_1a1d4ad39251aa72fbf4a890eb9d71c1fc" prot="public" static="no" mutable="no">
+        <type>tuple</type>
+        <definition>tuple module2.xgb</definition>
+        <argsstring></argsstring>
+        <name>xgb</name>
+        <initializer>= <ref refid="namespacemodule2_1af0e3deeab0189382007cb9a36a9cce83" kindref="member">auto_tuning</ref>(<ref refid="namespacemodule2_1ac5a96f8f4ae1e6c74934954063b4c8ce" kindref="member">estimator</ref>, <ref refid="namespacemodule2_1afeaf0b81d5a25537633d88c7a3c805db" kindref="member">init_param</ref>, <ref refid="namespacemodule2_1a3118a836fc62a15c7d748d15d323d054" kindref="member">param_test5</ref>, <ref refid="namespacemodule2_1a3347685c7aef8a8eb79b05b1c09c33c4" kindref="member">train</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module2.py" line="423" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module2.py" bodystart="423" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacemodule2_1a952bfa729283c6f5a46b54ae6695a430" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def module2.logger_set</definition>
+        <argsstring></argsstring>
+        <name>logger_set</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>创建一个logger
+:rtype : loger
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module2.py" line="18" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module2.py" bodystart="18" bodyend="60"/>
+        <referencedby refid="namespacemodule2_1af0e3deeab0189382007cb9a36a9cce83" compoundref="module2_8py" startline="219" endline="307">auto_tuning</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacemodule2_1a17970b5263fb1ce965b102f8e6c2d490" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def module2.calculater</definition>
+        <argsstring></argsstring>
+        <name>calculater</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module2.py" line="61" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module2.py" bodystart="61" bodyend="93"/>
+        <referencedby refid="namespacemodule2_1af0e3deeab0189382007cb9a36a9cce83" compoundref="module2_8py" startline="219" endline="307">auto_tuning</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacemodule2_1a32a6f7dc4e982f0a184ff9aafbd725b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def module2.createSamples</definition>
+        <argsstring></argsstring>
+        <name>createSamples</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module2.py" line="94" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module2.py" bodystart="94" bodyend="140"/>
+        <references refid="namespacemodule2_1a83b9c674ba1660dc95955f1d979c06ea" compoundref="module2_8py" startline="141" endline="151">intRange</references>
+        <referencedby refid="namespacemodule2_1af0e3deeab0189382007cb9a36a9cce83" compoundref="module2_8py" startline="219" endline="307">auto_tuning</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacemodule2_1a83b9c674ba1660dc95955f1d979c06ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def module2.intRange</definition>
+        <argsstring></argsstring>
+        <name>intRange</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module2.py" line="141" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module2.py" bodystart="141" bodyend="151"/>
+        <referencedby refid="namespacemodule2_1a32a6f7dc4e982f0a184ff9aafbd725b0" compoundref="module2_8py" startline="94" endline="140">createSamples</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacemodule2_1a98daa4f040953810515efc308c2d7c60" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def module2.is_converge</definition>
+        <argsstring></argsstring>
+        <name>is_converge</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module2.py" line="152" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module2.py" bodystart="152" bodyend="207"/>
+        <references refid="namespacemodule2_1ace5dcd12871e3d471efb1c41f4b6fe5b" compoundref="module2_8py" startline="213" endline="218">combine_dict</references>
+        <references refid="namespacemodule2_1a63527da6341bbae7b77fe47e535900f3" compoundref="module2_8py" startline="208" endline="212">expand_both</references>
+        <referencedby refid="namespacemodule2_1af0e3deeab0189382007cb9a36a9cce83" compoundref="module2_8py" startline="219" endline="307">auto_tuning</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacemodule2_1a63527da6341bbae7b77fe47e535900f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def module2.expand_both</definition>
+        <argsstring></argsstring>
+        <name>expand_both</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module2.py" line="208" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module2.py" bodystart="208" bodyend="212"/>
+        <referencedby refid="namespacemodule2_1a98daa4f040953810515efc308c2d7c60" compoundref="module2_8py" startline="152" endline="207">is_converge</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacemodule2_1ace5dcd12871e3d471efb1c41f4b6fe5b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def module2.combine_dict</definition>
+        <argsstring></argsstring>
+        <name>combine_dict</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module2.py" line="213" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module2.py" bodystart="213" bodyend="218"/>
+        <referencedby refid="namespacemodule2_1a98daa4f040953810515efc308c2d7c60" compoundref="module2_8py" startline="152" endline="207">is_converge</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacemodule2_1af0e3deeab0189382007cb9a36a9cce83" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def module2.auto_tuning</definition>
+        <argsstring></argsstring>
+        <name>auto_tuning</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>params包含参数的字典，每个参数的值由四维tuple构成，前两位是初始最小、最大，后两位是取值上下极限边界,若上下极限边界值为-1表示不做上下极限限制
+如：learning_rate:(0.05,0.3,0,1)表示learning_rate初始范围为（0.05,0.3），当在给范围找不到最优结果时，会扩大到（0,1）内
+:param model: 模型
+:param init_param:模型的初始值
+:param params: 参数寻优范围列表
+:param data: 训练数据
+:param target:训练数据中的目标
+:param expand:当初始寻优范围内寻优失败时，扩大边界所乘或除的系数，下边界除以expand，上边界乘expand
+:param samples: 每次迭代寻优时，参数点数
+:return:训练好的模型
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module2.py" line="219" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module2.py" bodystart="219" bodyend="307"/>
+        <references refid="namespacemodule2_1a17970b5263fb1ce965b102f8e6c2d490" compoundref="module2_8py" startline="61" endline="93">calculater</references>
+        <references refid="namespacemodule2_1a32a6f7dc4e982f0a184ff9aafbd725b0" compoundref="module2_8py" startline="94" endline="140">createSamples</references>
+        <references refid="namespacemodule2_1a98daa4f040953810515efc308c2d7c60" compoundref="module2_8py" startline="152" endline="207">is_converge</references>
+        <references refid="namespacemodule2_1a952bfa729283c6f5a46b54ae6695a430" compoundref="module2_8py" startline="18" endline="60">logger_set</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacemodule2_1a9daae146f514c5ec6c2a6aea29d85f06" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def module2.ignore_warn</definition>
+        <argsstring></argsstring>
+        <name>ignore_warn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module2.py" line="320" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module2.py" bodystart="320" bodyend="324"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>对输入的模型自动调参
+输入：模型（xgboost、rf），参数（经验范围，上下限）
+输出：  1.调完参数的模型
+    2.以log文件方式展示调参迭代过程
+</verbatim> </para>    </detaileddescription>
+    <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module2.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

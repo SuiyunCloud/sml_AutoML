@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="namespacespeedml" kind="namespace">
+    <compoundname>speedml</compoundname>
+    <innerclass refid="classspeedml_1_1_speedml" prot="public">speedml::Speedml</innerclass>
+    <innernamespace refid="namespacespeedml_1_1base">speedml::base</innernamespace>
+    <innernamespace refid="namespacespeedml_1_1feature">speedml::feature</innernamespace>
+    <innernamespace refid="namespacespeedml_1_1model">speedml::model</innernamespace>
+    <innernamespace refid="namespacespeedml_1_1plot">speedml::plot</innernamespace>
+    <innernamespace refid="namespacespeedml_1_1tuning">speedml::tuning</innernamespace>
+    <innernamespace refid="namespacespeedml_1_1util">speedml::util</innernamespace>
+    <innernamespace refid="namespacespeedml_1_1xgb">speedml::xgb</innernamespace>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacespeedml_1a412a40be3b1fe2b964165f5f7812acb7" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string speedml._RELEASE</definition>
+        <argsstring></argsstring>
+        <name>_RELEASE</name>
+        <initializer>= &apos;v0.9.3&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/__init__.py" line="22" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/__init__.py" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Speedml is a Python package to speed start machine learning projects. Contact author https://twitter.com/manavsehgal. Code, docs and demos https://speedml.com.
+</verbatim> </para>    </detaileddescription>
+    <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/__init__.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

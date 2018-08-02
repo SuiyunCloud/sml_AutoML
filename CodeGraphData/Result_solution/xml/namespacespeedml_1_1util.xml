@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="namespacespeedml_1_1util" kind="namespace">
+    <compoundname>speedml::util</compoundname>
+    <innerclass refid="classspeedml_1_1util_1_1_data_frame_imputer" prot="public">speedml::util::DataFrameImputer</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Speedml utility methods. Contact author https://twitter.com/manavsehgal. Code, docs and demos https://speedml.com.
+</verbatim> </para>    </detaileddescription>
+    <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/util.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

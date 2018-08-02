@@ -122,8 +122,7 @@ if __name__ == "__main__":
     
     data_null = data.isnull().sum()/len(data) * 100
     data_null = data_null.drop(data_null[data_null == 0].index).sort_values()
-    data_null
-    
+
     
     # Create new features
     # 3* Polynomials on the top 10 existing features
@@ -150,13 +149,8 @@ if __name__ == "__main__":
         for item in items:
             data[item] = data[item].apply(str)
     
-    
     item4 = ['MSSubClass','OverallCond','YrSold','MoSold']
-    num_transform(item4)
-    
-    
-    
-    
+    num_transform(item4)   
     
     cols = ('FireplaceQu', 'BsmtQual', 'BsmtCond', 'GarageQual', 'GarageCond', 
             'ExterQual', 'ExterCond','HeatingQC', 'PoolQC', 'KitchenQual', 'BsmtFinType1', 
@@ -168,18 +162,13 @@ if __name__ == "__main__":
         lbl = LabelEncoder()
         data[c] =lbl.fit_transform(list(data[c].values))
         
-    
-    
     data['TotalSF'] = data['TotalBsmtSF'] + data['1stFlrSF'] + data['2ndFlrSF']
-    
-    
     
     numeric_feats = data.dtypes[data.dtypes != 'object'].index
     
     skewed_feats = data[numeric_feats].apply(lambda x: skew(x.dropna())).sort_values(ascending=False)
     skewness = pd.DataFrame({'skew':skewed_feats})
     skewness.head(10)
-    
     
     skewness = skewness[abs(skewness) > 0.75]
     
@@ -189,9 +178,6 @@ if __name__ == "__main__":
     for feat in skewed_features:
         #all_data[feat] += 1
         data[feat] = boxcox1p(data[feat], lam)
-    
-    
-    
     
     data = pd.get_dummies(data)
     
@@ -227,3 +213,6 @@ if __name__ == "__main__":
     mode.fit(train,y_train)
     print(data)
     mode.predict(test)
+
+
+

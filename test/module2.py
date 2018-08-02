@@ -395,18 +395,30 @@ init_param ={}
 import lightgbm as lgb
 from collections import defaultdict, OrderedDict
 param_test5 = OrderedDict()
+#param_test5['bagging_freq']=(1, 50, 1, -1)
+#param_test5['max_depth'] = (3, 8, 2, 1000)
+#param_test5['num_leaves'] = (20, 200, 2, 10000)
+#param_test5['max_bin'] = (10, 255,2, -1)
+#param_test5['min_data_in_leaf'] = (2, 100, -1, -1)
+#param_test5['feature_fraction'] = (0.01, 1, 0.0001, 1)
+#param_test5['bagging_fraction'] = (0.01, 1, 0.0001, 1)
+#param_test5['lambda_l1']=(0.0, 1, 0, 1)
+#param_test5['lambda_l2']=(0.0, 1, 0, 1)
+
 param_test5['max_depth']=(3, 8, 2, 1000)
 param_test5['num_leaves']=(20, 200, 2, 10000)
-param_test5['max_bin']=(10, 255,1, -1)
-param_test5['min_data_in_leaf']=(2, 100, -1, -1)
+param_test5['max_bin']=(10, 255,2, -1)
+param_test5['min_data_in_leaf']=(2, 100, 2, -1)
 param_test5['feature_fraction']=(0.01, 1, 0.0001, 1)
-param_test5['bagging_fraction']=(0.01, 1, -1, 1)
-param_test5['bagging_freq']=(1, 50, -1, -1)
+param_test5['bagging_fraction']=(0.01, 1, 0.0001, 1)
+param_test5['bagging_freq']=(2, 50,2, -1)
 param_test5['lambda_l1']=(0.0, 1, 0, 1)
 param_test5['lambda_l2']=(0.0, 1, 0, 1)
+
+
 estimator = lgb.LGBMClassifier
 init_param = {}
 if __name__ == "__main__":
-    print('hello')
-    xgb = auto_tuning(estimator, init_param, param_test5, train)
-
+   # print('hello')
+   # xgb = auto_tuning(estimator, init_param, param_test5, train)
+   automl = autosklearn.classification.

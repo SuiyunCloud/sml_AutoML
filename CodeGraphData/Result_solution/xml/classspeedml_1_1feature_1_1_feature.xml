@@ -1,0 +1,361 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classspeedml_1_1feature_1_1_feature" kind="class" prot="public">
+    <compoundname>speedml::feature::Feature</compoundname>
+    <basecompoundref refid="classspeedml_1_1base_1_1_base" prot="public" virt="non-virtual">speedml.base.Base</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classspeedml_1_1feature_1_1_feature_1aa9b9980cf695b79c9e487ba0fdbf02b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def speedml.feature.Feature.drop</definition>
+        <argsstring></argsstring>
+        <name>drop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Drop one or more list of strings naming ``features`` from train and test datasets.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" line="17" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" bodystart="17" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classspeedml_1_1feature_1_1_feature_1ad525055a5db60d31b27cf8c53a8948b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def speedml.feature.Feature.impute</definition>
+        <argsstring></argsstring>
+        <name>impute</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Replace empty values in the entire dataframe with median value for numerical features and most common values for text features.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" line="30" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" bodystart="30" bodyend="46"/>
+        <references refid="classspeedml_1_1feature_1_1_feature_1a18e4c347857e70e1d30e1fa754ec8e2c" compoundref="feature_8py" startline="126" endline="132">speedml.feature.Feature.sum</references>
+      </memberdef>
+      <memberdef kind="function" id="classspeedml_1_1feature_1_1_feature_1a1c0fb1655c629f85f19725d7d7a224dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def speedml.feature.Feature.mapping</definition>
+        <argsstring></argsstring>
+        <name>mapping</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Convert values for categorical feature ``a`` using ``data`` dictionary. Use when number of categories are limited otherwise use labels.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" line="47" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" bodystart="47" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classspeedml_1_1feature_1_1_feature_1aea22185cedbbbc5bc44cb53ac55f17be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def speedml.feature.Feature.fillna</definition>
+        <argsstring></argsstring>
+        <name>fillna</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Fills empty or null values in ``a`` feature name with ``new`` string value.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" line="54" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" bodystart="54" bodyend="65"/>
+        <references refid="classspeedml_1_1feature_1_1_feature_1a18e4c347857e70e1d30e1fa754ec8e2c" compoundref="feature_8py" startline="126" endline="132">speedml.feature.Feature.sum</references>
+      </memberdef>
+      <memberdef kind="function" id="classspeedml_1_1feature_1_1_feature_1ac9ef7e3699b654410a43d0f1ba146a0f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def speedml.feature.Feature.replace</definition>
+        <argsstring></argsstring>
+        <name>replace</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>In feature ``a`` values ``match`` string or list of strings and replace with a ``new`` string.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" line="66" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" bodystart="66" bodyend="83"/>
+        <referencedby refid="classspeedml_1_1feature_1_1_feature_1a5f991ac16b995cd0794fe5117c59ba12" compoundref="feature_8py" startline="147" endline="156">speedml.feature.Feature.divide</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classspeedml_1_1feature_1_1_feature_1a33a0f9052b7ab19f0e01eac2825544ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def speedml.feature.Feature.outliers</definition>
+        <argsstring></argsstring>
+        <name>outliers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Fix outliers for ``lower`` or ``upper`` or both percentile of values within ``a`` feature.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" line="84" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" bodystart="84" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="classspeedml_1_1feature_1_1_feature_1a4fc59f6174e296d5e0c950719882d095" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def speedml.feature.Feature.density</definition>
+        <argsstring></argsstring>
+        <name>density</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Create new feature named ``a`` feature name + suffix &apos;_density&apos;, based on density or value_counts for each unique value in ``a`` feature specified as a string or multiple features as a list of strings.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" line="108" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" bodystart="108" bodyend="118"/>
+        <references refid="classspeedml_1_1feature_1_1_feature_1a8789599466c18fc5e34482daa8d1c7d7" compoundref="feature_8py" startline="102" endline="107">speedml.feature.Feature._density_by_feature</references>
+      </memberdef>
+      <memberdef kind="function" id="classspeedml_1_1feature_1_1_feature_1a7d28f8ab4aa9194e6c0f479e6a3b0343" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def speedml.feature.Feature.add</definition>
+        <argsstring></argsstring>
+        <name>add</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Update ``a`` numeric feature by adding ``num`` number to each values.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" line="119" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" bodystart="119" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="classspeedml_1_1feature_1_1_feature_1a18e4c347857e70e1d30e1fa754ec8e2c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def speedml.feature.Feature.sum</definition>
+        <argsstring></argsstring>
+        <name>sum</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Create ``new`` numeric feature by adding ``a`` + ``b`` feature values.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" line="126" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" bodystart="126" bodyend="132"/>
+        <referencedby refid="classspeedml_1_1feature_1_1_feature_1aea22185cedbbbc5bc44cb53ac55f17be" compoundref="feature_8py" startline="54" endline="65">speedml.feature.Feature.fillna</referencedby>
+        <referencedby refid="classspeedml_1_1feature_1_1_feature_1ad525055a5db60d31b27cf8c53a8948b3" compoundref="feature_8py" startline="30" endline="46">speedml.feature.Feature.impute</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classspeedml_1_1feature_1_1_feature_1a1f4e39a890bfabf0f73236efe44477f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def speedml.feature.Feature.diff</definition>
+        <argsstring></argsstring>
+        <name>diff</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Create ``new`` numeric feature by subtracting ``a`` - ``b`` feature values.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" line="133" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" bodystart="133" bodyend="139"/>
+      </memberdef>
+      <memberdef kind="function" id="classspeedml_1_1feature_1_1_feature_1ab079bb64ca93c9af52e9ce69d5f7e069" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def speedml.feature.Feature.product</definition>
+        <argsstring></argsstring>
+        <name>product</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Create ``new`` numeric feature by multiplying ``a`` * ``b`` feature values.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" line="140" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" bodystart="140" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="classspeedml_1_1feature_1_1_feature_1a5f991ac16b995cd0794fe5117c59ba12" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def speedml.feature.Feature.divide</definition>
+        <argsstring></argsstring>
+        <name>divide</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Create ``new`` numeric feature by dividing ``a`` / ``b`` feature values. Replace division-by-zero with zero values.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" line="147" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" bodystart="147" bodyend="156"/>
+        <references refid="classspeedml_1_1feature_1_1_feature_1ac9ef7e3699b654410a43d0f1ba146a0f" compoundref="feature_8py" startline="66" endline="83">speedml.feature.Feature.replace</references>
+      </memberdef>
+      <memberdef kind="function" id="classspeedml_1_1feature_1_1_feature_1a647c1981d66ee751e35ffb6c41704168" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def speedml.feature.Feature.round</definition>
+        <argsstring></argsstring>
+        <name>round</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Create ``new`` numeric feature by rounding ``a`` feature value to ``precision`` decimal places.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" line="157" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" bodystart="157" bodyend="163"/>
+      </memberdef>
+      <memberdef kind="function" id="classspeedml_1_1feature_1_1_feature_1a771eebb4a2f2ca771b8e4e55ecefea06" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def speedml.feature.Feature.concat</definition>
+        <argsstring></argsstring>
+        <name>concat</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Create ``new`` text feature by concatenating ``a`` and ``b`` text feature values, using ``sep`` separator.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" line="164" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" bodystart="164" bodyend="170"/>
+      </memberdef>
+      <memberdef kind="function" id="classspeedml_1_1feature_1_1_feature_1a3234f7010a86f28072715e7e9fcf84a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def speedml.feature.Feature.list_len</definition>
+        <argsstring></argsstring>
+        <name>list_len</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Create ``new`` numeric feature based on length or item count from ``a`` feature containing list object as values.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" line="171" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" bodystart="171" bodyend="177"/>
+      </memberdef>
+      <memberdef kind="function" id="classspeedml_1_1feature_1_1_feature_1aaba9103b85b548a5983f5ce33021ef0e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def speedml.feature.Feature.word_count</definition>
+        <argsstring></argsstring>
+        <name>word_count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Create ``new`` numeric feature based on length or word count from ``a`` feature containing free-form text.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" line="178" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" bodystart="178" bodyend="184"/>
+      </memberdef>
+      <memberdef kind="function" id="classspeedml_1_1feature_1_1_feature_1a230b7afc799bd71a092e773abb2b89b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def speedml.feature.Feature.extract</definition>
+        <argsstring></argsstring>
+        <name>extract</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Match ``regex`` regular expression with ``a`` text feature values to update ``a`` feature with matching text if ``new`` = None. Otherwise create ``new`` feature based on matching text.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" line="192" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" bodystart="192" bodyend="198"/>
+        <references refid="classspeedml_1_1feature_1_1_feature_1afdc31aa9e6c8ad55d634c0f8bcac1737" compoundref="feature_8py" startline="185" endline="191">speedml.feature.Feature._regex_text</references>
+      </memberdef>
+      <memberdef kind="function" id="classspeedml_1_1feature_1_1_feature_1a8b3638cc1b068c368952692fb50e8c1b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def speedml.feature.Feature.labels</definition>
+        <argsstring></argsstring>
+        <name>labels</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Generate numerical labels replacing text values from list of categorical ``features``.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" line="199" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" bodystart="199" bodyend="213"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classspeedml_1_1feature_1_1_feature_1a8789599466c18fc5e34482daa8d1c7d7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def speedml.feature.Feature._density_by_feature</definition>
+        <argsstring></argsstring>
+        <name>_density_by_feature</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" line="102" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" bodystart="102" bodyend="107"/>
+        <referencedby refid="classspeedml_1_1feature_1_1_feature_1a4fc59f6174e296d5e0c950719882d095" compoundref="feature_8py" startline="108" endline="118">speedml.feature.Feature.density</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classspeedml_1_1feature_1_1_feature_1afdc31aa9e6c8ad55d634c0f8bcac1737" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def speedml.feature.Feature._regex_text</definition>
+        <argsstring></argsstring>
+        <name>_regex_text</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" line="185" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" bodystart="185" bodyend="191"/>
+        <referencedby refid="classspeedml_1_1feature_1_1_feature_1a230b7afc799bd71a092e773abb2b89b5" compoundref="feature_8py" startline="192" endline="198">speedml.feature.Feature.extract</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="14">
+        <label>speedml.base.Base</label>
+        <link refid="classspeedml_1_1base_1_1_base"/>
+        <childnode refid="15" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>object</label>
+      </node>
+      <node id="13">
+        <label>speedml.feature.Feature</label>
+        <link refid="classspeedml_1_1feature_1_1_feature"/>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="17">
+        <label>speedml.base.Base</label>
+        <link refid="classspeedml_1_1base_1_1_base"/>
+        <childnode refid="18" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>object</label>
+      </node>
+      <node id="16">
+        <label>speedml.feature.Feature</label>
+        <link refid="classspeedml_1_1feature_1_1_feature"/>
+        <childnode refid="17" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" line="16" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" bodystart="16" bodyend="213"/>
+    <listofallmembers>
+      <member refid="classspeedml_1_1feature_1_1_feature_1a8789599466c18fc5e34482daa8d1c7d7" prot="private" virt="non-virtual"><scope>speedml::feature::Feature</scope><name>_density_by_feature</name></member>
+      <member refid="classspeedml_1_1feature_1_1_feature_1afdc31aa9e6c8ad55d634c0f8bcac1737" prot="private" virt="non-virtual"><scope>speedml::feature::Feature</scope><name>_regex_text</name></member>
+      <member refid="classspeedml_1_1feature_1_1_feature_1a7d28f8ab4aa9194e6c0f479e6a3b0343" prot="public" virt="non-virtual"><scope>speedml::feature::Feature</scope><name>add</name></member>
+      <member refid="classspeedml_1_1feature_1_1_feature_1a771eebb4a2f2ca771b8e4e55ecefea06" prot="public" virt="non-virtual"><scope>speedml::feature::Feature</scope><name>concat</name></member>
+      <member refid="classspeedml_1_1base_1_1_base_1af5ca411e6e3773eabfbe468bd08b08d9" prot="public" virt="non-virtual"><scope>speedml::feature::Feature</scope><name>data_n</name></member>
+      <member refid="classspeedml_1_1feature_1_1_feature_1a4fc59f6174e296d5e0c950719882d095" prot="public" virt="non-virtual"><scope>speedml::feature::Feature</scope><name>density</name></member>
+      <member refid="classspeedml_1_1feature_1_1_feature_1a1f4e39a890bfabf0f73236efe44477f5" prot="public" virt="non-virtual"><scope>speedml::feature::Feature</scope><name>diff</name></member>
+      <member refid="classspeedml_1_1feature_1_1_feature_1a5f991ac16b995cd0794fe5117c59ba12" prot="public" virt="non-virtual"><scope>speedml::feature::Feature</scope><name>divide</name></member>
+      <member refid="classspeedml_1_1feature_1_1_feature_1aa9b9980cf695b79c9e487ba0fdbf02b8" prot="public" virt="non-virtual"><scope>speedml::feature::Feature</scope><name>drop</name></member>
+      <member refid="classspeedml_1_1feature_1_1_feature_1a230b7afc799bd71a092e773abb2b89b5" prot="public" virt="non-virtual"><scope>speedml::feature::Feature</scope><name>extract</name></member>
+      <member refid="classspeedml_1_1feature_1_1_feature_1aea22185cedbbbc5bc44cb53ac55f17be" prot="public" virt="non-virtual"><scope>speedml::feature::Feature</scope><name>fillna</name></member>
+      <member refid="classspeedml_1_1feature_1_1_feature_1ad525055a5db60d31b27cf8c53a8948b3" prot="public" virt="non-virtual"><scope>speedml::feature::Feature</scope><name>impute</name></member>
+      <member refid="classspeedml_1_1feature_1_1_feature_1a8b3638cc1b068c368952692fb50e8c1b" prot="public" virt="non-virtual"><scope>speedml::feature::Feature</scope><name>labels</name></member>
+      <member refid="classspeedml_1_1feature_1_1_feature_1a3234f7010a86f28072715e7e9fcf84a2" prot="public" virt="non-virtual"><scope>speedml::feature::Feature</scope><name>list_len</name></member>
+      <member refid="classspeedml_1_1feature_1_1_feature_1a1c0fb1655c629f85f19725d7d7a224dc" prot="public" virt="non-virtual"><scope>speedml::feature::Feature</scope><name>mapping</name></member>
+      <member refid="classspeedml_1_1feature_1_1_feature_1a33a0f9052b7ab19f0e01eac2825544ce" prot="public" virt="non-virtual"><scope>speedml::feature::Feature</scope><name>outliers</name></member>
+      <member refid="classspeedml_1_1feature_1_1_feature_1ab079bb64ca93c9af52e9ce69d5f7e069" prot="public" virt="non-virtual"><scope>speedml::feature::Feature</scope><name>product</name></member>
+      <member refid="classspeedml_1_1feature_1_1_feature_1ac9ef7e3699b654410a43d0f1ba146a0f" prot="public" virt="non-virtual"><scope>speedml::feature::Feature</scope><name>replace</name></member>
+      <member refid="classspeedml_1_1feature_1_1_feature_1a647c1981d66ee751e35ffb6c41704168" prot="public" virt="non-virtual"><scope>speedml::feature::Feature</scope><name>round</name></member>
+      <member refid="classspeedml_1_1feature_1_1_feature_1a18e4c347857e70e1d30e1fa754ec8e2c" prot="public" virt="non-virtual"><scope>speedml::feature::Feature</scope><name>sum</name></member>
+      <member refid="classspeedml_1_1feature_1_1_feature_1aaba9103b85b548a5983f5ce33021ef0e" prot="public" virt="non-virtual"><scope>speedml::feature::Feature</scope><name>word_count</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

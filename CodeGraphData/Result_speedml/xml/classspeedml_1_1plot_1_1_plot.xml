@@ -1,0 +1,237 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classspeedml_1_1plot_1_1_plot" kind="class" prot="public">
+    <compoundname>speedml::plot::Plot</compoundname>
+    <basecompoundref refid="classspeedml_1_1base_1_1_base" prot="public" virt="non-virtual">speedml.base.Base</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classspeedml_1_1plot_1_1_plot_1ad8c6d7bb42d10b786a0c50dd011da183" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def speedml.plot.Plot.crosstab</definition>
+        <argsstring></argsstring>
+        <name>crosstab</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return a dataframe cross-tabulating values from feature ``x`` and ``y``.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/plot.py" line="23" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/plot.py" bodystart="23" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classspeedml_1_1plot_1_1_plot_1aedf0692978136928c169493dcd4c6155" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def speedml.plot.Plot.bar</definition>
+        <argsstring></argsstring>
+        <name>bar</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Bar plot ``x`` across ``y`` feature values.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/plot.py" line="29" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/plot.py" bodystart="29" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classspeedml_1_1plot_1_1_plot_1ab798513aeb470bce259365227af061ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def speedml.plot.Plot.strip</definition>
+        <argsstring></argsstring>
+        <name>strip</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Stripplot plot ``x`` across ``y`` feature values.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/plot.py" line="39" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/plot.py" bodystart="39" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classspeedml_1_1plot_1_1_plot_1ae685a20e115cce8a4512967c12726003" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def speedml.plot.Plot.distribute</definition>
+        <argsstring></argsstring>
+        <name>distribute</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Plot multiple feature distribution histogram plots for all numeric features. This helps understand skew of distribution from normal to quickly and relatively identify outliers in the dataset.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/plot.py" line="49" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/plot.py" bodystart="49" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classspeedml_1_1plot_1_1_plot_1a661ac8980062984543b85b2e2dbc12b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def speedml.plot.Plot.correlate</definition>
+        <argsstring></argsstring>
+        <name>correlate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Plot correlation matrix heatmap for numerical features of the training dataset. Use this plot to understand if certain features are duplicate, are of low importance, or possibly high importance for our model.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/plot.py" line="58" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/plot.py" bodystart="58" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classspeedml_1_1plot_1_1_plot_1a5b4fb33fdfea8c2ade447966adea50e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def speedml.plot.Plot.ordinal</definition>
+        <argsstring></argsstring>
+        <name>ordinal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Plot ordinal features (categorical numeric) using Violin plot against target feature. Use this to determine outliers within ordinal features spread across associated target feature values.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/plot.py" line="71" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/plot.py" bodystart="71" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classspeedml_1_1plot_1_1_plot_1a98cee1536b8fbd6eedf6be111d87b1ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def speedml.plot.Plot.continuous</definition>
+        <argsstring></argsstring>
+        <name>continuous</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Plot continuous features (numeric) using scatter plot. Use this to determine outliers within continuous features.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/plot.py" line="82" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/plot.py" bodystart="82" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="classspeedml_1_1plot_1_1_plot_1a75a2eac6551c839f7f867c937868c46c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def speedml.plot.Plot.model_ranks</definition>
+        <argsstring></argsstring>
+        <name>model_ranks</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Plot ranking among accuracy offered by various models based on our datasets.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/plot.py" line="93" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/plot.py" bodystart="93" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="classspeedml_1_1plot_1_1_plot_1a24eb02b6866d9fb420194165bfffd176" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def speedml.plot.Plot.importance</definition>
+        <argsstring></argsstring>
+        <name>importance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Plot importance of features based on ExtraTreesClassifier.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/plot.py" line="127" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/plot.py" bodystart="127" bodyend="138"/>
+        <references refid="classspeedml_1_1plot_1_1_plot_1a2d0f47dd10b3a990f6b7119de33642da" compoundref="plot_8py" startline="112" endline="126">speedml.plot.Plot._plot_importance</references>
+      </memberdef>
+      <memberdef kind="function" id="classspeedml_1_1plot_1_1_plot_1a44b483f041347758639e13d0a6891982" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def speedml.plot.Plot.xgb_importance</definition>
+        <argsstring></argsstring>
+        <name>xgb_importance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Plot importance of features based on XGBoost.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/plot.py" line="139" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/plot.py" bodystart="139" bodyend="149"/>
+        <references refid="classspeedml_1_1plot_1_1_plot_1a52586b71837e7bfa0659413fae373827" compoundref="plot_8py" startline="103" endline="111">speedml.plot.Plot._create_feature_map</references>
+        <references refid="classspeedml_1_1plot_1_1_plot_1a2d0f47dd10b3a990f6b7119de33642da" compoundref="plot_8py" startline="112" endline="126">speedml.plot.Plot._plot_importance</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classspeedml_1_1plot_1_1_plot_1a52586b71837e7bfa0659413fae373827" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def speedml.plot.Plot._create_feature_map</definition>
+        <argsstring></argsstring>
+        <name>_create_feature_map</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/plot.py" line="103" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/plot.py" bodystart="103" bodyend="111"/>
+        <referencedby refid="classspeedml_1_1plot_1_1_plot_1a44b483f041347758639e13d0a6891982" compoundref="plot_8py" startline="139" endline="149">speedml.plot.Plot.xgb_importance</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classspeedml_1_1plot_1_1_plot_1a2d0f47dd10b3a990f6b7119de33642da" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def speedml.plot.Plot._plot_importance</definition>
+        <argsstring></argsstring>
+        <name>_plot_importance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/plot.py" line="112" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/plot.py" bodystart="112" bodyend="126"/>
+        <referencedby refid="classspeedml_1_1plot_1_1_plot_1a24eb02b6866d9fb420194165bfffd176" compoundref="plot_8py" startline="127" endline="138">speedml.plot.Plot.importance</referencedby>
+        <referencedby refid="classspeedml_1_1plot_1_1_plot_1a44b483f041347758639e13d0a6891982" compoundref="plot_8py" startline="139" endline="149">speedml.plot.Plot.xgb_importance</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="26">
+        <label>speedml.base.Base</label>
+        <link refid="classspeedml_1_1base_1_1_base"/>
+        <childnode refid="27" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>object</label>
+      </node>
+      <node id="25">
+        <label>speedml.plot.Plot</label>
+        <link refid="classspeedml_1_1plot_1_1_plot"/>
+        <childnode refid="26" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="29">
+        <label>speedml.base.Base</label>
+        <link refid="classspeedml_1_1base_1_1_base"/>
+        <childnode refid="30" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>object</label>
+      </node>
+      <node id="28">
+        <label>speedml.plot.Plot</label>
+        <link refid="classspeedml_1_1plot_1_1_plot"/>
+        <childnode refid="29" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/plot.py" line="22" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/plot.py" bodystart="22" bodyend="149"/>
+    <listofallmembers>
+      <member refid="classspeedml_1_1plot_1_1_plot_1a52586b71837e7bfa0659413fae373827" prot="private" virt="non-virtual"><scope>speedml::plot::Plot</scope><name>_create_feature_map</name></member>
+      <member refid="classspeedml_1_1plot_1_1_plot_1a2d0f47dd10b3a990f6b7119de33642da" prot="private" virt="non-virtual"><scope>speedml::plot::Plot</scope><name>_plot_importance</name></member>
+      <member refid="classspeedml_1_1plot_1_1_plot_1aedf0692978136928c169493dcd4c6155" prot="public" virt="non-virtual"><scope>speedml::plot::Plot</scope><name>bar</name></member>
+      <member refid="classspeedml_1_1plot_1_1_plot_1a98cee1536b8fbd6eedf6be111d87b1ba" prot="public" virt="non-virtual"><scope>speedml::plot::Plot</scope><name>continuous</name></member>
+      <member refid="classspeedml_1_1plot_1_1_plot_1a661ac8980062984543b85b2e2dbc12b6" prot="public" virt="non-virtual"><scope>speedml::plot::Plot</scope><name>correlate</name></member>
+      <member refid="classspeedml_1_1plot_1_1_plot_1ad8c6d7bb42d10b786a0c50dd011da183" prot="public" virt="non-virtual"><scope>speedml::plot::Plot</scope><name>crosstab</name></member>
+      <member refid="classspeedml_1_1base_1_1_base_1af5ca411e6e3773eabfbe468bd08b08d9" prot="public" virt="non-virtual"><scope>speedml::plot::Plot</scope><name>data_n</name></member>
+      <member refid="classspeedml_1_1plot_1_1_plot_1ae685a20e115cce8a4512967c12726003" prot="public" virt="non-virtual"><scope>speedml::plot::Plot</scope><name>distribute</name></member>
+      <member refid="classspeedml_1_1plot_1_1_plot_1a24eb02b6866d9fb420194165bfffd176" prot="public" virt="non-virtual"><scope>speedml::plot::Plot</scope><name>importance</name></member>
+      <member refid="classspeedml_1_1plot_1_1_plot_1a75a2eac6551c839f7f867c937868c46c" prot="public" virt="non-virtual"><scope>speedml::plot::Plot</scope><name>model_ranks</name></member>
+      <member refid="classspeedml_1_1plot_1_1_plot_1a5b4fb33fdfea8c2ade447966adea50e4" prot="public" virt="non-virtual"><scope>speedml::plot::Plot</scope><name>ordinal</name></member>
+      <member refid="classspeedml_1_1plot_1_1_plot_1ab798513aeb470bce259365227af061ed" prot="public" virt="non-virtual"><scope>speedml::plot::Plot</scope><name>strip</name></member>
+      <member refid="classspeedml_1_1plot_1_1_plot_1a44b483f041347758639e13d0a6891982" prot="public" virt="non-virtual"><scope>speedml::plot::Plot</scope><name>xgb_importance</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

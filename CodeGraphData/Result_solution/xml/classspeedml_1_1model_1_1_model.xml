@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classspeedml_1_1model_1_1_model" kind="class" prot="public">
+    <compoundname>speedml::model::Model</compoundname>
+    <basecompoundref refid="classspeedml_1_1base_1_1_base" prot="public" virt="non-virtual">speedml.base.Base</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classspeedml_1_1model_1_1_model_1a6bb1e5d37205d604cd471d9cca7b9826" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>speedml.model.Model::xgb_accuracy</definition>
+        <argsstring></argsstring>
+        <name>xgb_accuracy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/model.py" line="88" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/model.py" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classspeedml_1_1model_1_1_model_1a27ef399f671eb07e2e932dcf088a68cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def speedml.model.Model.data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Prepare model input data ``Base.train_y`` as Series, ``Base.train_X``, and ``Base.test_X`` datasets as Matrix.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/model.py" line="27" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/model.py" bodystart="27" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classspeedml_1_1model_1_1_model_1afb05fe6a8e20134206a45dbe5056c2a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def speedml.model.Model.evaluate</definition>
+        <argsstring></argsstring>
+        <name>evaluate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Model evaluation across multiple classifiers based on accuracy of predictions.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/model.py" line="39" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/model.py" bodystart="39" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classspeedml_1_1model_1_1_model_1ab7b0f422203afaab916f475fdf860254" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def speedml.model.Model.ranks</definition>
+        <argsstring></argsstring>
+        <name>ranks</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Returns DataFrame of model ranking sorted by Accuracy.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/model.py" line="84" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/model.py" bodystart="84" bodyend="90"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="20">
+        <label>speedml.base.Base</label>
+        <link refid="classspeedml_1_1base_1_1_base"/>
+        <childnode refid="21" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>speedml.model.Model</label>
+        <link refid="classspeedml_1_1model_1_1_model"/>
+        <childnode refid="20" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>object</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="23">
+        <label>speedml.base.Base</label>
+        <link refid="classspeedml_1_1base_1_1_base"/>
+        <childnode refid="24" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>speedml.model.Model</label>
+        <link refid="classspeedml_1_1model_1_1_model"/>
+        <childnode refid="23" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>object</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/model.py" line="26" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/model.py" bodystart="26" bodyend="90"/>
+    <listofallmembers>
+      <member refid="classspeedml_1_1model_1_1_model_1a27ef399f671eb07e2e932dcf088a68cc" prot="public" virt="non-virtual"><scope>speedml::model::Model</scope><name>data</name></member>
+      <member refid="classspeedml_1_1base_1_1_base_1af5ca411e6e3773eabfbe468bd08b08d9" prot="public" virt="non-virtual"><scope>speedml::model::Model</scope><name>data_n</name></member>
+      <member refid="classspeedml_1_1model_1_1_model_1afb05fe6a8e20134206a45dbe5056c2a6" prot="public" virt="non-virtual"><scope>speedml::model::Model</scope><name>evaluate</name></member>
+      <member refid="classspeedml_1_1model_1_1_model_1ab7b0f422203afaab916f475fdf860254" prot="public" virt="non-virtual"><scope>speedml::model::Model</scope><name>ranks</name></member>
+      <member refid="classspeedml_1_1model_1_1_model_1a6bb1e5d37205d604cd471d9cca7b9826" prot="public" virt="non-virtual"><scope>speedml::model::Model</scope><name>xgb_accuracy</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

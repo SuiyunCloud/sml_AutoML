@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_e58b7b1b5c16116eb89476b839f0c2f5" kind="dir">
+    <compoundname>D:/programs/Python3.5.2</compoundname>
+    <innerdir refid="dir_24ebd0e33a774ce77336038382dcc791">D:/programs/Python3.5.2/Lib</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/programs/Python3.5.2/"/>
+  </compounddef>
+</doxygen>

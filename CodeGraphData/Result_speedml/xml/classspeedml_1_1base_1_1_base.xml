@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classspeedml_1_1base_1_1_base" kind="class" prot="public">
+    <compoundname>speedml::base::Base</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">object</basecompoundref>
+    <derivedcompoundref refid="classspeedml_1_1feature_1_1_feature" prot="public" virt="non-virtual">speedml.feature.Feature</derivedcompoundref>
+    <derivedcompoundref refid="classspeedml_1_1model_1_1_model" prot="public" virt="non-virtual">speedml.model.Model</derivedcompoundref>
+    <derivedcompoundref refid="classspeedml_1_1plot_1_1_plot" prot="public" virt="non-virtual">speedml.plot.Plot</derivedcompoundref>
+    <derivedcompoundref refid="classspeedml_1_1_speedml" prot="public" virt="non-virtual">speedml.Speedml</derivedcompoundref>
+    <derivedcompoundref refid="classspeedml_1_1xgb_1_1_xgb" prot="public" virt="non-virtual">speedml.xgb.Xgb</derivedcompoundref>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classspeedml_1_1base_1_1_base_1af5ca411e6e3773eabfbe468bd08b08d9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def speedml.base.Base.data_n</definition>
+        <argsstring></argsstring>
+        <name>data_n</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Updates train_n and test_n numeric datasets (used for model data creation) based on numeric datatypes from train and test datasets.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/base.py" line="5" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/base.py" bodystart="5" bodyend="11"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="0">
+        <label>speedml.base.Base</label>
+        <link refid="classspeedml_1_1base_1_1_base"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>speedml.model.Model</label>
+        <link refid="classspeedml_1_1model_1_1_model"/>
+        <childnode refid="0" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>speedml.Speedml</label>
+        <link refid="classspeedml_1_1_speedml"/>
+        <childnode refid="0" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>object</label>
+      </node>
+      <node id="4">
+        <label>speedml.plot.Plot</label>
+        <link refid="classspeedml_1_1plot_1_1_plot"/>
+        <childnode refid="0" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>speedml.xgb.Xgb</label>
+        <link refid="classspeedml_1_1xgb_1_1_xgb"/>
+        <childnode refid="0" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>speedml.feature.Feature</label>
+        <link refid="classspeedml_1_1feature_1_1_feature"/>
+        <childnode refid="0" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="7">
+        <label>speedml.base.Base</label>
+        <link refid="classspeedml_1_1base_1_1_base"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>object</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/base.py" line="3" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/base.py" bodystart="3" bodyend="11"/>
+    <listofallmembers>
+      <member refid="classspeedml_1_1base_1_1_base_1af5ca411e6e3773eabfbe468bd08b08d9" prot="public" virt="non-virtual"><scope>speedml::base::Base</scope><name>data_n</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

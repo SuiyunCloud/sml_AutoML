@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_89e1d3d2d465b60f113af048664be39c" kind="dir">
+    <compoundname>D:/programs/Python3.5.2/Lib/site-packages/speedml/test</compoundname>
+    <innerfile refid="house_price_8py">housePrice.py</innerfile>
+    <innerfile refid="module1_8py">module1.py</innerfile>
+    <innerfile refid="module2_8py">module2.py</innerfile>
+    <innerfile refid="test1_8py">test1.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/"/>
+  </compounddef>
+</doxygen>

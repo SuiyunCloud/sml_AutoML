@@ -210,3 +210,80 @@ class Feature(Base):
         Base.train = combine[0:Base.train.shape[0]]
         Base.test = combine[Base.train.shape[0]::]
         Base.test = Base.test.drop([Base.target], axis=1)
+
+    def cut(self,refFeature, newFeature, bins, right=True, labels=None, retbins=False, precision=3,
+        include_lowest=False):
+        """
+        Return indices of half-open bins to which each value of `x` belongs.
+
+        Parameters
+        ----------
+        refFeature: the feature which will be cutted
+        newFeature: new name of the feature which is the result of pd.cut
+        bins : int, sequence of scalars, or IntervalIndex
+            If `bins` is an int, it defines the number of equal-width bins in the
+            range of `x`. However, in this case, the range of `x` is extended
+            by .1% on each side to include the min or max values of `x`. If
+            `bins` is a sequence it defines the bin edges allowing for
+            non-uniform bin width. No extension of the range of `x` is done in
+            this case.
+        right : bool, optional
+            Indicates whether the bins include the rightmost edge or not. If
+            right == True (the default), then the bins [1,2,3,4] indicate
+            (1,2], (2,3], (3,4].
+        labels : array or boolean, default None
+            Used as labels for the resulting bins. Must be of the same length as
+            the resulting bins. If False, return only integer indicators of the
+            bins.
+        retbins : bool, optional
+            Whether to return the bins or not. Can be useful if bins is given
+            as a scalar.
+        precision : int, optional
+            The precision at which to store and display the bins labels
+        include_lowest : bool, optional
+            Whether the first interval should be left-inclusive or not.
+
+        Returns
+        -------
+        out : Categorical or Series or array of integers if labels is False
+            The return type (Categorical or Series) depends on the input: a Series
+            of type category if input is a Series else Categorical. Bins are
+            represented as categories when categorical data is returned.
+        bins : ndarray of floats
+            Returned only if `retbins` is True.
+
+        Notes
+        -----
+        The `cut` function can be useful for going from a continuous variable to
+        a categorical variable. For example, `cut` could convert ages to groups
+        of age ranges.
+
+        Any NA values will be NA in the result.  Out of bounds values will be NA in
+        the resulting Categorical object
+
+
+        Examples
+        --------
+        >>> pd.cut(np.array([.2, 1.4, 2.5, 6.2, 9.7, 2.1]), 3, retbins=True)
+        ... # doctest: +ELLIPSIS
+        ([(0.19, 3.367], (0.19, 3.367], (0.19, 3.367], (3.367, 6.533], ...
+        Categories (3, interval[float64]): [(0.19, 3.367] < (3.367, 6.533] ...
+
+        >>> pd.cut(np.array([.2, 1.4, 2.5, 6.2, 9.7, 2.1]),
+        ...        3, labels=["good", "medium", "bad"])
+        ... # doctest: +SKIP
+        [good, good, good, medium, bad, good]
+        Categories (3, object): [good < medium < bad]
+
+        >>> pd.cut(np.ones(5), 4, labels=False)
+        array([1, 1, 1, 1, 1])
+        """
+        Base.test[Base.target] = -1
+        combine = Base.train.append(Base.test)
+
+        combine[newFeature] = pd.cat(combine[x], bins, right=True, labels=None, retbins=False, precision=3,
+        include_lowest=False)
+        
+        Base.train = combine[0:Base.train.shape[0]]
+        Base.test = combine[Base.train.shape[0]::]
+        Base.test = Base.test.drop([Base.target], axis=1)

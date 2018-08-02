@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_81701184b37cb52f412233f2ff407c2d" kind="dir">
+    <compoundname>D:/programs/Python3.5.2/Lib/site-packages/speedml</compoundname>
+    <innerdir refid="dir_89e1d3d2d465b60f113af048664be39c">D:/programs/Python3.5.2/Lib/site-packages/speedml/test</innerdir>
+    <innerfile refid="____init_____8py">__init__.py</innerfile>
+    <innerfile refid="base_8py">base.py</innerfile>
+    <innerfile refid="feature_8py">feature.py</innerfile>
+    <innerfile refid="model_8py">model.py</innerfile>
+    <innerfile refid="plot_8py">plot.py</innerfile>
+    <innerfile refid="tuning_8py">tuning.py</innerfile>
+    <innerfile refid="util_8py">util.py</innerfile>
+    <innerfile refid="xgb_8py">xgb.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/"/>
+  </compounddef>
+</doxygen>

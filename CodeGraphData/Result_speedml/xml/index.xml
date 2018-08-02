@@ -1,0 +1,246 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.6">
+  <compound refid="classspeedml_1_1base_1_1_base" kind="class"><name>speedml::base::Base</name>
+    <member refid="classspeedml_1_1base_1_1_base_1af5ca411e6e3773eabfbe468bd08b08d9" kind="function"><name>data_n</name></member>
+  </compound>
+  <compound refid="classspeedml_1_1util_1_1_data_frame_imputer" kind="class"><name>speedml::util::DataFrameImputer</name>
+    <member refid="classspeedml_1_1util_1_1_data_frame_imputer_1ae487d957774da81c3d3d0eaad8a0342b" kind="variable"><name>fill</name></member>
+    <member refid="classspeedml_1_1util_1_1_data_frame_imputer_1afbccdd27d0078b2934dd5986f721af29" kind="function"><name>fit</name></member>
+    <member refid="classspeedml_1_1util_1_1_data_frame_imputer_1a54750e6f37675436fa4434fe214343c6" kind="function"><name>transform</name></member>
+  </compound>
+  <compound refid="classspeedml_1_1feature_1_1_feature" kind="class"><name>speedml::feature::Feature</name>
+    <member refid="classspeedml_1_1feature_1_1_feature_1aa9b9980cf695b79c9e487ba0fdbf02b8" kind="function"><name>drop</name></member>
+    <member refid="classspeedml_1_1feature_1_1_feature_1ad525055a5db60d31b27cf8c53a8948b3" kind="function"><name>impute</name></member>
+    <member refid="classspeedml_1_1feature_1_1_feature_1a1c0fb1655c629f85f19725d7d7a224dc" kind="function"><name>mapping</name></member>
+    <member refid="classspeedml_1_1feature_1_1_feature_1aea22185cedbbbc5bc44cb53ac55f17be" kind="function"><name>fillna</name></member>
+    <member refid="classspeedml_1_1feature_1_1_feature_1ac9ef7e3699b654410a43d0f1ba146a0f" kind="function"><name>replace</name></member>
+    <member refid="classspeedml_1_1feature_1_1_feature_1a33a0f9052b7ab19f0e01eac2825544ce" kind="function"><name>outliers</name></member>
+    <member refid="classspeedml_1_1feature_1_1_feature_1a4fc59f6174e296d5e0c950719882d095" kind="function"><name>density</name></member>
+    <member refid="classspeedml_1_1feature_1_1_feature_1a7d28f8ab4aa9194e6c0f479e6a3b0343" kind="function"><name>add</name></member>
+    <member refid="classspeedml_1_1feature_1_1_feature_1a18e4c347857e70e1d30e1fa754ec8e2c" kind="function"><name>sum</name></member>
+    <member refid="classspeedml_1_1feature_1_1_feature_1a1f4e39a890bfabf0f73236efe44477f5" kind="function"><name>diff</name></member>
+    <member refid="classspeedml_1_1feature_1_1_feature_1ab079bb64ca93c9af52e9ce69d5f7e069" kind="function"><name>product</name></member>
+    <member refid="classspeedml_1_1feature_1_1_feature_1a5f991ac16b995cd0794fe5117c59ba12" kind="function"><name>divide</name></member>
+    <member refid="classspeedml_1_1feature_1_1_feature_1a647c1981d66ee751e35ffb6c41704168" kind="function"><name>round</name></member>
+    <member refid="classspeedml_1_1feature_1_1_feature_1a771eebb4a2f2ca771b8e4e55ecefea06" kind="function"><name>concat</name></member>
+    <member refid="classspeedml_1_1feature_1_1_feature_1a3234f7010a86f28072715e7e9fcf84a2" kind="function"><name>list_len</name></member>
+    <member refid="classspeedml_1_1feature_1_1_feature_1aaba9103b85b548a5983f5ce33021ef0e" kind="function"><name>word_count</name></member>
+    <member refid="classspeedml_1_1feature_1_1_feature_1a230b7afc799bd71a092e773abb2b89b5" kind="function"><name>extract</name></member>
+    <member refid="classspeedml_1_1feature_1_1_feature_1a8b3638cc1b068c368952692fb50e8c1b" kind="function"><name>labels</name></member>
+    <member refid="classspeedml_1_1feature_1_1_feature_1a8789599466c18fc5e34482daa8d1c7d7" kind="function"><name>_density_by_feature</name></member>
+    <member refid="classspeedml_1_1feature_1_1_feature_1afdc31aa9e6c8ad55d634c0f8bcac1737" kind="function"><name>_regex_text</name></member>
+  </compound>
+  <compound refid="classspeedml_1_1model_1_1_model" kind="class"><name>speedml::model::Model</name>
+    <member refid="classspeedml_1_1model_1_1_model_1a6bb1e5d37205d604cd471d9cca7b9826" kind="variable"><name>xgb_accuracy</name></member>
+    <member refid="classspeedml_1_1model_1_1_model_1a27ef399f671eb07e2e932dcf088a68cc" kind="function"><name>data</name></member>
+    <member refid="classspeedml_1_1model_1_1_model_1afb05fe6a8e20134206a45dbe5056c2a6" kind="function"><name>evaluate</name></member>
+    <member refid="classspeedml_1_1model_1_1_model_1ab7b0f422203afaab916f475fdf860254" kind="function"><name>ranks</name></member>
+  </compound>
+  <compound refid="classspeedml_1_1plot_1_1_plot" kind="class"><name>speedml::plot::Plot</name>
+    <member refid="classspeedml_1_1plot_1_1_plot_1ad8c6d7bb42d10b786a0c50dd011da183" kind="function"><name>crosstab</name></member>
+    <member refid="classspeedml_1_1plot_1_1_plot_1aedf0692978136928c169493dcd4c6155" kind="function"><name>bar</name></member>
+    <member refid="classspeedml_1_1plot_1_1_plot_1ab798513aeb470bce259365227af061ed" kind="function"><name>strip</name></member>
+    <member refid="classspeedml_1_1plot_1_1_plot_1ae685a20e115cce8a4512967c12726003" kind="function"><name>distribute</name></member>
+    <member refid="classspeedml_1_1plot_1_1_plot_1a661ac8980062984543b85b2e2dbc12b6" kind="function"><name>correlate</name></member>
+    <member refid="classspeedml_1_1plot_1_1_plot_1a5b4fb33fdfea8c2ade447966adea50e4" kind="function"><name>ordinal</name></member>
+    <member refid="classspeedml_1_1plot_1_1_plot_1a98cee1536b8fbd6eedf6be111d87b1ba" kind="function"><name>continuous</name></member>
+    <member refid="classspeedml_1_1plot_1_1_plot_1a75a2eac6551c839f7f867c937868c46c" kind="function"><name>model_ranks</name></member>
+    <member refid="classspeedml_1_1plot_1_1_plot_1a24eb02b6866d9fb420194165bfffd176" kind="function"><name>importance</name></member>
+    <member refid="classspeedml_1_1plot_1_1_plot_1a44b483f041347758639e13d0a6891982" kind="function"><name>xgb_importance</name></member>
+    <member refid="classspeedml_1_1plot_1_1_plot_1a52586b71837e7bfa0659413fae373827" kind="function"><name>_create_feature_map</name></member>
+    <member refid="classspeedml_1_1plot_1_1_plot_1a2d0f47dd10b3a990f6b7119de33642da" kind="function"><name>_plot_importance</name></member>
+  </compound>
+  <compound refid="classspeedml_1_1_speedml" kind="class"><name>speedml::Speedml</name>
+    <member refid="classspeedml_1_1_speedml_1a014111bcb46b00a9ad24602b9c002abb" kind="variable"><name>plot</name></member>
+    <member refid="classspeedml_1_1_speedml_1ad74975db796547b90159e0693c6b4043" kind="variable"><name>feature</name></member>
+    <member refid="classspeedml_1_1_speedml_1a3f880199088ec7bc710c853aa70aebcc" kind="variable"><name>xgb</name></member>
+    <member refid="classspeedml_1_1_speedml_1a42d00e15896b001b3c54f8b437b7f7b2" kind="variable"><name>model</name></member>
+    <member refid="classspeedml_1_1_speedml_1aabae70966340f6f9511271bc0c04d2c4" kind="variable"><name>np</name></member>
+    <member refid="classspeedml_1_1_speedml_1a28869ce0f258c72c0bcfbdeb77dd0614" kind="variable"><name>pd</name></member>
+    <member refid="classspeedml_1_1_speedml_1a1f1e412daa5b3ccbf4f41cc9c0aff217" kind="function"><name>__init__</name></member>
+    <member refid="classspeedml_1_1_speedml_1ac829ce6decce7c7ce9448b78a6023a83" kind="function"><name>configure</name></member>
+    <member refid="classspeedml_1_1_speedml_1af213b14c4f28494e9ad1fe7bfea3dcd9" kind="function"><name>info</name></member>
+    <member refid="classspeedml_1_1_speedml_1a3e4bccb2d252caecf422a4301bfadb71" kind="function"><name>eda</name></member>
+    <member refid="classspeedml_1_1_speedml_1aaaaaf2a9cef39db38a27cff180a1ca12" kind="function"><name>shape</name></member>
+    <member refid="classspeedml_1_1_speedml_1a78025ed70827a9bf2c464b6fba39f043" kind="function"><name>save_results</name></member>
+    <member refid="classspeedml_1_1_speedml_1acdb77c6a089ae9f764098d6fe223fb6c" kind="function"><name>slug</name></member>
+    <member refid="classspeedml_1_1_speedml_1aa7cb108106cdf14f70a978fe0ff70a2a" kind="function"><name>_setup_environment</name></member>
+  </compound>
+  <compound refid="classspeedml_1_1xgb_1_1_xgb" kind="class"><name>speedml::xgb::Xgb</name>
+    <member refid="classspeedml_1_1xgb_1_1_xgb_1a77b29c3f3ff440f9aeec7f102d5e0eb7" kind="variable"><name>sample_accuracy</name></member>
+    <member refid="classspeedml_1_1xgb_1_1_xgb_1a83315f6ca77acc34f735f04f79044c35" kind="variable"><name>cv_results</name></member>
+    <member refid="classspeedml_1_1xgb_1_1_xgb_1a27de9afd514bc3517198647d288f3833" kind="variable"><name>error</name></member>
+    <member refid="classspeedml_1_1xgb_1_1_xgb_1a50cb05d4e8c282ed5bbcf0642d898337" kind="variable"><name>clf</name></member>
+    <member refid="classspeedml_1_1xgb_1_1_xgb_1af2efd73c28a06979d50bda4cff97d190" kind="variable"><name>predictions</name></member>
+    <member refid="classspeedml_1_1xgb_1_1_xgb_1ae96aac9213583cd3c8e000066cfcfdba" kind="variable"><name>feature_accuracy</name></member>
+    <member refid="classspeedml_1_1xgb_1_1_xgb_1a5f3fd53c867c4ebb63bb75e4e4940e5e" kind="function"><name>sample_accuracy</name></member>
+    <member refid="classspeedml_1_1xgb_1_1_xgb_1a418a84a4637d48c9be84d2ea87fd0f47" kind="function"><name>hyper</name></member>
+    <member refid="classspeedml_1_1xgb_1_1_xgb_1a1033f35b321809bc87e4ab0e33ba824b" kind="function"><name>cv</name></member>
+    <member refid="classspeedml_1_1xgb_1_1_xgb_1a36f3825d038c749d612461a342c68ba7" kind="function"><name>params</name></member>
+    <member refid="classspeedml_1_1xgb_1_1_xgb_1a4e97b77836e123ebb8c1e2a7243ba13b" kind="function"><name>classifier</name></member>
+    <member refid="classspeedml_1_1xgb_1_1_xgb_1a86288332d86668f71c5cd1c6d11d369c" kind="function"><name>fit</name></member>
+    <member refid="classspeedml_1_1xgb_1_1_xgb_1a9cc01a906730b51cbf32fb7dc3c787dc" kind="function"><name>predict</name></member>
+    <member refid="classspeedml_1_1xgb_1_1_xgb_1accf7b71381d6fd00b0fe02bc37699db3" kind="function"><name>feature_selection</name></member>
+  </compound>
+  <compound refid="namespacebuiltins" kind="namespace"><name>builtins</name>
+  </compound>
+  <compound refid="namespacehouse_price" kind="namespace"><name>housePrice</name>
+    <member refid="namespacehouse_price_1a7353ee4f25aff5487633cdd316332b15" kind="variable"><name>color</name></member>
+    <member refid="namespacehouse_price_1a1367f878d9de350296acd692a7aaea8f" kind="variable"><name>train</name></member>
+    <member refid="namespacehouse_price_1a2b02eb042737f62fb8e346acc8cf0dfb" kind="variable"><name>test</name></member>
+    <member refid="namespacehouse_price_1aea1111b00ab2af155801de42ab08406a" kind="variable"><name>y</name></member>
+    <member refid="namespacehouse_price_1a08bc6fa4c486cdaf066a15165f894eab" kind="variable"><name>ntrain</name></member>
+    <member refid="namespacehouse_price_1ac95c5f5478628a83299f588f8add0908" kind="variable"><name>ntest</name></member>
+    <member refid="namespacehouse_price_1af3c467aca8b8c67a0457d9854d735982" kind="variable"><name>y_train</name></member>
+    <member refid="namespacehouse_price_1aa63f9dbc4aad5d7d8746fa37294a7d0b" kind="variable"><name>data</name></member>
+    <member refid="namespacehouse_price_1a69a0a412ee71a82cd4c7c67086d1b49b" kind="variable"><name>data_na</name></member>
+    <member refid="namespacehouse_price_1a9006021d0d5a7fc92b1b1a7b3df62202" kind="variable"><name>items1</name></member>
+    <member refid="namespacehouse_price_1ad8da855e3ec621edf9cacd91e486e78a" kind="variable"><name>items2</name></member>
+    <member refid="namespacehouse_price_1ad31d6e99543c8ae3994d5d532f16b1ef" kind="variable"><name>item3</name></member>
+    <member refid="namespacehouse_price_1a288c776578ea8b8f3fd4b1777f4d7aba" kind="variable"><name>data_null</name></member>
+    <member refid="namespacehouse_price_1a948d9e05445d922fd05e84f1e6c6d659" kind="variable"><name>item4</name></member>
+    <member refid="namespacehouse_price_1a8de3d5f06217b2f4fe05fae0fa98fd72" kind="variable"><name>cols</name></member>
+    <member refid="namespacehouse_price_1acaad5b7c07f69732f179446ba9c176a4" kind="variable"><name>lbl</name></member>
+    <member refid="namespacehouse_price_1ab98d4c390bdc3c07a72f7897443875ac" kind="variable"><name>numeric_feats</name></member>
+    <member refid="namespacehouse_price_1a6881f212f55babdda37320fed838460c" kind="variable"><name>skewed_feats</name></member>
+    <member refid="namespacehouse_price_1ab6345cc2ade0fb9a6972f1c2637614cf" kind="variable"><name>skewness</name></member>
+    <member refid="namespacehouse_price_1a1e3a8acb8765b60d36c863e5c8eb0cc2" kind="variable"><name>skewed_features</name></member>
+    <member refid="namespacehouse_price_1ae603694316b9d171aeb375a958b75c67" kind="variable"><name>lam</name></member>
+    <member refid="namespacehouse_price_1ac769a88bb6cd3c5207a2949478a45e2e" kind="variable"><name>data2</name></member>
+    <member refid="namespacehouse_price_1a7fbdafb7abcd9758e50762e70ea0ae92" kind="variable"><name>param_test4</name></member>
+    <member refid="namespacehouse_price_1a7df313c1020e897a101270c9ff7b9bdd" kind="variable"><name>estimator</name></member>
+    <member refid="namespacehouse_price_1a8e253de5b3f0e58d818aa62bc0ed10ac" kind="variable"><name>init_param</name></member>
+    <member refid="namespacehouse_price_1a81fd6e447f9fa31185aa751f47ec0c81" kind="function"><name>ignore_warn</name></member>
+    <member refid="namespacehouse_price_1a2b0a00685062f831e0845fe31a73372a" kind="function"><name>fill_na</name></member>
+    <member refid="namespacehouse_price_1a0be6b4ef729fb48e16a608bed8bf9b52" kind="function"><name>fill_na_with_mode</name></member>
+    <member refid="namespacehouse_price_1a11a87b394d204862f98625eb60c53322" kind="function"><name>num_transform</name></member>
+  </compound>
+  <compound refid="namespacemodule1" kind="namespace"><name>module1</name>
+    <member refid="namespacemodule1_1a19e4e407d18fcaf603abfe7c30e81f8b" kind="variable"><name>color</name></member>
+    <member refid="namespacemodule1_1a816c82812588abe28ffd9a655867dc70" kind="variable"><name>train</name></member>
+    <member refid="namespacemodule1_1a551617199b876bf8f80695531833afe1" kind="variable"><name>test</name></member>
+    <member refid="namespacemodule1_1af0fa6c12583cfb99aca0069c36a519ec" kind="variable"><name>y</name></member>
+    <member refid="namespacemodule1_1ab787c930f24777609f726966b3210558" kind="variable"><name>ntrain</name></member>
+    <member refid="namespacemodule1_1a15468f3367a68caed28307fa20dcd747" kind="variable"><name>ntest</name></member>
+    <member refid="namespacemodule1_1a6cb8decbb8dced55fcb9ac1c63fdff7f" kind="variable"><name>y_train</name></member>
+    <member refid="namespacemodule1_1a3ddb40cb8be2caff78adcfa1bb651a9d" kind="variable"><name>data</name></member>
+    <member refid="namespacemodule1_1ac090f6e623e78f2e9ae64f1077a693b9" kind="variable"><name>data_na</name></member>
+    <member refid="namespacemodule1_1ab2b9e81f5fe97d0b44a15e10c461b45e" kind="variable"><name>items1</name></member>
+    <member refid="namespacemodule1_1a41a570388761f1482d9e73f0454c7a80" kind="variable"><name>items2</name></member>
+    <member refid="namespacemodule1_1a4796fb38e13993db567c2873d49e6f49" kind="variable"><name>item3</name></member>
+    <member refid="namespacemodule1_1a96bd878e5f406b511e4b0d0dee74adc8" kind="variable"><name>data_null</name></member>
+    <member refid="namespacemodule1_1a9bdc0d3e08cdb753f61e11507410e8d9" kind="variable"><name>item4</name></member>
+    <member refid="namespacemodule1_1afd88c5bfa93b83de85674cfc323149bb" kind="variable"><name>cols</name></member>
+    <member refid="namespacemodule1_1a1ca8da01911d40d574d8ab7dec3eaac5" kind="variable"><name>lbl</name></member>
+    <member refid="namespacemodule1_1ac7e624323276e0fffee43da1928ff3d1" kind="variable"><name>numeric_feats</name></member>
+    <member refid="namespacemodule1_1a943c16b4d64674ff048456ccc06ee091" kind="variable"><name>skewed_feats</name></member>
+    <member refid="namespacemodule1_1a6ac08d67f01ed66548225329d1fb8f28" kind="variable"><name>skewness</name></member>
+    <member refid="namespacemodule1_1a9550684fdb1230fa0b5cc96ff93b0c99" kind="variable"><name>skewed_features</name></member>
+    <member refid="namespacemodule1_1a327849839c76c5a883bada146727a0ac" kind="variable"><name>lam</name></member>
+    <member refid="namespacemodule1_1af1dff7dfb3c8d67e48aef2f726b8b8aa" kind="variable"><name>data2</name></member>
+    <member refid="namespacemodule1_1a34eccd820417a74d024f0fa4348d52e3" kind="variable"><name>param_test3</name></member>
+    <member refid="namespacemodule1_1a3ce141cb4797dfe820bb25967cb9422e" kind="variable"><name>estimator</name></member>
+    <member refid="namespacemodule1_1a61dddae5414f5c9240183197f88b623a" kind="variable"><name>init_param</name></member>
+    <member refid="namespacemodule1_1aea3cdae47dbb141c32ac55f3164175e9" kind="variable"><name>mode</name></member>
+    <member refid="namespacemodule1_1abec556fccc61fa9c1871cb4202e8478d" kind="function"><name>ignore_warn</name></member>
+    <member refid="namespacemodule1_1ac829197eb2fd5e1250857354c0d00a0e" kind="function"><name>fill_na</name></member>
+    <member refid="namespacemodule1_1a0cd1d2ec920119ec65d51b2876f5f010" kind="function"><name>fill_na_with_mode</name></member>
+    <member refid="namespacemodule1_1a765fc990ce2d34a2f439381582906d53" kind="function"><name>num_transform</name></member>
+  </compound>
+  <compound refid="namespacemodule2" kind="namespace"><name>module2</name>
+    <member refid="namespacemodule2_1ab034a5c053db6fae28d124a0eac5207d" kind="variable"><name>__author__</name></member>
+    <member refid="namespacemodule2_1afff88dd0f9db06d471f873d1a20bacc5" kind="variable"><name>sml</name></member>
+    <member refid="namespacemodule2_1a3347685c7aef8a8eb79b05b1c09c33c4" kind="variable"><name>train</name></member>
+    <member refid="namespacemodule2_1a75362f13fcd83d121a183fb54ca5b05b" kind="variable"><name>test</name></member>
+    <member refid="namespacemodule2_1a6978f086f6668d16c63532c42f357afc" kind="variable"><name>ntrain</name></member>
+    <member refid="namespacemodule2_1a0ebc82bf3a7871b08e384d71b7fc8cf9" kind="variable"><name>ntest</name></member>
+    <member refid="namespacemodule2_1a7a46ec8fc0f9752ed65fa94b8faecc71" kind="variable"><name>data</name></member>
+    <member refid="namespacemodule2_1a39441c175fc6117e940a4706bc9888e1" kind="variable"><name>match</name></member>
+    <member refid="namespacemodule2_1ac2a00588b38da1a36b6b7eb472a0197c" kind="variable"><name>new</name></member>
+    <member refid="namespacemodule2_1a52f26cdec3b6bcc6719c7da7cc6f29b0" kind="variable"><name>y_train</name></member>
+    <member refid="namespacemodule2_1a0bb075e28f913eab253e054186ca52d5" kind="variable"><name>train_avg</name></member>
+    <member refid="namespacemodule2_1ad25578063fd609cdaf97661e717d7c84" kind="variable"><name>test_avg</name></member>
+    <member refid="namespacemodule2_1af25b8f47c3c06b5c30d83efd18363d59" kind="variable"><name>param_test3</name></member>
+    <member refid="namespacemodule2_1ac5a96f8f4ae1e6c74934954063b4c8ce" kind="variable"><name>estimator</name></member>
+    <member refid="namespacemodule2_1afeaf0b81d5a25537633d88c7a3c805db" kind="variable"><name>init_param</name></member>
+    <member refid="namespacemodule2_1a3118a836fc62a15c7d748d15d323d054" kind="variable"><name>param_test5</name></member>
+    <member refid="namespacemodule2_1a1d4ad39251aa72fbf4a890eb9d71c1fc" kind="variable"><name>xgb</name></member>
+    <member refid="namespacemodule2_1a952bfa729283c6f5a46b54ae6695a430" kind="function"><name>logger_set</name></member>
+    <member refid="namespacemodule2_1a17970b5263fb1ce965b102f8e6c2d490" kind="function"><name>calculater</name></member>
+    <member refid="namespacemodule2_1a32a6f7dc4e982f0a184ff9aafbd725b0" kind="function"><name>createSamples</name></member>
+    <member refid="namespacemodule2_1a83b9c674ba1660dc95955f1d979c06ea" kind="function"><name>intRange</name></member>
+    <member refid="namespacemodule2_1a98daa4f040953810515efc308c2d7c60" kind="function"><name>is_converge</name></member>
+    <member refid="namespacemodule2_1a63527da6341bbae7b77fe47e535900f3" kind="function"><name>expand_both</name></member>
+    <member refid="namespacemodule2_1ace5dcd12871e3d471efb1c41f4b6fe5b" kind="function"><name>combine_dict</name></member>
+    <member refid="namespacemodule2_1af0e3deeab0189382007cb9a36a9cce83" kind="function"><name>auto_tuning</name></member>
+    <member refid="namespacemodule2_1a9daae146f514c5ec6c2a6aea29d85f06" kind="function"><name>ignore_warn</name></member>
+  </compound>
+  <compound refid="namespacespeedml" kind="namespace"><name>speedml</name>
+    <member refid="namespacespeedml_1a412a40be3b1fe2b964165f5f7812acb7" kind="variable"><name>_RELEASE</name></member>
+  </compound>
+  <compound refid="namespacespeedml_1_1base" kind="namespace"><name>speedml::base</name>
+  </compound>
+  <compound refid="namespacespeedml_1_1feature" kind="namespace"><name>speedml::feature</name>
+  </compound>
+  <compound refid="namespacespeedml_1_1model" kind="namespace"><name>speedml::model</name>
+  </compound>
+  <compound refid="namespacespeedml_1_1plot" kind="namespace"><name>speedml::plot</name>
+  </compound>
+  <compound refid="namespacespeedml_1_1tuning" kind="namespace"><name>speedml::tuning</name>
+    <member refid="namespacespeedml_1_1tuning_1a12c6c6bcc210247936c2861a9f324034" kind="variable"><name>lgb</name></member>
+    <member refid="namespacespeedml_1_1tuning_1a5138f753756d070fb594d1077c20c412" kind="function"><name>method_name</name></member>
+    <member refid="namespacespeedml_1_1tuning_1a4b83a539a60fd353f3df1e6f9dee9af1" kind="function"><name>logger_set</name></member>
+    <member refid="namespacespeedml_1_1tuning_1a653499daeaeff9bc58661ad7a5c83927" kind="function"><name>calculater</name></member>
+    <member refid="namespacespeedml_1_1tuning_1ad770298006b236e7d80cd781840cb8cf" kind="function"><name>createSamples</name></member>
+    <member refid="namespacespeedml_1_1tuning_1a40de4d6d84550358fd0b2999b965183d" kind="function"><name>intRange</name></member>
+    <member refid="namespacespeedml_1_1tuning_1a00f0eede9f8b27c2dbaed10f002a3d88" kind="function"><name>is_converge</name></member>
+    <member refid="namespacespeedml_1_1tuning_1a684cfcff90b12ee04e27aa0673879e50" kind="function"><name>expand_both</name></member>
+    <member refid="namespacespeedml_1_1tuning_1ad7e1c888c9dd782ee8ac10af388666c2" kind="function"><name>combine_dict</name></member>
+    <member refid="namespacespeedml_1_1tuning_1af2ccae3301081cacce0ea5066bdc8c19" kind="function"><name>get_decimal_place</name></member>
+    <member refid="namespacespeedml_1_1tuning_1a16b2205537a834d2e0d48018a6d3e15b" kind="function"><name>auto_tuning</name></member>
+  </compound>
+  <compound refid="namespacespeedml_1_1util" kind="namespace"><name>speedml::util</name>
+  </compound>
+  <compound refid="namespacespeedml_1_1xgb" kind="namespace"><name>speedml::xgb</name>
+  </compound>
+  <compound refid="namespacetest1" kind="namespace"><name>test1</name>
+  </compound>
+  <compound refid="____init_____8py" kind="file"><name>__init__.py</name>
+  </compound>
+  <compound refid="base_8py" kind="file"><name>base.py</name>
+  </compound>
+  <compound refid="feature_8py" kind="file"><name>feature.py</name>
+  </compound>
+  <compound refid="model_8py" kind="file"><name>model.py</name>
+  </compound>
+  <compound refid="plot_8py" kind="file"><name>plot.py</name>
+  </compound>
+  <compound refid="house_price_8py" kind="file"><name>housePrice.py</name>
+  </compound>
+  <compound refid="module1_8py" kind="file"><name>module1.py</name>
+  </compound>
+  <compound refid="module2_8py" kind="file"><name>module2.py</name>
+  </compound>
+  <compound refid="test1_8py" kind="file"><name>test1.py</name>
+  </compound>
+  <compound refid="tuning_8py" kind="file"><name>tuning.py</name>
+  </compound>
+  <compound refid="util_8py" kind="file"><name>util.py</name>
+  </compound>
+  <compound refid="xgb_8py" kind="file"><name>xgb.py</name>
+  </compound>
+  <compound refid="dir_275089585c7fc1b5fd5d7d42c69cb1da" kind="dir"><name>D:</name>
+  </compound>
+  <compound refid="dir_24ebd0e33a774ce77336038382dcc791" kind="dir"><name>D:/programs/Python3.5.2/Lib</name>
+  </compound>
+  <compound refid="dir_15cb5c1bafb54632db093b70212d3561" kind="dir"><name>D:/programs</name>
+  </compound>
+  <compound refid="dir_e58b7b1b5c16116eb89476b839f0c2f5" kind="dir"><name>D:/programs/Python3.5.2</name>
+  </compound>
+  <compound refid="dir_a7de0ca832378f6c2183b3dd48fac4e2" kind="dir"><name>D:/programs/Python3.5.2/Lib/site-packages</name>
+  </compound>
+  <compound refid="dir_81701184b37cb52f412233f2ff407c2d" kind="dir"><name>D:/programs/Python3.5.2/Lib/site-packages/speedml</name>
+  </compound>
+  <compound refid="dir_89e1d3d2d465b60f113af048664be39c" kind="dir"><name>D:/programs/Python3.5.2/Lib/site-packages/speedml/test</name>
+  </compound>
+</doxygenindex>

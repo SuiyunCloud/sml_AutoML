@@ -196,3 +196,30 @@ y_train.shape
 
 data2 = train
 data2['SalePrice'] = y_train
+
+
+
+
+#print(data2)
+from speedml.tuning import auto_tuning
+from xgboost.sklearn import XGBRegressor
+from sklearn import cross_validation, metrics
+from sklearn.cross_validation import train_test_split
+from collections import defaultdict, OrderedDict
+param_test4 = OrderedDict()
+param_test4['n_estimators']=(15, 200, 2, 10000)
+param_test4['max_depth']=(3, 10, 2, 1000)
+param_test4['min_child_weight']=(0.01, 10, 0.00001, 10000)
+param_test4['gamma']=(0, 1, -1, -1)
+param_test4['subsample']=(0.5, 0.9, 0.001, 1)
+param_test4['colsample_bytree']=(0.5, 0.9, 0.001, 1)
+param_test4['scale_pos_weight']=(0.1, 10, 0.001, 100)
+param_test4['learning_rate']=(0.05, 0.3, 0.0001, 0.9)
+estimator = XGBRegressor
+init_param = {'learning_rate': 0.1, 'n_estimators': 15,
+              'max_depth': 5, 'min_child_weight': 0.9, 'gamma': 0,
+              'subsample': 0.8, 'colsample_bytree': 0.8,
+              'nthread': 4, 'scale_pos_weight': 1, 'seed': 27, 'eval_metric':'auc'}
+
+if __name__ == '__main__':
+    xgb = auto_tuning(estimator, init_param, param_test4, data2, target='SalePrice')
