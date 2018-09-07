@@ -403,7 +403,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/housePrice.py" line="85" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/housePrice.py" bodystart="85" bodyend="90"/>
-        <references refid="namespacemodule1_1aea3cdae47dbb141c32ac55f3164175e9" compoundref="module1_8py" startline="213">module1.mode</references>
       </memberdef>
       <memberdef kind="function" id="namespacehouse_price_1a11a87b394d204862f98625eb60c53322" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>

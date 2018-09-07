@@ -227,20 +227,6 @@
         </inbodydescription>
         <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module2.py" line="397" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module2.py" bodystart="397" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="namespacemodule2_1a1d4ad39251aa72fbf4a890eb9d71c1fc" prot="public" static="no" mutable="no">
-        <type>tuple</type>
-        <definition>tuple module2.xgb</definition>
-        <argsstring></argsstring>
-        <name>xgb</name>
-        <initializer>= <ref refid="namespacemodule2_1af0e3deeab0189382007cb9a36a9cce83" kindref="member">auto_tuning</ref>(<ref refid="namespacemodule2_1ac5a96f8f4ae1e6c74934954063b4c8ce" kindref="member">estimator</ref>, <ref refid="namespacemodule2_1afeaf0b81d5a25537633d88c7a3c805db" kindref="member">init_param</ref>, <ref refid="namespacemodule2_1a3118a836fc62a15c7d748d15d323d054" kindref="member">param_test5</ref>, <ref refid="namespacemodule2_1a3347685c7aef8a8eb79b05b1c09c33c4" kindref="member">train</ref>)</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module2.py" line="423" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module2.py" bodystart="423" bodyend="-1"/>
-      </memberdef>
       </sectiondef>
       <sectiondef kind="func">
       <memberdef kind="function" id="namespacemodule2_1a952bfa729283c6f5a46b54ae6695a430" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">

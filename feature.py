@@ -10,10 +10,16 @@ from speedml.base import Base
 from speedml.util import DataFrameImputer
 
 import numpy as np
+import pandas as pd
+
 from sklearn.preprocessing import LabelEncoder
 import re
 
 class Feature(Base):
+ 
+    #def __init__(self):
+        #Base.data = Base.train.append(Base.test)
+    
     def drop(self, features):
         """
         Drop one or more list of strings naming ``features`` from train and test datasets.
@@ -281,9 +287,28 @@ class Feature(Base):
         Base.test[Base.target] = -1
         combine = Base.train.append(Base.test)
 
-        combine[newFeature] = pd.cat(combine[x], bins, right=True, labels=None, retbins=False, precision=3,
-        include_lowest=False)
+        combine[newFeature] = pd.cut(combine[refFeature], bins, right, labels, retbins, precision,include_lowest)
         
         Base.train = combine[0:Base.train.shape[0]]
         Base.test = combine[Base.train.shape[0]::]
         Base.test = Base.test.drop([Base.target], axis=1)
+
+    def mapFunction(self,fun,feature1,feature2=None):
+        if feature2 == None:
+            feature2 = feature1
+        Base.train[feature2] = Base.train[feature1].map(fun)
+        Base.test[feature2] = Base.test[feature1].map(fun)
+
+    def get_dummies(self, prefix=None, prefix_sep='_', dummy_na=False,
+                columns=None, sparse=False, drop_first=False):
+        Base.test[Base.target] = -1
+        combine = Base.train.append(Base.test)
+        combine = pd.get_dummies(combine, prefix=prefix, prefix_sep=prefix_sep, dummy_na=dummy_na,
+                columns=columns, sparse=sparse, drop_first=drop_first)
+
+        Base.train = combine[0:Base.train.shape[0]]
+        Base.test = combine[Base.train.shape[0]::]
+        Base.test = Base.test.drop([Base.target], axis=1)
+
+
+    

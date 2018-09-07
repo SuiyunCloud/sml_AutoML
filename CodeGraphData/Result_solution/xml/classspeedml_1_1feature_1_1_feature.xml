@@ -3,6 +3,22 @@
   <compounddef id="classspeedml_1_1feature_1_1_feature" kind="class" prot="public">
     <compoundname>speedml::feature::Feature</compoundname>
     <basecompoundref refid="classspeedml_1_1base_1_1_base" prot="public" virt="non-virtual">speedml.base.Base</basecompoundref>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classspeedml_1_1feature_1_1_feature_1a8e3c0111f0cdbbb4b3f1adc4633f8aad" prot="private" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple speedml.feature.Feature::__combine__</definition>
+        <argsstring></argsstring>
+        <name>__combine__</name>
+        <initializer>= Base.train.append(Base.test)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" line="19" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
       <sectiondef kind="public-func">
       <memberdef kind="function" id="classspeedml_1_1feature_1_1_feature_1aa9b9980cf695b79c9e487ba0fdbf02b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -16,7 +32,7 @@
 </verbatim> </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" line="17" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" bodystart="17" bodyend="29"/>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" line="22" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" bodystart="22" bodyend="34"/>
       </memberdef>
       <memberdef kind="function" id="classspeedml_1_1feature_1_1_feature_1ad525055a5db60d31b27cf8c53a8948b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -30,8 +46,8 @@
 </verbatim> </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" line="30" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" bodystart="30" bodyend="46"/>
-        <references refid="classspeedml_1_1feature_1_1_feature_1a18e4c347857e70e1d30e1fa754ec8e2c" compoundref="feature_8py" startline="126" endline="132">speedml.feature.Feature.sum</references>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" line="35" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" bodystart="35" bodyend="51"/>
+        <references refid="classspeedml_1_1feature_1_1_feature_1a18e4c347857e70e1d30e1fa754ec8e2c" compoundref="feature_8py" startline="131" endline="137">speedml.feature.Feature.sum</references>
       </memberdef>
       <memberdef kind="function" id="classspeedml_1_1feature_1_1_feature_1a1c0fb1655c629f85f19725d7d7a224dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -45,7 +61,7 @@
 </verbatim> </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" line="47" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" bodystart="47" bodyend="53"/>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" line="52" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" bodystart="52" bodyend="58"/>
       </memberdef>
       <memberdef kind="function" id="classspeedml_1_1feature_1_1_feature_1aea22185cedbbbc5bc44cb53ac55f17be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -59,8 +75,8 @@
 </verbatim> </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" line="54" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" bodystart="54" bodyend="65"/>
-        <references refid="classspeedml_1_1feature_1_1_feature_1a18e4c347857e70e1d30e1fa754ec8e2c" compoundref="feature_8py" startline="126" endline="132">speedml.feature.Feature.sum</references>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" line="59" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" bodystart="59" bodyend="70"/>
+        <references refid="classspeedml_1_1feature_1_1_feature_1a18e4c347857e70e1d30e1fa754ec8e2c" compoundref="feature_8py" startline="131" endline="137">speedml.feature.Feature.sum</references>
       </memberdef>
       <memberdef kind="function" id="classspeedml_1_1feature_1_1_feature_1ac9ef7e3699b654410a43d0f1ba146a0f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -74,8 +90,8 @@
 </verbatim> </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" line="66" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" bodystart="66" bodyend="83"/>
-        <referencedby refid="classspeedml_1_1feature_1_1_feature_1a5f991ac16b995cd0794fe5117c59ba12" compoundref="feature_8py" startline="147" endline="156">speedml.feature.Feature.divide</referencedby>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" line="71" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" bodystart="71" bodyend="88"/>
+        <referencedby refid="classspeedml_1_1feature_1_1_feature_1a5f991ac16b995cd0794fe5117c59ba12" compoundref="feature_8py" startline="152" endline="161">speedml.feature.Feature.divide</referencedby>
       </memberdef>
       <memberdef kind="function" id="classspeedml_1_1feature_1_1_feature_1a33a0f9052b7ab19f0e01eac2825544ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -89,7 +105,7 @@
 </verbatim> </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" line="84" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" bodystart="84" bodyend="101"/>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" line="89" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" bodystart="89" bodyend="106"/>
       </memberdef>
       <memberdef kind="function" id="classspeedml_1_1feature_1_1_feature_1a4fc59f6174e296d5e0c950719882d095" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -103,8 +119,8 @@
 </verbatim> </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" line="108" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" bodystart="108" bodyend="118"/>
-        <references refid="classspeedml_1_1feature_1_1_feature_1a8789599466c18fc5e34482daa8d1c7d7" compoundref="feature_8py" startline="102" endline="107">speedml.feature.Feature._density_by_feature</references>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" line="113" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" bodystart="113" bodyend="123"/>
+        <references refid="classspeedml_1_1feature_1_1_feature_1a8789599466c18fc5e34482daa8d1c7d7" compoundref="feature_8py" startline="107" endline="112">speedml.feature.Feature._density_by_feature</references>
       </memberdef>
       <memberdef kind="function" id="classspeedml_1_1feature_1_1_feature_1a7d28f8ab4aa9194e6c0f479e6a3b0343" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -118,7 +134,7 @@
 </verbatim> </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" line="119" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" bodystart="119" bodyend="125"/>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" line="124" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" bodystart="124" bodyend="130"/>
       </memberdef>
       <memberdef kind="function" id="classspeedml_1_1feature_1_1_feature_1a18e4c347857e70e1d30e1fa754ec8e2c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -132,9 +148,9 @@
 </verbatim> </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" line="126" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" bodystart="126" bodyend="132"/>
-        <referencedby refid="classspeedml_1_1feature_1_1_feature_1aea22185cedbbbc5bc44cb53ac55f17be" compoundref="feature_8py" startline="54" endline="65">speedml.feature.Feature.fillna</referencedby>
-        <referencedby refid="classspeedml_1_1feature_1_1_feature_1ad525055a5db60d31b27cf8c53a8948b3" compoundref="feature_8py" startline="30" endline="46">speedml.feature.Feature.impute</referencedby>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" line="131" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" bodystart="131" bodyend="137"/>
+        <referencedby refid="classspeedml_1_1feature_1_1_feature_1aea22185cedbbbc5bc44cb53ac55f17be" compoundref="feature_8py" startline="59" endline="70">speedml.feature.Feature.fillna</referencedby>
+        <referencedby refid="classspeedml_1_1feature_1_1_feature_1ad525055a5db60d31b27cf8c53a8948b3" compoundref="feature_8py" startline="35" endline="51">speedml.feature.Feature.impute</referencedby>
       </memberdef>
       <memberdef kind="function" id="classspeedml_1_1feature_1_1_feature_1a1f4e39a890bfabf0f73236efe44477f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -148,7 +164,7 @@
 </verbatim> </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" line="133" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" bodystart="133" bodyend="139"/>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" line="138" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" bodystart="138" bodyend="144"/>
       </memberdef>
       <memberdef kind="function" id="classspeedml_1_1feature_1_1_feature_1ab079bb64ca93c9af52e9ce69d5f7e069" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -162,7 +178,7 @@
 </verbatim> </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" line="140" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" bodystart="140" bodyend="146"/>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" line="145" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" bodystart="145" bodyend="151"/>
       </memberdef>
       <memberdef kind="function" id="classspeedml_1_1feature_1_1_feature_1a5f991ac16b995cd0794fe5117c59ba12" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -176,8 +192,8 @@
 </verbatim> </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" line="147" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" bodystart="147" bodyend="156"/>
-        <references refid="classspeedml_1_1feature_1_1_feature_1ac9ef7e3699b654410a43d0f1ba146a0f" compoundref="feature_8py" startline="66" endline="83">speedml.feature.Feature.replace</references>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" line="152" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" bodystart="152" bodyend="161"/>
+        <references refid="classspeedml_1_1feature_1_1_feature_1ac9ef7e3699b654410a43d0f1ba146a0f" compoundref="feature_8py" startline="71" endline="88">speedml.feature.Feature.replace</references>
       </memberdef>
       <memberdef kind="function" id="classspeedml_1_1feature_1_1_feature_1a647c1981d66ee751e35ffb6c41704168" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -191,7 +207,7 @@
 </verbatim> </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" line="157" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" bodystart="157" bodyend="163"/>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" line="162" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" bodystart="162" bodyend="168"/>
       </memberdef>
       <memberdef kind="function" id="classspeedml_1_1feature_1_1_feature_1a771eebb4a2f2ca771b8e4e55ecefea06" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -205,7 +221,7 @@
 </verbatim> </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" line="164" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" bodystart="164" bodyend="170"/>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" line="169" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" bodystart="169" bodyend="175"/>
       </memberdef>
       <memberdef kind="function" id="classspeedml_1_1feature_1_1_feature_1a3234f7010a86f28072715e7e9fcf84a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -219,7 +235,7 @@
 </verbatim> </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" line="171" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" bodystart="171" bodyend="177"/>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" line="176" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" bodystart="176" bodyend="182"/>
       </memberdef>
       <memberdef kind="function" id="classspeedml_1_1feature_1_1_feature_1aaba9103b85b548a5983f5ce33021ef0e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -233,7 +249,7 @@
 </verbatim> </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" line="178" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" bodystart="178" bodyend="184"/>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" line="183" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" bodystart="183" bodyend="189"/>
       </memberdef>
       <memberdef kind="function" id="classspeedml_1_1feature_1_1_feature_1a230b7afc799bd71a092e773abb2b89b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -247,8 +263,8 @@
 </verbatim> </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" line="192" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" bodystart="192" bodyend="198"/>
-        <references refid="classspeedml_1_1feature_1_1_feature_1afdc31aa9e6c8ad55d634c0f8bcac1737" compoundref="feature_8py" startline="185" endline="191">speedml.feature.Feature._regex_text</references>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" line="197" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" bodystart="197" bodyend="203"/>
+        <references refid="classspeedml_1_1feature_1_1_feature_1afdc31aa9e6c8ad55d634c0f8bcac1737" compoundref="feature_8py" startline="190" endline="196">speedml.feature.Feature._regex_text</references>
       </memberdef>
       <memberdef kind="function" id="classspeedml_1_1feature_1_1_feature_1a8b3638cc1b068c368952692fb50e8c1b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -262,7 +278,113 @@
 </verbatim> </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" line="199" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" bodystart="199" bodyend="213"/>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" line="204" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" bodystart="204" bodyend="218"/>
+        <references refid="classspeedml_1_1feature_1_1_feature_1a75bff6d8734b5ef1f5399f0262c98ea0" compoundref="feature_8py" startline="220" endline="294">speedml.feature.Feature.cut</references>
+      </memberdef>
+      <memberdef kind="function" id="classspeedml_1_1feature_1_1_feature_1a75bff6d8734b5ef1f5399f0262c98ea0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def speedml.feature.Feature.cut</definition>
+        <argsstring></argsstring>
+        <name>cut</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return indices of half-open bins to which each value of `x` belongs.
+
+Parameters
+----------
+refFeature: the feature which will be cutted
+newFeature: new name of the feature which is the result of pd.cut
+bins : int, sequence of scalars, or IntervalIndex
+    If `bins` is an int, it defines the number of equal-width bins in the
+    range of `x`. However, in this case, the range of `x` is extended
+    by .1% on each side to include the min or max values of `x`. If
+    `bins` is a sequence it defines the bin edges allowing for
+    non-uniform bin width. No extension of the range of `x` is done in
+    this case.
+right : bool, optional
+    Indicates whether the bins include the rightmost edge or not. If
+    right == True (the default), then the bins [1,2,3,4] indicate
+    (1,2], (2,3], (3,4].
+labels : array or boolean, default None
+    Used as labels for the resulting bins. Must be of the same length as
+    the resulting bins. If False, return only integer indicators of the
+    bins.
+retbins : bool, optional
+    Whether to return the bins or not. Can be useful if bins is given
+    as a scalar.
+precision : int, optional
+    The precision at which to store and display the bins labels
+include_lowest : bool, optional
+    Whether the first interval should be left-inclusive or not.
+
+Returns
+-------
+out : Categorical or Series or array of integers if labels is False
+    The return type (Categorical or Series) depends on the input: a Series
+    of type category if input is a Series else Categorical. Bins are
+    represented as categories when categorical data is returned.
+bins : ndarray of floats
+    Returned only if `retbins` is True.
+
+Notes
+-----
+The `cut` function can be useful for going from a continuous variable to
+a categorical variable. For example, `cut` could convert ages to groups
+of age ranges.
+
+Any NA values will be NA in the result.  Out of bounds values will be NA in
+the resulting Categorical object
+
+
+Examples
+--------
+&gt;&gt;&gt; pd.cut(np.array([.2, 1.4, 2.5, 6.2, 9.7, 2.1]), 3, retbins=True)
+... # doctest: +ELLIPSIS
+([(0.19, 3.367], (0.19, 3.367], (0.19, 3.367], (3.367, 6.533], ...
+Categories (3, interval[float64]): [(0.19, 3.367] &lt; (3.367, 6.533] ...
+
+&gt;&gt;&gt; pd.cut(np.array([.2, 1.4, 2.5, 6.2, 9.7, 2.1]),
+...        3, labels=[&quot;good&quot;, &quot;medium&quot;, &quot;bad&quot;])
+... # doctest: +SKIP
+[good, good, good, medium, bad, good]
+Categories (3, object): [good &lt; medium &lt; bad]
+
+&gt;&gt;&gt; pd.cut(np.ones(5), 4, labels=False)
+array([1, 1, 1, 1, 1])
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" line="219" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" bodystart="220" bodyend="294"/>
+        <referencedby refid="classspeedml_1_1feature_1_1_feature_1a8b3638cc1b068c368952692fb50e8c1b" compoundref="feature_8py" startline="204" endline="218">speedml.feature.Feature.labels</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classspeedml_1_1feature_1_1_feature_1a3d6f963fd571ad1f4d9d781b7c1e7a07" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def speedml.feature.Feature.mapFunction</definition>
+        <argsstring></argsstring>
+        <name>mapFunction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" line="295" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" bodystart="295" bodyend="300"/>
+        <references refid="classspeedml_1_1feature_1_1_feature_1a1dd5a51e1c4a407b248c7dd39956c18a" compoundref="feature_8py" startline="302" endline="312">speedml.feature.Feature.get_dummies</references>
+      </memberdef>
+      <memberdef kind="function" id="classspeedml_1_1feature_1_1_feature_1a1dd5a51e1c4a407b248c7dd39956c18a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def speedml.feature.Feature.get_dummies</definition>
+        <argsstring></argsstring>
+        <name>get_dummies</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" line="301" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" bodystart="302" bodyend="312"/>
+        <referencedby refid="classspeedml_1_1feature_1_1_feature_1a3d6f963fd571ad1f4d9d781b7c1e7a07" compoundref="feature_8py" startline="295" endline="300">speedml.feature.Feature.mapFunction</referencedby>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -277,8 +399,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" line="102" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" bodystart="102" bodyend="107"/>
-        <referencedby refid="classspeedml_1_1feature_1_1_feature_1a4fc59f6174e296d5e0c950719882d095" compoundref="feature_8py" startline="108" endline="118">speedml.feature.Feature.density</referencedby>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" line="107" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" bodystart="107" bodyend="112"/>
+        <referencedby refid="classspeedml_1_1feature_1_1_feature_1a4fc59f6174e296d5e0c950719882d095" compoundref="feature_8py" startline="113" endline="123">speedml.feature.Feature.density</referencedby>
       </memberdef>
       <memberdef kind="function" id="classspeedml_1_1feature_1_1_feature_1afdc31aa9e6c8ad55d634c0f8bcac1737" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -291,8 +413,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" line="185" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" bodystart="185" bodyend="191"/>
-        <referencedby refid="classspeedml_1_1feature_1_1_feature_1a230b7afc799bd71a092e773abb2b89b5" compoundref="feature_8py" startline="192" endline="198">speedml.feature.Feature.extract</referencedby>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" line="190" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" bodystart="190" bodyend="196"/>
+        <referencedby refid="classspeedml_1_1feature_1_1_feature_1a230b7afc799bd71a092e773abb2b89b5" compoundref="feature_8py" startline="197" endline="203">speedml.feature.Feature.extract</referencedby>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -333,12 +455,14 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" line="16" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" bodystart="16" bodyend="213"/>
+    <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" line="17" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/feature.py" bodystart="17" bodyend="312"/>
     <listofallmembers>
+      <member refid="classspeedml_1_1feature_1_1_feature_1a8e3c0111f0cdbbb4b3f1adc4633f8aad" prot="private" virt="non-virtual"><scope>speedml::feature::Feature</scope><name>__combine__</name></member>
       <member refid="classspeedml_1_1feature_1_1_feature_1a8789599466c18fc5e34482daa8d1c7d7" prot="private" virt="non-virtual"><scope>speedml::feature::Feature</scope><name>_density_by_feature</name></member>
       <member refid="classspeedml_1_1feature_1_1_feature_1afdc31aa9e6c8ad55d634c0f8bcac1737" prot="private" virt="non-virtual"><scope>speedml::feature::Feature</scope><name>_regex_text</name></member>
       <member refid="classspeedml_1_1feature_1_1_feature_1a7d28f8ab4aa9194e6c0f479e6a3b0343" prot="public" virt="non-virtual"><scope>speedml::feature::Feature</scope><name>add</name></member>
       <member refid="classspeedml_1_1feature_1_1_feature_1a771eebb4a2f2ca771b8e4e55ecefea06" prot="public" virt="non-virtual"><scope>speedml::feature::Feature</scope><name>concat</name></member>
+      <member refid="classspeedml_1_1feature_1_1_feature_1a75bff6d8734b5ef1f5399f0262c98ea0" prot="public" virt="non-virtual"><scope>speedml::feature::Feature</scope><name>cut</name></member>
       <member refid="classspeedml_1_1base_1_1_base_1af5ca411e6e3773eabfbe468bd08b08d9" prot="public" virt="non-virtual"><scope>speedml::feature::Feature</scope><name>data_n</name></member>
       <member refid="classspeedml_1_1feature_1_1_feature_1a4fc59f6174e296d5e0c950719882d095" prot="public" virt="non-virtual"><scope>speedml::feature::Feature</scope><name>density</name></member>
       <member refid="classspeedml_1_1feature_1_1_feature_1a1f4e39a890bfabf0f73236efe44477f5" prot="public" virt="non-virtual"><scope>speedml::feature::Feature</scope><name>diff</name></member>
@@ -346,9 +470,11 @@
       <member refid="classspeedml_1_1feature_1_1_feature_1aa9b9980cf695b79c9e487ba0fdbf02b8" prot="public" virt="non-virtual"><scope>speedml::feature::Feature</scope><name>drop</name></member>
       <member refid="classspeedml_1_1feature_1_1_feature_1a230b7afc799bd71a092e773abb2b89b5" prot="public" virt="non-virtual"><scope>speedml::feature::Feature</scope><name>extract</name></member>
       <member refid="classspeedml_1_1feature_1_1_feature_1aea22185cedbbbc5bc44cb53ac55f17be" prot="public" virt="non-virtual"><scope>speedml::feature::Feature</scope><name>fillna</name></member>
+      <member refid="classspeedml_1_1feature_1_1_feature_1a1dd5a51e1c4a407b248c7dd39956c18a" prot="public" virt="non-virtual"><scope>speedml::feature::Feature</scope><name>get_dummies</name></member>
       <member refid="classspeedml_1_1feature_1_1_feature_1ad525055a5db60d31b27cf8c53a8948b3" prot="public" virt="non-virtual"><scope>speedml::feature::Feature</scope><name>impute</name></member>
       <member refid="classspeedml_1_1feature_1_1_feature_1a8b3638cc1b068c368952692fb50e8c1b" prot="public" virt="non-virtual"><scope>speedml::feature::Feature</scope><name>labels</name></member>
       <member refid="classspeedml_1_1feature_1_1_feature_1a3234f7010a86f28072715e7e9fcf84a2" prot="public" virt="non-virtual"><scope>speedml::feature::Feature</scope><name>list_len</name></member>
+      <member refid="classspeedml_1_1feature_1_1_feature_1a3d6f963fd571ad1f4d9d781b7c1e7a07" prot="public" virt="non-virtual"><scope>speedml::feature::Feature</scope><name>mapFunction</name></member>
       <member refid="classspeedml_1_1feature_1_1_feature_1a1c0fb1655c629f85f19725d7d7a224dc" prot="public" virt="non-virtual"><scope>speedml::feature::Feature</scope><name>mapping</name></member>
       <member refid="classspeedml_1_1feature_1_1_feature_1a33a0f9052b7ab19f0e01eac2825544ce" prot="public" virt="non-virtual"><scope>speedml::feature::Feature</scope><name>outliers</name></member>
       <member refid="classspeedml_1_1feature_1_1_feature_1ab079bb64ca93c9af52e9ce69d5f7e069" prot="public" virt="non-virtual"><scope>speedml::feature::Feature</scope><name>product</name></member>

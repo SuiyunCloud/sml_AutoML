@@ -429,9 +429,9 @@
 <codeline lineno="419"><highlight class="normal">estimator<sp/>=<sp/>lgb.LGBMClassifier</highlight></codeline>
 <codeline lineno="420"><highlight class="normal">init_param<sp/>=<sp/>{}</highlight></codeline>
 <codeline lineno="421"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>__name__<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;__main__&quot;</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="422"><highlight class="normal"><sp/><sp/><sp/><sp/>print(</highlight><highlight class="stringliteral">&apos;hello&apos;</highlight><highlight class="normal">)</highlight></codeline>
-<codeline lineno="423" refid="namespacemodule2_1a1d4ad39251aa72fbf4a890eb9d71c1fc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>xgb<sp/>=<sp/><ref refid="namespacemodule2_1af0e3deeab0189382007cb9a36a9cce83" kindref="member">auto_tuning</ref>(estimator,<sp/>init_param,<sp/>param_test5,<sp/>train)</highlight></codeline>
-<codeline lineno="424"><highlight class="normal"></highlight></codeline>
+<codeline lineno="422"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>print(&apos;hello&apos;)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="423"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>xgb<sp/>=<sp/>auto_tuning(estimator,<sp/>init_param,<sp/>param_test5,<sp/>train)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="424"><highlight class="normal"><sp/><sp/><sp/>automl<sp/>=<sp/>autosklearn.classification.</highlight></codeline>
     </programlisting>
     <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/module2.py"/>
   </compounddef>

@@ -94,7 +94,7 @@
 <codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="85" refid="namespacehouse_price_1a0be6b4ef729fb48e16a608bed8bf9b52" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacehouse_price_1a0be6b4ef729fb48e16a608bed8bf9b52" kindref="member">fill_na_with_mode</ref>(items):</highlight></codeline>
 <codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>item<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>items:</highlight></codeline>
-<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>data[item]<sp/>=<sp/>data[item].fillna(data[item].<ref refid="namespacemodule1_1aea3cdae47dbb141c32ac55f3164175e9" kindref="member">mode</ref>()[0])</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>data[item]<sp/>=<sp/>data[item].fillna(data[item].mode()[0])</highlight></codeline>
 <codeline lineno="88"><highlight class="normal"></highlight></codeline>
 <codeline lineno="89"><highlight class="normal"></highlight></codeline>
 <codeline lineno="90"><highlight class="normal"></highlight></codeline>

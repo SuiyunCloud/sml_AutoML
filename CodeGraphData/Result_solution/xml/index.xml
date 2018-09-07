@@ -9,6 +9,7 @@
     <member refid="classspeedml_1_1util_1_1_data_frame_imputer_1a54750e6f37675436fa4434fe214343c6" kind="function"><name>transform</name></member>
   </compound>
   <compound refid="classspeedml_1_1feature_1_1_feature" kind="class"><name>speedml::feature::Feature</name>
+    <member refid="classspeedml_1_1feature_1_1_feature_1a8e3c0111f0cdbbb4b3f1adc4633f8aad" kind="variable"><name>__combine__</name></member>
     <member refid="classspeedml_1_1feature_1_1_feature_1aa9b9980cf695b79c9e487ba0fdbf02b8" kind="function"><name>drop</name></member>
     <member refid="classspeedml_1_1feature_1_1_feature_1ad525055a5db60d31b27cf8c53a8948b3" kind="function"><name>impute</name></member>
     <member refid="classspeedml_1_1feature_1_1_feature_1a1c0fb1655c629f85f19725d7d7a224dc" kind="function"><name>mapping</name></member>
@@ -27,6 +28,9 @@
     <member refid="classspeedml_1_1feature_1_1_feature_1aaba9103b85b548a5983f5ce33021ef0e" kind="function"><name>word_count</name></member>
     <member refid="classspeedml_1_1feature_1_1_feature_1a230b7afc799bd71a092e773abb2b89b5" kind="function"><name>extract</name></member>
     <member refid="classspeedml_1_1feature_1_1_feature_1a8b3638cc1b068c368952692fb50e8c1b" kind="function"><name>labels</name></member>
+    <member refid="classspeedml_1_1feature_1_1_feature_1a75bff6d8734b5ef1f5399f0262c98ea0" kind="function"><name>cut</name></member>
+    <member refid="classspeedml_1_1feature_1_1_feature_1a3d6f963fd571ad1f4d9d781b7c1e7a07" kind="function"><name>mapFunction</name></member>
+    <member refid="classspeedml_1_1feature_1_1_feature_1a1dd5a51e1c4a407b248c7dd39956c18a" kind="function"><name>get_dummies</name></member>
     <member refid="classspeedml_1_1feature_1_1_feature_1a8789599466c18fc5e34482daa8d1c7d7" kind="function"><name>_density_by_feature</name></member>
     <member refid="classspeedml_1_1feature_1_1_feature_1afdc31aa9e6c8ad55d634c0f8bcac1737" kind="function"><name>_regex_text</name></member>
   </compound>
@@ -115,38 +119,6 @@
     <member refid="namespacehouse_price_1a0be6b4ef729fb48e16a608bed8bf9b52" kind="function"><name>fill_na_with_mode</name></member>
     <member refid="namespacehouse_price_1a11a87b394d204862f98625eb60c53322" kind="function"><name>num_transform</name></member>
   </compound>
-  <compound refid="namespacemodule1" kind="namespace"><name>module1</name>
-    <member refid="namespacemodule1_1a19e4e407d18fcaf603abfe7c30e81f8b" kind="variable"><name>color</name></member>
-    <member refid="namespacemodule1_1a816c82812588abe28ffd9a655867dc70" kind="variable"><name>train</name></member>
-    <member refid="namespacemodule1_1a551617199b876bf8f80695531833afe1" kind="variable"><name>test</name></member>
-    <member refid="namespacemodule1_1af0fa6c12583cfb99aca0069c36a519ec" kind="variable"><name>y</name></member>
-    <member refid="namespacemodule1_1ab787c930f24777609f726966b3210558" kind="variable"><name>ntrain</name></member>
-    <member refid="namespacemodule1_1a15468f3367a68caed28307fa20dcd747" kind="variable"><name>ntest</name></member>
-    <member refid="namespacemodule1_1a6cb8decbb8dced55fcb9ac1c63fdff7f" kind="variable"><name>y_train</name></member>
-    <member refid="namespacemodule1_1a3ddb40cb8be2caff78adcfa1bb651a9d" kind="variable"><name>data</name></member>
-    <member refid="namespacemodule1_1ac090f6e623e78f2e9ae64f1077a693b9" kind="variable"><name>data_na</name></member>
-    <member refid="namespacemodule1_1ab2b9e81f5fe97d0b44a15e10c461b45e" kind="variable"><name>items1</name></member>
-    <member refid="namespacemodule1_1a41a570388761f1482d9e73f0454c7a80" kind="variable"><name>items2</name></member>
-    <member refid="namespacemodule1_1a4796fb38e13993db567c2873d49e6f49" kind="variable"><name>item3</name></member>
-    <member refid="namespacemodule1_1a96bd878e5f406b511e4b0d0dee74adc8" kind="variable"><name>data_null</name></member>
-    <member refid="namespacemodule1_1a9bdc0d3e08cdb753f61e11507410e8d9" kind="variable"><name>item4</name></member>
-    <member refid="namespacemodule1_1afd88c5bfa93b83de85674cfc323149bb" kind="variable"><name>cols</name></member>
-    <member refid="namespacemodule1_1a1ca8da01911d40d574d8ab7dec3eaac5" kind="variable"><name>lbl</name></member>
-    <member refid="namespacemodule1_1ac7e624323276e0fffee43da1928ff3d1" kind="variable"><name>numeric_feats</name></member>
-    <member refid="namespacemodule1_1a943c16b4d64674ff048456ccc06ee091" kind="variable"><name>skewed_feats</name></member>
-    <member refid="namespacemodule1_1a6ac08d67f01ed66548225329d1fb8f28" kind="variable"><name>skewness</name></member>
-    <member refid="namespacemodule1_1a9550684fdb1230fa0b5cc96ff93b0c99" kind="variable"><name>skewed_features</name></member>
-    <member refid="namespacemodule1_1a327849839c76c5a883bada146727a0ac" kind="variable"><name>lam</name></member>
-    <member refid="namespacemodule1_1af1dff7dfb3c8d67e48aef2f726b8b8aa" kind="variable"><name>data2</name></member>
-    <member refid="namespacemodule1_1a34eccd820417a74d024f0fa4348d52e3" kind="variable"><name>param_test3</name></member>
-    <member refid="namespacemodule1_1a3ce141cb4797dfe820bb25967cb9422e" kind="variable"><name>estimator</name></member>
-    <member refid="namespacemodule1_1a61dddae5414f5c9240183197f88b623a" kind="variable"><name>init_param</name></member>
-    <member refid="namespacemodule1_1aea3cdae47dbb141c32ac55f3164175e9" kind="variable"><name>mode</name></member>
-    <member refid="namespacemodule1_1abec556fccc61fa9c1871cb4202e8478d" kind="function"><name>ignore_warn</name></member>
-    <member refid="namespacemodule1_1ac829197eb2fd5e1250857354c0d00a0e" kind="function"><name>fill_na</name></member>
-    <member refid="namespacemodule1_1a0cd1d2ec920119ec65d51b2876f5f010" kind="function"><name>fill_na_with_mode</name></member>
-    <member refid="namespacemodule1_1a765fc990ce2d34a2f439381582906d53" kind="function"><name>num_transform</name></member>
-  </compound>
   <compound refid="namespacemodule2" kind="namespace"><name>module2</name>
     <member refid="namespacemodule2_1ab034a5c053db6fae28d124a0eac5207d" kind="variable"><name>__author__</name></member>
     <member refid="namespacemodule2_1afff88dd0f9db06d471f873d1a20bacc5" kind="variable"><name>sml</name></member>
@@ -164,7 +136,6 @@
     <member refid="namespacemodule2_1ac5a96f8f4ae1e6c74934954063b4c8ce" kind="variable"><name>estimator</name></member>
     <member refid="namespacemodule2_1afeaf0b81d5a25537633d88c7a3c805db" kind="variable"><name>init_param</name></member>
     <member refid="namespacemodule2_1a3118a836fc62a15c7d748d15d323d054" kind="variable"><name>param_test5</name></member>
-    <member refid="namespacemodule2_1a1d4ad39251aa72fbf4a890eb9d71c1fc" kind="variable"><name>xgb</name></member>
     <member refid="namespacemodule2_1a952bfa729283c6f5a46b54ae6695a430" kind="function"><name>logger_set</name></member>
     <member refid="namespacemodule2_1a17970b5263fb1ce965b102f8e6c2d490" kind="function"><name>calculater</name></member>
     <member refid="namespacemodule2_1a32a6f7dc4e982f0a184ff9aafbd725b0" kind="function"><name>createSamples</name></member>
@@ -205,6 +176,12 @@
   </compound>
   <compound refid="namespacetest1" kind="namespace"><name>test1</name>
   </compound>
+  <compound refid="namespace_titanic" kind="namespace"><name>Titanic</name>
+    <member refid="namespace_titanic_1a6715d55a095531f8392269985dfd80fc" kind="variable"><name>color</name></member>
+    <member refid="namespace_titanic_1a606b0d74a8fce2daace88e6a4bfc8f9c" kind="variable"><name>sml</name></member>
+    <member refid="namespace_titanic_1a8936cce83a1b97134eb92452ad54daca" kind="variable"><name>bins</name></member>
+    <member refid="namespace_titanic_1adf3f7458a0e23f40d1e3d79feff9d803" kind="function"><name>ignore_warn</name></member>
+  </compound>
   <compound refid="____init_____8py" kind="file"><name>__init__.py</name>
   </compound>
   <compound refid="base_8py" kind="file"><name>base.py</name>
@@ -217,11 +194,11 @@
   </compound>
   <compound refid="house_price_8py" kind="file"><name>housePrice.py</name>
   </compound>
-  <compound refid="module1_8py" kind="file"><name>module1.py</name>
-  </compound>
   <compound refid="module2_8py" kind="file"><name>module2.py</name>
   </compound>
   <compound refid="test1_8py" kind="file"><name>test1.py</name>
+  </compound>
+  <compound refid="_titanic_8py" kind="file"><name>Titanic.py</name>
   </compound>
   <compound refid="tuning_8py" kind="file"><name>tuning.py</name>
   </compound>

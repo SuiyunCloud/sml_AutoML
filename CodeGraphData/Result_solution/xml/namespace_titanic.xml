@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="namespace_titanic" kind="namespace">
+    <compoundname>Titanic</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespace_titanic_1a6715d55a095531f8392269985dfd80fc" prot="public" static="no" mutable="no">
+        <type>tuple</type>
+        <definition>tuple Titanic.color</definition>
+        <argsstring></argsstring>
+        <name>color</name>
+        <initializer>= sns.color_palette()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/Titanic.py" line="11" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/Titanic.py" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespace_titanic_1a606b0d74a8fce2daace88e6a4bfc8f9c" prot="public" static="no" mutable="no">
+        <type>tuple</type>
+        <definition>tuple Titanic.sml</definition>
+        <argsstring></argsstring>
+        <name>sml</name>
+        <initializer>= <ref refid="classspeedml_1_1_speedml" kindref="compound">Speedml</ref>(&quot;C:\\Users\\suiyun.yang\\Desktop\\Kaggle\\datasets\\Kaggle\\Titanic\\train.csv&quot;,&quot;C:\\Users\\suiyun.yang\\Desktop\\Kaggle\\datasets\\Kaggle\\Titanic\\test.csv&quot;,target=&apos;Survived&apos;,uid=&apos;PassengerId&apos;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/Titanic.py" line="30" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/Titanic.py" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespace_titanic_1a8936cce83a1b97134eb92452ad54daca" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list Titanic.bins</definition>
+        <argsstring></argsstring>
+        <name>bins</name>
+        <initializer>= [20,30,40,50,60]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/Titanic.py" line="31" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/Titanic.py" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespace_titanic_1adf3f7458a0e23f40d1e3d79feff9d803" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Titanic.ignore_warn</definition>
+        <argsstring></argsstring>
+        <name>ignore_warn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/Titanic.py" line="14" column="1" bodyfile="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/Titanic.py" bodystart="14" bodyend="17"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/Titanic.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

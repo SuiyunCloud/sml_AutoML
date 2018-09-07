@@ -51,8 +51,16 @@ class Speedml(Base):
 
             self.np = np
             self.pd = pd
+
+            #self.train = Base.train
+            #self.test = Base.test
+
+            Base.data = Base.train.append(Base.test)
+
         else:
             print('ERROR: SpeedML can only process .csv and .json file extensions.')
+
+        
 
     def configure(self, option=None, value=None):
         """
@@ -92,9 +100,9 @@ class Speedml(Base):
         """
         Runs DataFrame.info() on both Train and Test datasets.
         """
-        self.train.info()
+        Base.train.info()
         print('-'*40)
-        self.test.info()
+        Base.test.info()
 
     def eda(self):
         """
@@ -270,3 +278,35 @@ class Speedml(Base):
             self.xgb.sample_accuracy,
             self.xgb.feature_accuracy)
         return performance_slug
+
+    def describe(self):
+        Base.data = Base.train.append(Base.test)
+        Base.data.describe()
+
+    
+    @property
+    def train(self):
+        return Base.train
+
+    @train.setter
+    def train(self,train):
+        Base.train = train
+
+    @property
+    def test(self):
+        return Base.test
+
+    @test.setter
+    def test(self,test):
+        Base.test = test    
+
+    #def get(self,var):
+    #    if var == "train":
+    #        return Base.train
+    #    if var == "test":
+    #        return Base.test
+    #def set(self,var,value):
+    #    if var == "train":
+    #        Base.train = value
+    #    if var == "test":
+    #        Base.test = value

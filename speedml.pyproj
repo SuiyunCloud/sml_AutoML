@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{5edb9cd9-f370-48a1-ac15-f40845551e79}</ProjectGuid>
     <ProjectHome />
-    <StartupFile>test\module1.py</StartupFile>
+    <StartupFile>test\test1.py</StartupFile>
     <SearchPath />
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
@@ -24,9 +24,10 @@
     <Compile Include="model.py" />
     <Compile Include="plot.py" />
     <Compile Include="test\housePrice.py" />
-    <Compile Include="test\module1.py" />
     <Compile Include="test\module2.py" />
     <Compile Include="test\test1.py" />
+    <Compile Include="test\test2.py" />
+    <Compile Include="test\Titanic.py" />
     <Compile Include="tuning.py" />
     <Compile Include="util.py" />
     <Compile Include="xgb.py" />

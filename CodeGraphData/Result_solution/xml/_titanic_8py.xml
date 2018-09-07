@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_titanic_8py" kind="file">
+    <compoundname>Titanic.py</compoundname>
+    <innernamespace refid="namespace_titanic">Titanic</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespace_titanic" refkind="compound"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>sklearn.preprocessing<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>LabelEncoder</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>sklearn.ensemble<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>GradientBoostingClassifier</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>collections<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>defaultdict,<sp/>OrderedDict</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/><ref refid="namespacespeedml_1_1tuning" kindref="compound">speedml.tuning</ref><sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>auto_tuning</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>numpy<sp/></highlight><highlight class="keyword">as</highlight><highlight class="normal"><sp/>np<sp/></highlight><highlight class="comment">#<sp/>linear<sp/>algebra</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>pandas<sp/></highlight><highlight class="keyword">as</highlight><highlight class="normal"><sp/>pd<sp/></highlight><highlight class="comment">#<sp/>data<sp/>processing,<sp/>CSV<sp/>file<sp/>I/O<sp/>(e.g.<sp/>pd.read_csv)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>matplotlib.pyplot<sp/></highlight><highlight class="keyword">as</highlight><highlight class="normal"><sp/>plt<sp/><sp/></highlight><highlight class="comment">#<sp/>Matlab-style<sp/>plotting</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>seaborn<sp/></highlight><highlight class="keyword">as</highlight><highlight class="normal"><sp/>sns</highlight></codeline>
+<codeline lineno="11" refid="namespace_titanic_1a6715d55a095531f8392269985dfd80fc" refkind="member"><highlight class="normal">color<sp/>=<sp/>sns.color_palette()</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">sns.set_style(</highlight><highlight class="stringliteral">&apos;darkgrid&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>warnings</highlight></codeline>
+<codeline lineno="14" refid="namespace_titanic_1adf3f7458a0e23f40d1e3d79feff9d803" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespace_titanic_1adf3f7458a0e23f40d1e3d79feff9d803" kindref="member">ignore_warn</ref>(*args,<sp/>**kwargs):</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">pass</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal">warnings.warn<sp/>=<sp/>ignore_warn<sp/></highlight><highlight class="comment">#ignore<sp/>annoying<sp/>warning<sp/>(from<sp/>sklearn<sp/>and<sp/>seaborn)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>scipy<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>stats</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>scipy.stats<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>norm,<sp/>skew<sp/></highlight><highlight class="comment">#for<sp/>some<sp/>statistics</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal">pd.set_option(</highlight><highlight class="stringliteral">&apos;display.float_format&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">lambda</highlight><highlight class="normal"><sp/>x:<sp/></highlight><highlight class="stringliteral">&apos;{:.3f}&apos;</highlight><highlight class="normal">.format(x))<sp/></highlight><highlight class="comment">#Limiting<sp/>floats<sp/>output<sp/>to<sp/>3<sp/>decimal<sp/>points</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>numpy<sp/></highlight><highlight class="keyword">as</highlight><highlight class="normal"><sp/>np</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>pandas<sp/></highlight><highlight class="keyword">as</highlight><highlight class="normal"><sp/>pd</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>sklearn.ensemble<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>RandomForestRegressor</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>speedml<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Speedml</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="namespace_titanic_1a606b0d74a8fce2daace88e6a4bfc8f9c" refkind="member"><highlight class="normal">sml<sp/>=<sp/><ref refid="classspeedml_1_1_speedml" kindref="compound">Speedml</ref>(</highlight><highlight class="stringliteral">&quot;C:\\Users\\suiyun.yang\\Desktop\\Kaggle\\datasets\\Kaggle\\Titanic\\train.csv&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;C:\\Users\\suiyun.yang\\Desktop\\Kaggle\\datasets\\Kaggle\\Titanic\\test.csv&quot;</highlight><highlight class="normal">,target=</highlight><highlight class="stringliteral">&apos;Survived&apos;</highlight><highlight class="normal">,uid=</highlight><highlight class="stringliteral">&apos;PassengerId&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="31" refid="namespace_titanic_1a8936cce83a1b97134eb92452ad54daca" refkind="member"><highlight class="normal">bins<sp/>=<sp/>[20,30,40,50,60]</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">sml.feature.cut(</highlight><highlight class="stringliteral">&apos;Age&apos;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;AgeBin&quot;</highlight><highlight class="normal">,bins)</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">print(sml.columns)</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="D:/programs/Python3.5.2/Lib/site-packages/speedml/test/Titanic.py"/>
+  </compounddef>
+</doxygen>

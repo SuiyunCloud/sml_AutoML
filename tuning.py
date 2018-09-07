@@ -152,7 +152,7 @@ def intRange(min, max, samples):
     return [i * step + min for i in range(samples)], can_adjust
 
 
-def is_converge(res, expand=10, converge_threshold=0.001):
+def is_converge(res, min_fixed,expand, converge_threshold):
     meanScores = []
     itera_params = []
     for row in res['gridScore']:
@@ -190,8 +190,14 @@ def is_converge(res, expand=10, converge_threshold=0.001):
             if tem_index == 0:
                 return False, expand_both(itera_params, expand)
             else:
+                #最优值在下端点
                 for k, v in itera_params[0].items():
-                    itera_params[0][k] = (v / expand, itera_params[tem_index][k])
+                    if min_fixed == 0:
+                        itera_params[0][k] = (int(v / expand), itera_params[tem_index][k])
+                    if get_decimal_place(min_fixed) == 0 & min_fixed > 0:
+                        itera_params[0][k] = (math.ceil(v / expand) , itera_params[tem_index][k])
+                    else:
+                        itera_params[0][k] = (v / expand, itera_params[tem_index][k])
                 return False, itera_params[0]
         else:
             tem_index = len(meanScores) -1
@@ -236,7 +242,7 @@ def get_decimal_place(decimal):
     return num
 
 # def compare_boundary(param,label,min_fixed,max_fixed):
-def auto_tuning(model, init_param, params, data, target='Survived',scorer='roc_auc',expand=10,samples=10,min_positive_num=0.001):
+def auto_tuning(model, init_param, params, data, target='Survived',scorer='roc_auc',expand=10,samples=10,min_positive_num=0.001,converge_threshold=0.001):
     """
     params包含参数的字典，每个参数的值由四维tuple构成，前两位是初始最小、最大，后两位是取值上下极限边界,若上下极限边界值为-1表示不做上下极限限制
     如：learning_rate:(0.05,0.3,0,1)表示learning_rate初始范围为（0.05,0.3），当在给范围找不到最优结果时，会扩大到（0,1）内
@@ -299,8 +305,8 @@ def auto_tuning(model, init_param, params, data, target='Survived',scorer='roc_a
             rests.append(res)
             #logger.debug('hello')
             if canAdjust and (not is_done):
-                is_done, param = is_converge(res,expand)
-                if is_done:
+                is_done, param = is_converge(res,min_fixed,expand,converge_threshold)
+                if is_done:                  
                     break
                 # deal with fixed boundary
                 temp = [i for i in param.values()]
