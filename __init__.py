@@ -52,9 +52,6 @@ class Speedml(Base):
             self.np = np
             self.pd = pd
 
-            #self.train = Base.train
-            #self.test = Base.test
-
             Base.data = Base.train.append(Base.test)
 
         else:
@@ -300,13 +297,3 @@ class Speedml(Base):
     def test(self,test):
         Base.test = test    
 
-    #def get(self,var):
-    #    if var == "train":
-    #        return Base.train
-    #    if var == "test":
-    #        return Base.test
-    #def set(self,var,value):
-    #    if var == "train":
-    #        Base.train = value
-    #    if var == "test":
-    #        Base.test = value
